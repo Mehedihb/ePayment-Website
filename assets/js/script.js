@@ -20,19 +20,8 @@ const handleScrollHeader1 = () => {
     }
   };
   
-  // Function to handle scroll event and toggle class 'fixed' for .header-2
-  const handleScrollHeader2 = () => {
-    const header2 = document.querySelector('.header-2');
-    if (window.scrollY > 0) {
-      header2.classList.add('fixed');
-    } else {
-      header2.classList.remove('fixed');
-    }
-  };
-  
   // Add event listeners for scroll events
   window.addEventListener('scroll', handleScrollHeader1);
-  window.addEventListener('scroll', handleScrollHeader2);
   
 
 

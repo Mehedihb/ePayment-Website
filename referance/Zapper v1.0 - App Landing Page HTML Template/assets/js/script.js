@@ -3,7 +3,7 @@ header
 ********************/
 $(".header .header__bars").on('click', function () {
 
-    var selector = $(".header .header__nav")
+    var selector = $(".header .header-nav")
 
     if (selector.hasClass('shown')) {
         selector.css('right', "100%");
@@ -14,9 +14,9 @@ $(".header .header__bars").on('click', function () {
     }
 });
 
-$(".header .header__nav span").on('click', function () {
+$(".header .header-nav span").on('click', function () {
 
-    var selector = $(".header .header__nav")
+    var selector = $(".header .header-nav")
 
     if (selector.hasClass('shown')) {
         selector.css('right', "100%");

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>ePayment | সরকারি রাজেন্দ্র কলেজ, ফরিদপুর</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/CollegeLogo.svg">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./assets/css/new.css">
+    </head>
+
+    <body class="h-100">
+  <!--header section start-->
+  <header class="header fixed">
+    <div class="container">
+      <div class="header-wrapper">
+  
+        <a class="header-logo" href="index.html">
+          <img src="assets/images/CollegeLogo.svg" alt="logo">
+          <h1>সরকারি রাজেন্দ্র কলেজ, ফরিদপুর</h1>
+        </a>
+  
+        <div class="header-nav">
+          <ul class="header-nav-primary">
+
+            <li class="nav__dropdown" id="service-list">
+              <a href="#" class="dropdown-info">
+                Services
+              </a>
+              <ul class="nav__dropdown-box">
+                <li><a href="student-registration.html">Student Registration</a></li>
+                <li><a href="student-admission.html">Student Admission</a></li>
+                <li><a href="application-fee.html">Application Fee</a></li>
+                <li><a href="admission-fee.html">Admission Fee</a></li>
+                <li><a href="find-admission-invoice.html">Find Admission Invoice</a></li>
+              </ul>
+            </li>
+            <li><a href="#faq">Notice</a></li>
+            <li><a href="#check-invoice">About</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <ul class="btn-group">
+          <!-- <li>
+            <a href="login.html" class="guestuser-btn">
+              Login/ Sign Up
+            </a>
+          </li> -->
+          <li class="nav__dropdown" id="menu-list">
+            <div href="#" class="dropdown-info user-btn">
+              <img src="./assets/images/user-img.png" alt="">
+              <p class="user-context">User Name <span class="material-symbols-rounded"> arrow_drop_down </span></p>
+              <span class="header__bars material-symbols-rounded category-menu-mobile"> menu_open </span>
+            </div>
+            <ul class="nav__dropdown-box mt-4">
+              <!-- <li><a href="index-student-panel.html">Student Panel</a></li> -->
+              <li><a href="index.html">Back Website</a></li>
+              <li><a href="#">Log Out</a></li>
+            </ul>
+          </li>
+        </ul>
+     
+      </div>
+    </div>
+  </header>
+  <!--header section end-->
+
+
+  <div class="master-layout">
+
+    <div class="layout-body container">
+        <div class="layout-sidebar">
+            <!--==========>>>>> Start Category Sidebar Area -->
+            <aside class="category-sidebar">
+                <div class="header-mobile">
+                    <h5>Category</h5>
+                    <span class="material-icons categoryClose-btn"> cancel </span>
+                </div>
+                <!-- Sidebar Inner -->
+                <div id="product-categoray-menu">
+                    <!-- Accordion Menu -->
+                    <div class="accordion accordion-flush category">
+                        <!-- Non Accordion Menu -->
+                        <a href="./index.html">
+                            <button class="non-accordion-button" type="button" onclick="accordionClose()">
+                                <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home" /></span>
+                                <p>Home</p>
+                            </button>
+                        </a>
+                        <a href="./my-notice.html">
+                            <button class="non-accordion-button" type="button" onclick="accordionClose()">
+                                <span class="category-icon"><img src="./assets/images/Notice-Icon.svg" alt="Offers" /></span>
+                                <p>My Notice</p>
+                            </button>
+                        </a>
+                        <a href="./history.html">
+                            <button class="non-accordion-button" type="button" onclick="accordionClose()">
+                                <span class="category-icon"><img src="./asset/img/cetegory/wishlist.svg" alt="Wishlist" /></span>
+                                <p>My History</p>
+                            </button>
+                        </a>
+                        <a href="./coupons.html">
+                            <button class="non-accordion-button active" type="button" onclick="accordionClose()">
+                                <span class="category-icon"><img src="./asset/img/cetegory/cupon.svg" alt="Coupons" /></span>
+                                <p>Coupons</p>
+                            </button>
+                        </a>
+                        <!-- Category 1 -->
+                        <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#category-1" aria-expanded="false" aria-controls="category-1">
+                                <span class="category-icon"><img src="./asset/img/cetegory/vegetable.svg" alt="Category Image" /></span>
+                                <p>Category 1</p>
+                            </button>
+                            <!-- Accordion Body -->
+                            <div id="category-1" class="accordion-collapse collapse" data-bs-parent=".category">
+                                <div class="accordion-body">
+                                    <!-- Accordion Menu -->
+                                    <div class="accordion accordion-flush c1-sub-category">
+                                        <div class="accordion-item">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c1-child1" aria-expanded="false" aria-controls="c1-child1">
+                                                <span class="sub-category-icon material-icons-round">category</span>
+                                                <p>Sub Category 1</p>
+                                            </button>
+                                            <!-- Accordion Body -->
+                                            <div id="c1-child1" class="accordion-collapse collapse" data-bs-parent=".c1-sub-category">
+                                                <div class="accordion-body">
+                                                    <button class="accordion-button-x" type="button">Sub Category Child 1</button>
+                                                    <button class="accordion-button-x" type="button">Sub Category Child 2</button>
+                                                    <button class="accordion-button-x" type="button">Sub Category Child 3</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c1-child2" aria-expanded="false" aria-controls="c1-child2">
+                                                <span class="sub-category-icon material-icons-round">category</span>
+                                                <p>Sub Category 1</p>
+                                            </button>
+                                            <!-- Accordion Body -->
+                                            <div id="c1-child2" class="accordion-collapse collapse" data-bs-parent=".c1-sub-category">
+                                                <div class="accordion-body">
+                                                    <button class="accordion-button-x" type="button">Sub Category Child 1</button>
+                                                    <button class="accordion-button-x" type="button">Sub Category Child 2</button>
+                                                    <button class="accordion-button-x" type="button">Sub Category Child 3</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c1-child3" aria-expanded="false" aria-controls="c1-child3">
+                                                <span class="sub-category-icon material-icons-round">category</span>
+                                                <p>Sub Category 1</p>
+                                            </button>
+                                            <!-- Accordion Body -->
+                                            <div id="c1-child3" class="accordion-collapse collapse" data-bs-parent=".c1-sub-category">
+                                                <div class="accordion-body">
+                                                    <button class="accordion-button-x" type="button">Sub Category Child 1</button>
+                                                    <button class="accordion-button-x" type="button">Sub Category Child 2</button>
+                                                    <button class="accordion-button-x" type="button">Sub Category Child 3</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Category 2 -->
+                        <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#category-2" aria-expanded="false" aria-controls="category-2">
+                                <span class="category-icon"><img src="./asset/img/cetegory/vegetable.svg" alt="Category Image" /></span>
+                                <p>Category 2</p>
+                            </button>
+                            <!-- Accordion Body -->
+                            <div id="category-2" class="accordion-collapse collapse" data-bs-parent=".category">
+                                <div class="accordion-body">
+                                    <!-- Accordion Menu -->
+                                    <div class="accordion accordion-flush c2-sub-category">
+                                        <div class="accordion-item">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c2-child1" aria-expanded="false" aria-controls="c2-child1">
+                                                <span class="sub-category-icon material-icons-round">category</span>
+                                                <p>Sub Category 1</p>
+                                            </button>
+                                            <!-- Accordion Body -->
+                                            <div id="c2-child1" class="accordion-collapse collapse" data-bs-parent=".c2-sub-category">
+                                                <div class="accordion-body">
+                                                    <button class="accordion-button-x" type="button">Sub Category Child 1</button>
+                                                    <button class="accordion-button-x" type="button">Sub Category Child 2</button>
+                                                    <button class="accordion-button-x" type="button">Sub Category Child 3</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c2-child2" aria-expanded="false" aria-controls="c2-child2">
+                                                <span class="sub-category-icon material-icons-round">category</span>
+                                                <p>Sub Category 1</p>
+                                            </button>
+                                            <!-- Accordion Body -->
+                                            <div id="c2-child2" class="accordion-collapse collapse" data-bs-parent=".c2-sub-category">
+                                                <div class="accordion-body">
+                                                    <button class="accordion-button-x" type="button">Sub Category Child 1</button>
+                                                    <button class="accordion-button-x" type="button">Sub Category Child 2</button>
+                                                    <button class="accordion-button-x" type="button">Sub Category Child 3</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c3-child3" aria-expanded="false" aria-controls="c3-child3">
+                                                <span class="sub-category-icon material-icons-round">category</span>
+                                                <p>Sub Category 1</p>
+                                            </button>
+                                            <!-- Accordion Body -->
+                                            <div id="c3-child3" class="accordion-collapse collapse" data-bs-parent=".c2-sub-category">
+                                                <div class="accordion-body">
+                                                    <button class="accordion-button-x" type="button">Sub Category Child 1</button>
+                                                    <button class="accordion-button-x" type="button">Sub Category Child 2</button>
+                                                    <button class="accordion-button-x" type="button">Sub Category Child 3</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <!-- End Category Sidebar Area <<<<<==========-->
+        </div>
+
+        <div class="layout-details">
+            <div class="layout-inner">
+            <!--==========>>>>> Start Breadcrumbs Area -->
+            <div class="breadcrumbs">
+                <ul class="bread-list">
+                    <li><a href="index.html">Home</a> <span class="material-symbols-rounded"> trending_flat </span></li>
+                    <li class="active"><a href="./profile.html">Profile</a></li>
+                </ul>
+            </div>
+            <!-- End Breadcrumbs Area <<<<<==========-->
+
+            <div class="p-5">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-header">
+                            <h5>Edit your profile. It's always easy.</h5>
+                            <hr class="colorgraph" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <!--==========>>>>> Start Profile Card Area -->
+                        <div class="profile-card">
+                            <div class="user-img">
+                                <img src="./assets/images/user-img.png" alt="User Image" />
+                                <input type="file" name="image" id="profile-photo" />
+                                <span class="upload-btn">Change</span>
+                            </div>
+                            <h5 class="user-name">Mehedi Hassan</h5>
+                        </div>
+                        <!-- End Profile Card Area <<<<<==========-->
+                    </div>
+                
+                    <div class="col-lg-9 col-md-8 col-12">
+                        <form action="#">
+                            <div class="row">
+                                <!-- Single Item -->
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group">
+                                        <label for="full-name">Full Name</label>
+                                        <input type="text" class="form-control" value="Mehedi Hassan" id="full-name" />
+                                    </div>
+                                </div>
+                                <!-- Single Item -->
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group">
+                                        <label for="full-name">Area</label>
+                                        <select class="form-select" disabled>
+                                            <option selected>Select Area</option>
+                                            <option value="1">Dinajpur</option>
+                                            <option value="2">Rangpur</option>
+                                            <option value="3">Feni</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- Single Item -->
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group">
+                                        <label for="phone">Phone</label>
+                                        <input type="text" class="form-control" value="01755440038" disabled />
+                                    </div>
+                                </div>
+                                <!-- Single Item -->
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" value="mehedi.all.info@gmail.com" id="email" disabled />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-center mt-4">
+                                    <button type="submit" class="btn btn-primary">Edit Profile</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    
+    <!--==========>>>>> Start Modal Section Area -->
+    <!-- Start Authentication Modal -->
+    <div class="modal fade" id="authentication-modal" tabindex="-1" role="dialog" aria-labelledby="popupmodal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="form-tab">
+                        <ul class="nav nav-tabs nav-justified" role="tablist">
+                            <li class="nav-item">
+                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#log-in" type="button" role="tab" aria-controls="log-in" aria-selected="true">Log In</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" aria-controls="register" aria-selected="false">Register</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="log-in" role="tabpanel">
+                                <form action="#">
+                                    <div class="row">
+                                        <!-- Single Item -->
+                                        <div class="col-12 form-group">
+                                            <label for="Phone">Phone</label>
+                                            <input type="text" class="form-control" id="Phone" required />
+                                        </div>
+                                        <!-- Single Item -->
+                                        <div class="col-12 form-group">
+                                            <label for="Password">Password</label>
+                                            <input type="password" class="form-control" id="Password" required />
+                                        </div>
+                                    </div>
+                                    <div class="form-footer">
+                                        <span class="forgot-link" data-bs-target="#password-recovery-modal" data-bs-toggle="modal" data-bs-dismiss="modal">Forgot Password?</span>
+                                        <button type="submit" class="btn btn-primary">LOG IN<span class="material-icons"> trending_flat </span></button>
+                                    </div>
+                                </form>
+                                <!-- Start Auth Social Area -->
+                                <div class="auth-social">
+                                    <p class="text-center">or sign in with</p>
+                                    <div class="row">
+                                        <div class="col-sm-6 col-12">
+                                            <a href="#" class="btn btn-login">
+                                                <img src="./asset/img/google.svg" alt="" />
+                                                Login With Google
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-6 col-12">
+                                            <a href="#" class="btn btn-login">
+                                                <img src="./asset/img/facebook.svg" alt="" />
+                                                Login With Facebook
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Start Auth Social Area -->
+                            </div>
+                            <div class="tab-pane fade" id="register" role="tabpanel">
+                                <form action="#">
+                                    <div class="row">
+                                        <!-- Single Item -->
+                                        <div class="col-12 col-sm-6 form-group">
+                                            <label for="full-name">Full Name</label>
+                                            <input type="text" class="form-control" id="full-name" required />
+                                        </div>
+                                        <!-- Single Item -->
+                                        <div class="col-12 form-group">
+                                            <label for="phone">Phone</label>
+                                            <div class="verify-container">
+                                                <input type="text" class="form-control" id="Phone" required />
+                                                <span>Send</span>
+                                            </div>
+                                        </div>
+                                        <!-- Single Item -->
+                                        <div class="col-12 form-group">
+                                            <label for="otp">OTP</label>
+                                            <input type="text" class="form-control" id="otp" required />
+                                        </div>
+                                        <!-- Single Item -->
+                                        <div class="col-12 form-group">
+                                            <label for="email">Email</label>
+                                            <input type="email" class="form-control" id="email" required />
+                                        </div>
+                                        <!-- Single Item -->
+                                        <div class="col-12 form-group">
+                                            <label for="register-password">Password</label>
+                                            <input type="password" class="form-control" id="register-password" required />
+                                        </div>
+                                        <!-- Single Item -->
+                                        <div class="col-12 form-group">
+                                            <label for="confirm-register-password">Confirm Password</label>
+                                            <input type="password" class="form-control" id="confirm-register-password" required />
+                                        </div>
+                                    </div>
+                                    <div class="form-footer">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="register-policy" required />
+                                            <label class="custom-control-label" for="register-policy">I agree to the <a href="#">privacy policy</a></label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">SIGN UP<span class="material-icons"> trending_flat</span></button>
+                                    </div>
+                                </form>
+                                <!-- Start Auth Social Area -->
+                                <div class="auth-social">
+                                    <p class="text-center">or sign in with</p>
+                                    <div class="row">
+                                        <div class="col-sm-6 col-12">
+                                            <a href="#" class="btn btn-login">
+                                                <img src="./asset/img/google.svg" alt="" />
+                                                Login With Google
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-6 col-12">
+                                            <a href="#" class="btn btn-login">
+                                                <img src="./asset/img/facebook.svg" alt="" />
+                                                Login With Facebook
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Start Auth Social Area -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Start Password Recovery Modal -->
+    <div class="modal fade" id="password-recovery-modal" tabindex="-1" role="dialog" aria-labelledby="popupmodal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title">Reset Password</h5>
+                    <form action="#">
+                        <div class="row">
+                            <!-- Single Item -->
+                            <div class="col-12 form-group">
+                                <label for="phone">Phone</label>
+                                <div class="verify-container">
+                                    <input type="text" class="form-control" id="Phone" />
+                                    <span>Send</span>
+                                </div>
+                            </div>
+                            <!-- Single Item -->
+                            <div class="col-12 form-group">
+                                <label for="otp">OTP</label>
+                                <input type="text" class="form-control" id="otp" />
+                            </div>
+                            <!-- Single Item -->
+                            <div class="col-12 form-group">
+                                <label for="new-password">New Password</label>
+                                <input type="password" class="form-control" id="new-password" />
+                            </div>
+                            <!-- Single Item -->
+                            <div class="col-12 form-group">
+                                <label for="confirm-new-password">Confirm Password</label>
+                                <input type="password" class="form-control" id="confirm-new-password" />
+                            </div>
+                        </div>
+                        <div class="form-footer d-flex justify-content-center mt-3">
+                            <button type="submit" class="btn btn-primary">Change Password</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Start Manage Address Modal -->
+    <div class="modal fade" id="manage-address-modal" tabindex="-1" role="dialog" aria-labelledby="popupmodal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title">Manage Address</h5>
+                    <div class="row">
+                        <!-- Single Item -->
+                        <div class="col-12">
+                            <div class="address-card">
+                                <label class="shipping-address-card">
+                                    <input class="form-check-input" type="radio" name="address" checked />
+                                    <div class="address-details">
+                                        <h5 class="address-head">Home</h5>
+                                        <p>58/A Sukrabad, Dhanmondi 32</p>
+                                    </div>
+                                </label>
+                                <span class="material-icons-round"> delete </span>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-12">
+                            <button class="btn btn-primary outline" type="button" data-bs-toggle="collapse" data-bs-target="#add-new-address" aria-expanded="false" aria-controls="add-new-address">
+                                <span class="material-icons-round mr-4"> add </span> Add New Address
+                            </button>
+
+                            <div class="collapse" id="add-new-address">
+                                <div class="card card-body">
+                                    <div class="row">
+                                        <!-- Single Item -->
+                                        <div class="col-12 col-sm-6 form-group">
+                                            <label for="address-name">Address Name</label>
+                                            <input type="text" class="form-control" id="address-name" placeholder="Ex: Home" />
+                                        </div>
+                                        <!-- Single Item -->
+                                        <div class="col-12 form-group">
+                                            <label for="receiver-name">Receiver Name</label>
+                                            <input type="text" class="form-control" id="receiver-name" placeholder="Ex: Mehedi Hassan" />
+                                        </div>
+                                        <!-- Single Item -->
+                                        <div class="col-12 form-group">
+                                            <label for="receiver-phone">Receiver Phone</label>
+                                            <input type="text" class="form-control" id="receiver-phone" placeholder="Ex: +880123455678" />
+                                        </div>
+                                        <!-- Single Item -->
+                                        <div class="col-12 form-group">
+                                            <label for="House">House</label>
+                                            <input type="text" class="form-control" id="House" placeholder="Ex: 58/A Sukrabad," />
+                                        </div>
+                                        <!-- Single Item -->
+                                        <div class="col-12 form-group">
+                                            <label for="Area">Area</label>
+                                            <input type="text" class="form-control" id="Area" placeholder="Ex: Dhanmondi 32" />
+                                        </div>
+                                        <div class="col-12 mt-3 d-flex justify-content-center">
+                                            <button class="btn btn-primary" type="button">Add Address</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>

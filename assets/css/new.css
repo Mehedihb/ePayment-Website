@@ -433,3 +433,117 @@ ul {
     }
 }
 /*>>>>> End Header Sction Area <---------- */
+
+.footer-section {
+    background: var(--primary-black);
+    padding-top: 2rem;
+}
+.footer-section a:hover,
+.footer-section a:focus {
+    text-decoration: none;
+    outline: none;
+}
+.footer-section ul {
+    padding: 0;
+    margin: 0;
+}
+.footer-logo {
+    padding-bottom: 60px;
+}
+.footer-logo img {
+    height: 50px;
+}
+.footer-widget {
+    margin-bottom: 70px;
+    overflow: hidden;
+}
+.footer-widget h2 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 35px;
+}
+.footer-widget p {
+    color: var(--secondary-black);
+    font-size: 14px;
+    line-height: 1.6;
+}
+.footer-widget.about-widget p {
+    margin-bottom: 50px;
+    letter-spacing: -0.01em;
+}
+.footer-widget ul {
+    list-style: none;
+    float: left;
+    margin-right: 37px;
+}
+.footer-widget ul:last-child {
+    margin-right: 0;
+}
+.footer-widget ul li a {
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+    font-size: 14px;
+    color: var(--secondary-black);
+    margin-bottom: 6px;
+}
+.footer-widget ul li a:after {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    left: 0;
+    top: 8px;
+    border: 1px solid var(--brand-color);
+    border-radius: 50%;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.footer-widget ul li a:hover {
+    color: var(--white);
+}
+.footer-widget ul li a:hover:after {
+    width: 7px;
+    height: 7px;
+    top: 6px;
+    background: var(--brand-color);
+}
+.footer-bottom {
+    position: relative;
+    background: var(--primary-black);
+    padding: 25px 0;
+    border-top: 1px solid #343a40;
+}
+@media (max-width: 480px) {
+.footer-bottom {
+    text-align: center;}
+}
+.footer-bottom .copyright p {
+    color: var(--border-color);
+    margin-bottom: 0;
+}
+.social-media-icons {
+    text-align: center !important;
+}
+.social-media-icons li {
+    display: inline-block;
+}
+.social-media-icons li a {
+    color: var(--secondary-black);
+    padding: 0 20px;
+}
+.social-media-icons li a:hover {
+    color: var(--white)!important;
+    text-decoration: none;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+.footer-widget ul {
+    margin-right: 5px;}
+}
+@media only screen and (max-width: 767px) {
+.footer-widget ul {
+    margin-right: 25px;}
+}

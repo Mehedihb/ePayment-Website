@@ -1560,13 +1560,12 @@
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 0.3rem 1rem;
+    padding: 0.3rem 1rem 2rem 1rem;
     font-size: var(--font14);
     color: var(--black);
     outline: none;
     box-shadow: none;
     background-color: var(--white);
-    padding-left: 63px;
     border: 1px solid transparent;
     border-left: 3px solid transparent;
   }
@@ -1580,8 +1579,6 @@
     font-family: 'Material Icons';
     font-style: normal;
     font-weight: 400;
-    /* Use the Unicode code point for the desired icon */
-    content: '\e87c';
     color: var(--black);
     flex-shrink: 0;
     content: "\e5cf";
@@ -1613,7 +1610,7 @@
     height: 100%;
     width: 100%;
   }
-  #product-categoray-menu .accordion-item .accordion-button .sub-category-icon {
+  #product-categoray-menu .accordion-button-x .material-icons {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1996,4 +1993,5 @@
     line-height: 30px;
   }
   /*-- End Trams & Condition Area <<<<<==========--*/
+  
   

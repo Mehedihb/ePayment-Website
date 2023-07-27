@@ -1,3 +1,44 @@
+
+// JavaScript to handle the custom select behavior
+document.addEventListener("DOMContentLoaded", function () {
+  var customSelect = document.querySelector(".custom-select");
+  var selectedOption = customSelect.querySelector(".select-selected");
+  var dropdownItems = customSelect.querySelector(".select-items").children;
+
+  selectedOption.addEventListener("click", function () {
+    var selectItems = this.nextElementSibling;
+    selectItems.style.display = selectItems.style.display === "block" ? "none" : "block";
+  });
+
+  for (var i = 0; i < dropdownItems.length; i++) {
+    dropdownItems[i].addEventListener("click", function () {
+      selectedOption.textContent = this.textContent;
+      selectedOption.click();
+    });
+  }
+});
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   var customSelect = document.querySelector(".custom-select");
+//   var selectedOption = customSelect.querySelector(".select-selected");
+//   var dropdownItems = customSelect.querySelector(".select-items").children;
+
+//   selectedOption.addEventListener("click", function () {
+//     var selectItems = this.nextElementSibling;
+//     selectItems.style.display = selectItems.style.display === "block" ? "none" : "block";
+//     selectedOption.classList.add("clickedColor"); // Add the .clickedColor class to selectedOption
+//   });
+
+//   for (var i = 0; i < dropdownItems.length; i++) {
+//     dropdownItems[i].addEventListener("click", function () {
+//       selectedOption.textContent = this.textContent;
+//       selectedOption.click();
+//     });
+//   }
+// });
+
+
+
 /********************
 header
 ********************/
@@ -32,10 +73,6 @@ const handleScrollHeader1 = () => {
         categorySidebar.classList.remove('show-hide');
       })
     // End Category Sidebar Area
-
-
-
-
 
 
 

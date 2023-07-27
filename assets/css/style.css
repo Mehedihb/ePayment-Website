@@ -1242,49 +1242,7 @@
     outline: none;
     box-shadow: none;
   }
-  .form-group {
-    width: 100%;
-    margin-bottom: .5rem;
-  }
-  .form-group .verify-container{
-    position: relative;
-  }
-  .form-group .verify-container span{
-    cursor: pointer;
-    position: absolute;
-    top: 4px;
-    right: 10px;
-    padding: 5px 10px;
-    color: var(--text-black);
-    font-weight: 600;
-    font-size: var(--font14);
-    background-color: var(--brand-color);
-    border-radius: 4px;
-  }
-  .form-group label{
-    color: var(--black);
-    font-size: var(--font12);
-    margin-bottom: 5px;
-  }
-  .form-group .form-control,
-  .form-group .form-select {
-    height: 40px;
-    border-radius: 2px;
-    border: 1px solid var(--border-color);
-  }
-  .form-group .form-select{
-    color: var(--text-black);
-    font-size: var(--font14);
-  }
-  .form-group .form-control::placeholder {
-    font-size: var(--font14);
-    color: #aac0d9;
-  }
-  .form-group .form-control:focus,
-  .form-group .form-select:focus {
-    border-color: var(--brand-color);
-    box-shadow: none;
-  }
+  
   .section-header h5 {
     font-size: var(--font18);
     color: var(--text-black);
@@ -1554,34 +1512,7 @@
     border-bottom-color: var(--brand-color);
   }
   /* Start Custom Form Area */
-  #authentication-modal .modal-body .form-tab .form-group {
-    margin-bottom: .5rem;
-  }
-  #authentication-modal .modal-body .form-tab .form-group label {
-    color: var(--low-black);
-    font-weight: 300;
-    font-size: var(--font12);
-    margin-bottom: 5px;
-  }
-  #authentication-modal .modal-body .form-tab .form-group .form-control {
-    height: 40px;
-    font-weight: 300;
-    margin: 0px;
-    font-size: var(--font14);
-    color: var(--low-black);
-    background-color: #fafafa;
-    border: 1px solid var(--border-color);
-    border-radius: 0;
-    transition: all 0.3s;
-    box-shadow: none;
-  }
-  #authentication-modal .modal-body .form-tab .form-group .form-control:focus {
-    color: var(--text-black);
-    background-color: var(--white);
-    border-color: var(--brand-color);
-    box-shadow: none;
-    outline: none !important;
-  }
+
   #authentication-modal .modal-body .form-tab .form-footer {
     display: flex;
     align-items: center;

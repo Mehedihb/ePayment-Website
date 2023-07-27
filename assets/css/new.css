@@ -547,3 +547,155 @@ ul {
 .footer-widget ul {
     margin-right: 25px;}
 }
+
+
+
+
+
+
+
+
+
+
+
+.screen-1 {
+    background: #f1f7fe;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 0 0 2em #e6e9f9;
+    gap: 2em;
+  }
+  .screen-1 .logo {
+    margin-top: -3em;
+  }
+
+
+
+
+
+  .screen-1 .form-group {
+    background: var(--ice-whiteApp);
+    padding: 12px 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border-radius:12px;
+    border: 1px solid var(--border-color);
+  }
+  .screen-1 .form-group:hover {
+    background: var(--ice-whiteApp);
+    border-color: var(--brand-color);
+  }
+  .screen-1 .form-group .form-label {
+    font-size: 12px;
+    color: var(--secondary-black);
+    margin-bottom: 0rem;
+  }
+  .screen-1 .form-group .form-control {
+    font-size: 14px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    color: var(--primary-black);
+    background-color: transparent;
+    padding: 0rem;
+  }
+  .screen-1 .form-group .form-control::-moz-placeholder {
+    font-weight: 400;
+    color: #C4DCEA;
+  }
+  .screen-1 .form-group .form-control:-ms-input-placeholder {
+    font-weight: 400;
+    color: #C4DCEA;
+  }
+  .screen-1 .form-group .form-control::placeholder {
+    font-weight: 400;
+    color: #C4DCEA;
+  }
+
+
+
+  .custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element: */
+  }
+  
+  .select-selected {
+    background-color: DodgerBlue;
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+
+  .screen-1 .login {
+    padding: 1em;
+    background: #3e4684;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+  }
+  .screen-1 .footer {
+    display: flex;
+    font-size: 0.7em;
+    color: #5e5e5e;
+    gap: 14em;
+    padding-bottom: 10em;
+  }
+  .screen-1 .footer span {
+    cursor: pointer;
+  }
+  
+  button {
+    cursor: pointer;
+  }

@@ -101,7 +101,7 @@ ul {
     width: 68%;
     line-height: -2rem
 }
-
+/* Medium devices (tablets, less than 992px)*/
 @media (max-width: 991.98px) {
     .section-heading {
         font-size: 2rem;
@@ -110,7 +110,7 @@ ul {
         width: 85%
     }
 }
-
+/*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
     .section-heading {
         font-size: 2rem;
@@ -722,30 +722,12 @@ div.progresscont {
 		height: 7rem;
 		
 	}
-	div.circulo {
-		width: 5em;
-		height: 5em;
-		border: 2px solid #45597a;
-		background-color: #fcfcfc;
-		border-radius: 2.5em;
-		padding-top: 30%;
-		cursor: pointer;
-	}
-	.activecirculo {
-	transition: .5s ease all;
-	background-color: #45597a !important;	
-	}
-	.activecirculo i{
-		color: #fcfcfc !important;
-	}
-	div.circulo i {
-		font-size: 1.75rem;
-		color: #45597a;
-	}
+
+
 .wizard-header {
     position: relative;
     width: 100%;
-    height: 75px;
+    height: 80px;
     display: flex;
     align-items: center;
 }
@@ -762,128 +744,88 @@ div.progresscont {
 }
 
 .wizard-header .circleblocks {
-    top: 4px;
+    top: 10px;
     position: absolute;
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-	.wizard-navigation {
-		position: relative;
-		bottom: 0;
-		width: 98%;
-		margin-left: auto;
-		margin-right: auto;
-		padding-bottom: 2.5%;
-	}
-	.wizard-navigation button {
-		border-radius: 2rem;
-		width: 10rem;
-	}
-#submitForm {
-width: 15rem;	
-}
-	div.registration-content {
-		width: 95%; 
-		min-height: 51vh;
-		margin-left: auto;
-		margin-right: auto;
-		position: relative;
-		margin-top: 5%;
-		padding-top: 2.5%;
-	}
-	div.registration-content > div {
-		width: 100%;
-		min-height: inherit;
-		
-	}
-div.registration-content input {
-	border-radius: 2rem;
-}
-	#addrescont,#verifycont,#aboutcont {
-		display: none;
-	}
-
-#submitForm {
-	display: none;
+.wizard-header .circleblocks div.circulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    color: var(--white);
+    border: 6px solid #D7F5E3;
+    background-color: #B0EBC7;
+    border-radius: 50rem;
+    cursor: pointer;
 }
 
-.btn-file {
+.wizard-header .circleblocks div.circulo span {
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.wizard-header .circleblocks .activecirculo {
+    transition: .5s ease all;
+    background-color: #B0EBC7;
+    background-color: var(--brand-color) !important;
+}
+
+.wizard-header .circleblocks .step-title{
+    font-size: 12px;
+    color: var(--brand-color);
+    margin-top: 2px;
+    text-align: center;
+}
+
+
+
+div.registration-content {
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
-    overflow: hidden;
-	background-color: #c5ccd8 !important;
-	border-top-right-radius: 0 !important;
-	border-bottom-right-radius: 0 !important;
-}
-.btn-file input[type=file] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    font-size: 100px;
-    text-align: right;
-    filter: alpha(opacity=0);
-    opacity: 0;
-    outline: none;
-    background: white;
-    cursor: inherit;
-    display: block;
+    margin-top: 4rem;
 }
 
-#id-cont,#proof-cont {
+div.registration-content>div {
     width: 100%;
-	height: 18em;
-	padding: 2.5%;
+    min-height: inherit;
 }
 
-.uploadid{
-	border: 1px solid #c9ced6; 
-	height: 40vh;
-	position:relative;
-}
-.uploadid .form-group {
-	height: inherit !important;
+
+.wizard-navigation {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2.5%;
 }
 
-/*Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) { 
-  div.joincontent {
-    width: 98%;
-    height: 155vh;
-    
-  }
-  div.registration-content {
-    padding-top: 17.5%;
-  }
+.wizard-navigation button {
+    border-radius: 2rem;
+    width: 10rem;
 }
 
-/* Medium devices (tablets, less than 992px)*/
-@media (max-width: 991.98px) { 
-
+#addrescont,
+#verifycont,
+#aboutcont {
+    display: none;
 }
-/*Large devices (desktops, less than 1200px)*/
-@media (max-width: 1350px) {
-#id-cont,#proof-cont{
-   height: 15em;
 
+#submitForm {
+    width: 15rem;
 }
-}
-/*Large devices (desktops, less than 1200px)*/
-@media (max-width: 1750px) {
-div.joincontent{
-	
-	height: 94vh;
 
-
+#submitForm {
+    display: none;
 }
+
+#id-cont,
+#proof-cont {
+    width: 100%;
+    height: 18em;
+    padding: 2.5%;
 }

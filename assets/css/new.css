@@ -131,21 +131,22 @@ ul {
     color: var(--white)
 }
 
-.container {
+/* .container {
     padding: 0
-}
+} */
 
 /* Start Input CSS Area */
 .form-group,
 .form-group.custom-select {
     position: relative;
     background: var(--ice-whiteApp);
-    padding: 12px 2rem;
+    padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 6px;
     border-radius: 12px;
     border: 1px solid var(--border-color);
+    margin-bottom: 2rem;
 }
 
 .form-group:hover,
@@ -167,7 +168,7 @@ ul {
     outline: none;
     border: none;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--primary-black);
     background-color: transparent;
 }
@@ -179,12 +180,12 @@ ul {
     content: url('../images/Dropdown.svg');
 }
 .form-group .form-control::-moz-placeholder {
-    font-weight: 400;
+    font-weight: 500;
     color: #aac0d9;
 }
 
 .form-group .form-control:-ms-input-placeholder {
-    font-weight: 400;
+    font-weight: 500;
     color: #aac0d9;
 }
 
@@ -652,43 +653,30 @@ ul {
 
 
 .screen-1 {
-    background: #f1f7fe;
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    border-radius: 30px;
-    box-shadow: 0 0 2em #e6e9f9;
-    gap: 2em;
+    background: var(--white);
+    padding: 4em;
+    border-radius: 24px;
+    border: 1px solid var(--border-color);
   }
-  .screen-1 .logo {
-    margin-top: -3em;
+  .screen-1 h1{
+    font-size: 3.5em;
+    font-weight: 600;
+    color: var(--primary-black);
+    margin-bottom: 1rem;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.screen-1 p {
+    font-size: 1.5rem;
+    color: var(--secondary-black);
+    margin-bottom: 4rem;
+  }
   .screen-1 .login {
-    padding: 1em;
-    background: #3e4684;
-    color: white;
+    width: 100%;
+    padding: 2rem;
+    background: var(--brand-color);
+    font-size: 2rem;
+    color: var(--white);
     border: none;
-    border-radius: 30px;
+    border-radius: 12px;
     font-weight: 600;
   }
   .screen-1 .footer {
@@ -707,3 +695,195 @@ ul {
   }
 
 
+
+
+
+
+
+
+
+
+
+
+/* CSS Document */
+div.joincontent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.progresscont {
+		width: 98%;
+		padding-top: 5.5%;
+		margin-left: auto;
+		margin-right: auto;
+		height: 7rem;
+		
+	}
+	div.circulo {
+		width: 5em;
+		height: 5em;
+		border: 2px solid #45597a;
+		background-color: #fcfcfc;
+		border-radius: 2.5em;
+		padding-top: 30%;
+		cursor: pointer;
+	}
+	.activecirculo {
+	transition: .5s ease all;
+	background-color: #45597a !important;	
+	}
+	.activecirculo i{
+		color: #fcfcfc !important;
+	}
+	div.circulo i {
+		font-size: 1.75rem;
+		color: #45597a;
+	}
+.wizard-header {
+    position: relative;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.wizard-header .progress {
+    width: 100%;
+    height: 5px;
+    background-color: var(--border-color);
+}
+
+.wizard-header .progress .progress-bar {
+    background-color: var(--brand-color) !important;
+    height: 5px;
+}
+
+.wizard-header .circleblocks {
+    top: 4px;
+    position: absolute;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+	.wizard-navigation {
+		position: relative;
+		bottom: 0;
+		width: 98%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 2.5%;
+	}
+	.wizard-navigation button {
+		border-radius: 2rem;
+		width: 10rem;
+	}
+#submitForm {
+width: 15rem;	
+}
+	div.registration-content {
+		width: 95%; 
+		min-height: 51vh;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		margin-top: 5%;
+		padding-top: 2.5%;
+	}
+	div.registration-content > div {
+		width: 100%;
+		min-height: inherit;
+		
+	}
+div.registration-content input {
+	border-radius: 2rem;
+}
+	#addrescont,#verifycont,#aboutcont {
+		display: none;
+	}
+
+#submitForm {
+	display: none;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+	background-color: #c5ccd8 !important;
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#id-cont,#proof-cont {
+    width: 100%;
+	height: 18em;
+	padding: 2.5%;
+}
+
+.uploadid{
+	border: 1px solid #c9ced6; 
+	height: 40vh;
+	position:relative;
+}
+.uploadid .form-group {
+	height: inherit !important;
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+  div.joincontent {
+    width: 98%;
+    height: 155vh;
+    
+  }
+  div.registration-content {
+    padding-top: 17.5%;
+  }
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+
+}
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1350px) {
+#id-cont,#proof-cont{
+   height: 15em;
+
+}
+}
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1750px) {
+div.joincontent{
+	
+	height: 94vh;
+
+
+}
+}

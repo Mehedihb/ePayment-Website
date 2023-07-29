@@ -1,91 +1,51 @@
+// >>>>> Start Wizard Form Area
+const navigateToFormStep = (stepNumber) => {
+  // Hide all form steps
+  document.querySelectorAll(".step-details").forEach((formStepElement) => {
+    formStepElement.classList.add("d-none");
+  });
+  // Mark all form steps as unfinished
+  document.querySelectorAll(".form-stepper-list").forEach((formStepHeader) => {
+    formStepHeader.classList.add("form-stepper-unfinished");
+    formStepHeader.classList.remove("form-stepper-active", "form-stepper-completed");
+  });
+  // Show the current form step (as passed to the function).
+  document.querySelector("#step-" + stepNumber).classList.remove("d-none");
+  // Select the form step circle (progress bar).
+  const formStepCircle = document.querySelector('li[step="' + stepNumber + '"]');
+  //Mark the current form step as active.
+  formStepCircle.classList.remove("form-stepper-unfinished", "form-stepper-completed");
+  formStepCircle.classList.add("form-stepper-active");
+  /**
+   * Loop through each form step circles.
+   * This loop will continue up to the current step number.
+   * Example: If the current step is 3,
+   * then the loop will perform operations for step 1 and 2.
+   */
+  for (let index = 0; index < stepNumber; index++) {
+    //Select the form step circle (progress bar).
+    const formStepCircle = document.querySelector('li[step="' + index + '"]');
+    // Check if the element exist. If yes, then proceed.
+    if (formStepCircle) {
+      // Mark the form step as completed.
+      formStepCircle.classList.remove("form-stepper-unfinished", "form-stepper-active");
+      formStepCircle.classList.add("form-stepper-completed");
+    }
+  }
+};
+//Select all form navigation buttons, and loop through them.
+document.querySelectorAll(".btn-navigate-form-step").forEach((formNavigationBtn) => {
+  // Add a click event listener to the button.
+  formNavigationBtn.addEventListener("click", () => {
+    // Get the value of the step.
+    const stepNumber = parseInt(formNavigationBtn.getAttribute("step_number"));
+    // Call the function to navigate to the target form step.
+    navigateToFormStep(stepNumber);
+  });
+});
+// <<<<< End Wizard Form Area
 
-
-(function () {
-  var wizard = {
-    formstate: 0,
-    inactiveSections: [1, 2],
-    setInactiveSections: function () {
-      if (this.formstate === 0) {
-        this.inactiveSections = [1, 2];
-      } else if (this.formstate === 1) {
-        this.inactiveSections = [0, 2];
-      } else {
-        this.inactiveSections = [0, 1];
-      }
-    },
-    formsections: ['#aboutcont', '#addrescont', '#verifycont'],
-    circlesections: ['.aboutblock .circulo', '.addressblock .circulo', '.verifyblock .circulo'],
-    prevbtn: 'prevbtn',
-    nextbtn: 'nextbtn',
-
-    initiateForm: function () {
-      var currsection = document.querySelector(this.formsections[this.formstate]);
-      var inactiveSecta = document.querySelector(this.formsections[this.inactiveSections[0]]);
-      var inactiveSectb = document.querySelector(this.formsections[this.inactiveSections[1]]);
-      var currcircle = document.querySelector(this.circlesections[this.formstate]);
-
-      var progressbar = document.querySelector('#progresswizard');
-      var currsectionprogress = currsection.getAttribute('data-progress');
-
-      progressbar.style.width = currsectionprogress;
-      currsection.style.display = "block";
-      inactiveSecta.style.display = "none";
-      inactiveSectb.style.display = "none";
-
-      if (this.formstate === 0) {
-        document.getElementById(this.prevbtn).style.display = "none";
-      } else {
-        document.getElementById(this.prevbtn).style.display = "inline-block";
-      }
-
-      currcircle.classList.add("activecirculo");
-      this.setInactiveCircles();
-
-      if (this.formstate === 2) {
-        document.querySelector("#nextbtn").style.display = "none";
-        document.querySelector("#submitForm").style.display = "inline-block";
-      } else {
-        document.querySelector("#nextbtn").style.display = "inline-block";
-        document.querySelector("#submitForm").style.display = "none";
-      }
-    },
-
-    nextSection: function () {
-      if (this.formstate < 2) {
-        this.formstate++;
-        this.setInactiveSections();
-        wizard.initiateForm();
-      }
-    },
-
-    prevSection: function () {
-      if (this.formstate > 0) {
-        this.formstate--;
-        this.setInactiveSections();
-        wizard.initiateForm();
-      }
-    },
-  };
-
-  wizard.initiateForm();
-  document.getElementById(wizard.nextbtn).addEventListener("click", function () { wizard.nextSection(); });
-  document.getElementById(wizard.prevbtn).addEventListener("click", function () { wizard.prevSection(); });
-})();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// JavaScript to handle the custom select behavior
+// >>>>> Start JavaScript to handle the custom select behavior
 document.addEventListener("DOMContentLoaded", function () {
   var customSelect = document.querySelector(".custom-select");
   var selectedOption = customSelect.querySelector(".select-selected");
@@ -103,81 +63,30 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+// <<<<< End JavaScript to handle the custom select behavior
 
-/********************
-header
-********************/
-// Function to handle scroll event and toggle class 'fixed' for .header-1
-const handleScrollHeader1 = () => {
-    const header1 = document.querySelector('.headerScroll');
-    if (window.scrollY > 50) {
-      header1.classList.add('fixed');
-    } else {
-      header1.classList.remove('fixed');
-    }
-  };
-  
-  // Add event listeners for scroll events
-  window.addEventListener('scroll', handleScrollHeader1);
-  
+// >>>>> Start Function to handle scroll event and toggle class 'fixed' for .headerScroll
+const handleScrollHeader = () => {
+  const header1 = document.querySelector('.headerScroll');
+  if (window.scrollY > 50) {
+    header1.classList.add('fixed');
+  } else {
+    header1.classList.remove('fixed');
+  }
+};
+window.addEventListener('scroll', handleScrollHeader);
+// <<<<< End Function to handle scroll event and toggle class 'fixed' for .headerScroll
 
-
-
-
-
-      // Start Category Sidebar Area
-      var categorySidebar = document.querySelector('.category-sidebar');
-      var categoryToggle = document.querySelectorAll('.category-menu , .category-menu-mobile');
-      var categoryClose = document.querySelector('.categoryClose-btn')
-      categoryToggle.forEach( (node) => {
-        node.addEventListener('click', () => {
-          categorySidebar.classList.toggle('show-hide');
-        })
-      })
-      categoryClose.addEventListener("click", ()=>{
-        categorySidebar.classList.remove('show-hide');
-      })
-    // End Category Sidebar Area
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// >>>>> Start Category Sidebar Area
+var categorySidebar = document.querySelector('.category-sidebar');
+var categoryToggle = document.querySelectorAll('.category-menu , .category-menu-mobile');
+var categoryClose = document.querySelector('.categoryClose-btn')
+categoryToggle.forEach((node) => {
+  node.addEventListener('click', () => {
+    categorySidebar.classList.toggle('show-hide');
+  })
+})
+categoryClose.addEventListener("click", () => {
+  categorySidebar.classList.remove('show-hide');
+})
+// <<<<< End Category Sidebar Area

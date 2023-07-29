@@ -77,8 +77,7 @@
     </div>
   </header>
   <!--header section end-->
-  <div class="master-layout ">
-
+  <div class="master-layout">
     <div class="container h-100">
       <div class="row h-100 d-flex align-content-center">
         <div class="col-lg-6">
@@ -92,452 +91,339 @@
           <div class="screen-1">
             <h1>Registration</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <div class="joincontent">
-              
-              <div class="wizard-header">
-                <div class="progress">
-                  <div id="progresswizard" class="progress-bar" role="progressbar" style="width: 15%;" aria-valuemin="0"
-                    aria-valuemax="100"></div>
-                </div>
-              
-                <div class="circleblocks">
-                  <div class="d-flex justify-content-around">
-                    <div class="aboutblock">
-                      <div class="circulo activecirculo"><span class="material-symbols-rounded"> check_small </span></div>
-                      <div class="step-title">Step 1</div>
+            <!-- Form Steps / Progress Bar -->
+            <ul class="form-stepper">
+              <!-- Step 1 -->
+              <li class="form-stepper-list form-stepper-active" step="1">
+                <a class="single-step">
+                  <span class="form-stepper-circle">
+                    <span class="material-symbols-rounded"> check_small </span>
+                  </span>
+                  <div class="label">Account Basic</div>
+                </a>
+              </li>
+              <!-- Step 2 -->
+              <li class="form-stepper-list form-stepper-unfinished" step="2">
+                <a class="single-step">
+                  <span class="form-stepper-circle text-muted">
+                    <span class="material-symbols-rounded"> check_small </span>
+                  </span>
+                  <div class="label">Social Profiles</div>
+                </a>
+              </li>
+              <!-- Step 3 -->
+              <li class="form-stepper-list form-stepper-unfinished" step="3">
+                <a class="single-step">
+                  <span class="form-stepper-circle text-muted">
+                    <span class="material-symbols-rounded"> check_small </span>
+                  </span>
+                  <div class="label">Personal Details</div>
+                </a>
+              </li>
+            </ul>
+            <!-- Step Wise Form Content -->
+            <form id="userAccountSetupForm" name="userAccountSetupForm">
+              <!-- Step 1 Content -->
+              <section id="step-1" class="step-details">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <label class="form-label" for="fullname">Full Name <span style="color: #cc1818;">*</span></label>
+                      <input class="form-control" type="text" name="fullname" id="fullname" placeholder="Enter Name"
+                        required />
                     </div>
-
-                    <div class="addressblock">
-                      <div class="circulo"><span class="material-symbols-rounded"> check_small </span></div>
-                      <div class="step-title">Step 2</div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group custom-select">
+                      <label class="form-label" for="gender">Gender<span style="color: #cc1818;">*</span></label>
+                      <div class="select-selected">Select an option</div>
+                      <div class="select-items">
+                        <div>Male</div>
+                        <div>Female</div>
+                        <div>Other</div>
+                      </div>
                     </div>
-
-                    <div class="verifyblock">
-                      <div class="circulo"><span class="material-symbols-rounded"> check_small </span></div>
-                      <div class="step-title">Step 3</div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group custom-select">
+                      <label class="form-label" for="Blood">Blood Group<span style="color: #cc1818;">*</span></label>
+                      <div class="select-selected">Select an option</div>
+                      <div class="select-items">
+                        <div>A+ (Positive)</div>
+                        <div>A- (Negative)</div>
+                        <div>B+ (Positive)</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="username">Username <span style="color: #cc1818;">*</span></label>
+                      <input type="text" class="form-control" name="username" id="username" required />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="email">Email <span style="color: #cc1818;">*</span></label>
+                      <input type="text" class="form-control" name="email" id="email" required />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="password">Password <span style="color: #cc1818;">*</span></label>
+                      <input type="text" class="form-control" name="password" id="password" required />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="repassword">Re-Password <span style="color: #cc1818;">*</span></label>
+                      <input type="text" class="form-control" name="repassword" id="repassword" required />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="phone">Phone <span style="color: #cc1818;">*</span></label>
+                      <input type="text" class="form-control" name="phone" id="phone" required />
                     </div>
                   </div>
                 </div>
-              </div>
-
-
-
-
-
-
-            <form action="registerUser" method="POST">
-                <div class="registration-content">
-                    <div id="aboutcont" data-progress="15%">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label for="firstname">First Name <span style="color: #cc1818;">*</span></label>
-                                    <input type="text" class="form-control" name="firstname" id="firstname" required />
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label for="lastname">Last Name <span style="color: #cc1818;">*</span></label>
-                                    <input type="text" class="form-control" name="lastname" id="lastname" required />
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label for="username">Username <span style="color: #cc1818;">*</span></label>
-                                    <input type="text" class="form-control" name="username" id="username" required />
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label for="email">Email <span style="color: #cc1818;">*</span></label>
-                                    <input type="text" class="form-control" name="email" id="email" required />
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label for="password">Password <span style="color: #cc1818;">*</span></label>
-                                    <input type="text" class="form-control" name="password" id="password" required />
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label for="repassword">Re-Password <span style="color: #cc1818;">*</span></label>
-                                    <input type="text" class="form-control" name="repassword" id="repassword" required />
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label for="phone">Phone <span style="color: #cc1818;">*</span></label>
-                                    <input type="text" class="form-control" name="phone" id="phone" required />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="addrescont" data-progress="50%">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <div class="form-group">
-                                    <label for="streetname">Street Name <span style="color: #cc1818;">*</span></label>
-                                    <input type="text" class="form-control" name="streetname" id="streetname" required />
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="form-group">
-                                    <label for="streetno">Street Number <span style="color: #cc1818;">*</span></label>
-                                    <input type="text" class="form-control" name="streetno" id="streetno" required />
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label for="city">City <span style="color: #cc1818;">*</span></label>
-                                    <input type="text" class="form-control" name="city" id="city" value="Toronto" required />
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label for="postalcode">Postal Code <span style="color: #cc1818;">*</span></label>
-                                    <input type="text" class="form-control" name="postalcode" id="postalcode" required />
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label for="state">State</label>
-                                    <input type="text" class="form-control" name="state" id="state" value="Ontario" required />
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label for="country_residence">Country <span style="color: #cc1818;">*</span></label>
-                                    <select name="country_residence" class="selectpicker countrypicker form-control">
-                                        <option value="">Canada</option>
-                                        <option value="">United States</option>
-                                        <option value="">United Kingdom</option>
-                                        <option value="">Germany</option>
-                                        <option value="">France</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="verifycont" data-progress="85%">
-                        <h6 class="text-center">
-                            In order to verify your identity based on the (Know your Customer) rules you have to upload one Government ID(Passport, ID Card or Driver's License) as well as a Proof of Address(Any bill that is
-                            clearly on your name and address that you register at our site).
-                        </h6>
-                    </div>
+                <div class="btn-group">
+                  <button class="button btn-navigate-form-step" type="button" step_number="2">Next</button>
                 </div>
+              </section>
 
-                <div class="d-flex justify-content-between wizard-navigation">
-                    <div class="p-2"><button id="prevbtn" type="button" class="btn btn-outline-dark btn-lg">Previous</button></div>
-
-                    <div class="p-2">
-                        <button id="nextbtn" type="button" class="btn btn-primary btn-lg text-center">Next</button>
-                        <button id="submitForm" name="submitForm" style="" type="submit" class="btn btn-primary btn-lg">Create Profile</button>
+              <!-- Step 2 Content, default hidden on page load. -->
+              <section id="step-2" class="step-details d-none">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <label class="form-label" for="fullname">Full Name <span style="color: #cc1818;">*</span></label>
+                      <input class="form-control" type="text" name="fullname" id="fullname" placeholder="Enter Name"
+                        required />
                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="username">Username <span style="color: #cc1818;">*</span></label>
+                      <input type="text" class="form-control" name="username" id="username" required />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="email">Email <span style="color: #cc1818;">*</span></label>
+                      <input type="text" class="form-control" name="email" id="email" required />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="password">Password <span style="color: #cc1818;">*</span></label>
+                      <input type="text" class="form-control" name="password" id="password" required />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="repassword">Re-Password <span style="color: #cc1818;">*</span></label>
+                      <input type="text" class="form-control" name="repassword" id="repassword" required />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="phone">Phone <span style="color: #cc1818;">*</span></label>
+                      <input type="text" class="form-control" name="phone" id="phone" required />
+                    </div>
+                  </div>
                 </div>
+                <div class="btn-group">
+                  <button class="button btn-navigate-form-step" type="button" step_number="1">Prev</button>
+                  <button class="button btn-navigate-form-step" type="button" step_number="3">Next</button>
+                </div>
+              </section>
+              <!-- Step 3 Content, default hidden on page load. -->
+              <section id="step-3" class="step-details d-none">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <label class="form-label" for="fullname">Full Name <span style="color: #cc1818;">*</span></label>
+                      <input class="form-control" type="text" name="fullname" id="fullname" placeholder="Enter Name"
+                        required />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="username">Username <span style="color: #cc1818;">*</span></label>
+                      <input type="text" class="form-control" name="username" id="username" required />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="email">Email <span style="color: #cc1818;">*</span></label>
+                      <input type="text" class="form-control" name="email" id="email" required />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="password">Password <span style="color: #cc1818;">*</span></label>
+                      <input type="text" class="form-control" name="password" id="password" required />
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-group">
+                  <button class="button btn-navigate-form-step" type="button" step_number="2">Prev</button>
+                  <button class="button submit-btn" type="submit">Save</button>
+                </div>
+              </section>
             </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
 
+  <!--============================= Start Footer Area==============================-->
+  <section class="footer-section">
+    <div class="container">
+      <div class="footer-logo text-center">
+        <a href="index.html"><img src="main-img/core-img/logo2.png" alt=""></a>
+      </div>
+      <div class="row">
 
+        <div class="col-lg-3 col-sm-6">
+          <div class="footer-widget about-widget">
+            <h2>About</h2>
+            <p>Donec vitae purus nunc. Morbi faucibus erat sit amet congue mattis. Nullam frin-gilla faucibus urna, id
+              dapibus erat iaculis ut. Integer ac sem.</p>
+            <img src="main-img/core-img/cards.png" alt="">
+            <a class="footer-play-icon" href="" target="_blank">
+              <svg width="171" height="60" viewBox="0 0 171 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="170.087" height="60" rx="8" fill="white"></rect>
+                <g clip-path="url(#clip0_1363_76620)">
+                  <path
+                    d="M42.9358 26.8603C40.6125 25.5608 36.8834 23.4741 31.0993 20.2355C30.7094 19.9779 30.2607 19.9442 29.873 20.0754L39.7969 29.9993L42.9358 26.8603Z"
+                    fill="#32BBFF"></path>
+                  <path
+                    d="M29.8736 20.0754C29.8009 20.1 29.7302 20.1297 29.6626 20.1655C29.2345 20.3971 28.9199 20.8427 28.9199 21.4062V38.5922C28.9199 39.1558 29.2345 39.6014 29.6626 39.8329C29.7301 39.8687 29.8007 39.8985 29.8733 39.9233L39.7974 29.9992L29.8736 20.0754Z"
+                    fill="#32BBFF"></path>
+                  <path
+                    d="M39.7971 29.9993L29.873 39.9233C30.2608 40.0555 30.7095 40.0243 31.0996 39.763C36.7089 36.622 40.3959 34.5601 42.7462 33.2495C42.8116 33.2128 42.8757 33.1768 42.939 33.1412L39.7971 29.9993Z"
+                    fill="#32BBFF"></path>
+                  <path
+                    d="M28.9199 29.9993V38.5923C28.9199 39.1558 29.2345 39.6014 29.6626 39.8329C29.7301 39.8687 29.8007 39.8985 29.8733 39.9233L39.7974 29.9993H28.9199Z"
+                    fill="#2C9FD9"></path>
+                  <path
+                    d="M31.0994 20.2355C30.6363 19.9297 30.0902 19.9384 29.6621 20.1656L39.6463 30.1498L42.9358 26.8603C40.6125 25.5608 36.8835 23.4741 31.0994 20.2355Z"
+                    fill="#29CC5E"></path>
+                  <path
+                    d="M39.6464 29.8487L29.6621 39.8329C30.0902 40.06 30.6363 40.0732 31.0994 39.763C36.7087 36.622 40.3957 34.56 42.746 33.2495C42.8114 33.2127 42.8755 33.1768 42.9389 33.1412L39.6464 29.8487Z"
+                    fill="#D93F21"></path>
+                  <path
+                    d="M47.08 29.9993C47.08 29.5231 46.8397 29.0425 46.3635 28.7761C46.3635 28.7761 45.4729 28.2791 42.7431 26.7523L39.4961 29.9993L42.7463 33.2495C45.4461 31.7336 46.3634 31.2224 46.3634 31.2224C46.8397 30.956 47.08 30.4754 47.08 29.9993Z"
+                    fill="#FFD500"></path>
+                  <path
+                    d="M46.3635 31.2225C46.8397 30.956 47.08 30.4754 47.08 29.9993H39.4961L42.7463 33.2495C45.4461 31.7336 46.3635 31.2225 46.3635 31.2225Z"
+                    fill="#FFAA00"></path>
+                </g>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M90.7493 37.9349C90.2168 37.5089 89.7907 36.7633 89.5777 36.3373L91.2819 35.5917C91.3884 35.8047 91.6014 36.1243 91.8144 36.4438C92.2405 36.8698 92.8795 37.2959 93.5186 37.2959C94.1576 37.2959 94.9032 36.9763 95.3292 36.4438C95.6487 35.9112 95.8617 35.3787 95.8617 34.6331V33.9941C94.5836 35.5917 91.9209 35.3787 90.4298 33.6746C88.8321 31.9704 88.8321 29.0947 90.4298 27.3905C92.0274 25.7929 94.3706 25.5799 95.7552 27.071V26.3254H97.5659V34.3136C97.5659 36.3373 96.8203 37.5089 95.8617 38.2544C95.2227 38.787 94.2641 39 93.4121 39C92.4535 38.8935 91.4949 38.574 90.7493 37.9349ZM135.377 38.3609L137.187 34.1006L133.992 26.7515H135.803L138.039 31.9704L140.276 26.7515H142.087L137.187 38.3609H135.377ZM126.749 34.3136C126.217 33.7811 126.004 33.0355 126.004 32.2899C126.004 31.6509 126.217 31.0118 126.643 30.5858C127.388 29.8402 128.453 29.5207 129.625 29.5207C130.371 29.5207 131.01 29.6272 131.542 29.9467C131.542 28.6686 130.477 28.1361 129.625 28.1361C128.88 28.1361 128.134 28.5621 127.814 29.3077L126.217 28.6686C126.536 27.9231 127.388 26.5385 129.519 26.5385C130.584 26.5385 131.649 26.858 132.288 27.6036C132.927 28.3491 133.14 29.2012 133.14 30.3728V34.8462H131.329V34.1006C131.116 34.4201 130.69 34.6331 130.371 34.8462C129.945 35.0592 129.412 35.1657 128.879 35.1657C128.24 35.0592 127.282 34.8462 126.749 34.3136ZM69.9801 30.4793C69.9801 28.3491 71.5777 26.0059 74.4535 26.0059C77.2227 26.0059 78.9268 28.3491 78.9268 30.4793C78.9268 32.6095 77.3292 34.9527 74.4535 34.9527C71.5777 34.9527 69.9801 32.6095 69.9801 30.4793ZM79.5659 30.4793C79.5659 28.3491 81.1635 26.0059 84.0393 26.0059C86.8085 26.0059 88.5126 28.3491 88.5126 30.4793C88.5126 32.6095 86.915 34.9527 84.0393 34.9527C81.27 34.9527 79.5659 32.6095 79.5659 30.4793ZM57.9446 32.8225C55.2819 30.1598 55.3884 25.7929 58.0511 23.0237C59.4357 21.6391 61.1399 21 62.9505 21C64.6546 21 66.3588 21.6391 67.6369 22.9172L66.3588 24.3018C64.4416 22.3846 61.3529 22.4911 59.5422 24.4083C57.6251 26.432 57.6251 29.5207 59.5422 31.5444C61.4594 33.568 64.6546 33.6746 66.5718 31.6509C67.2109 31.0118 67.4239 30.1598 67.5304 29.3077H63.057V27.3905H69.341C69.4475 27.8166 69.4476 28.3491 69.4476 28.8817C69.4476 30.4793 68.8085 32.0769 67.7434 33.142C66.5718 34.3136 64.8677 34.9527 63.1635 34.9527C61.2464 34.8462 59.3292 34.2071 57.9446 32.8225ZM102.998 33.568C101.4 31.8639 101.4 28.9882 102.998 27.1775C104.595 25.4734 107.258 25.4734 108.749 27.1775C109.282 27.7101 109.601 28.4556 109.921 29.2012L104.063 31.6509C104.382 32.3964 105.128 33.0355 106.193 33.0355C107.152 33.0355 107.791 32.716 108.43 31.7574L110.027 32.8225C109.814 33.0355 109.601 33.2485 109.495 33.4615C107.684 35.2722 104.595 35.2722 102.998 33.568ZM114.075 34.8462V23.0237H117.909C120.146 23.0237 121.956 24.6213 121.956 26.5385C121.956 28.4556 120.359 30.0533 118.335 30.0533H115.992V34.7396H114.075V34.8462ZM123.022 34.8462V23.0237H124.832V34.8462H123.022ZM98.9505 34.6331V21.426H100.868V34.6331H98.9505ZM131.436 31.3314C131.01 31.0118 130.371 30.9053 129.732 30.9053C128.453 30.9053 127.708 31.5444 127.708 32.2899C127.708 33.0355 128.453 33.4615 129.199 33.4615C130.264 33.4615 131.436 32.6095 131.436 31.3314ZM76.9032 30.4793C76.9032 29.2012 76.0511 27.8166 74.4535 27.8166C72.8558 27.8166 72.0038 29.2012 72.0038 30.4793C72.0038 31.7574 72.8558 33.142 74.4535 33.142C75.9446 33.142 76.9032 31.7574 76.9032 30.4793ZM86.489 30.4793C86.489 29.2012 85.6369 27.8166 84.0393 27.8166C82.4416 27.8166 81.5896 29.2012 81.5896 30.4793C81.5896 31.7574 82.4416 33.142 84.0393 33.142C85.6369 33.142 86.489 31.7574 86.489 30.4793ZM95.9683 31.2248C95.9683 31.1183 95.9683 31.0118 96.0748 30.9053C96.0748 30.7988 96.0748 30.5858 96.0748 30.4793C96.0748 30.3728 96.0748 30.1598 96.0748 30.0533V29.9467C96.0748 29.8402 95.9683 29.6272 95.9683 29.5207C95.6487 28.4556 94.6901 27.7101 93.7316 27.7101C92.4535 27.7101 91.3884 28.9882 91.3884 30.3728C91.3884 31.8639 92.4535 33.0355 93.8381 33.0355C94.6902 33.142 95.5422 32.3964 95.9683 31.2248ZM103.743 30.2663L107.684 28.5621C107.258 27.8166 106.619 27.6036 106.087 27.6036C104.489 27.7101 103.53 29.4142 103.743 30.2663ZM120.039 26.645C120.039 25.5799 119.187 24.8343 118.016 24.8343H115.885V28.5621H118.122C119.187 28.5621 120.039 27.7101 120.039 26.645Z"
+                  fill="#232C6A"></path>
+                <defs>
+                  <clipPath id="clip0_1363_76620">
+                    <rect width="20" height="20" fill="white" transform="translate(28 20)"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
+        <div class="col-lg-3  offset-lg-1   col-sm-6">
+          <div class="footer-widget about-widget">
+            <h2>Help & Support</h2>
+            <div class=" d-flex justify-content-between">
+              <ul>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Track Orders</a></li>
+                <li><a href="">Returns</a></li>
+                <li><a href="">Jobs</a></li>
+                <li><a href="">Partners</a></li>
+                <li><a href="">Support</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Get To Know Us</a></li>
+                <li><a href="#">How We Works</a></li>
+                <li><a href="#">Hiring On Here</a></li>
+                <li><a href="#">Buying On Here</a></li>
+                <li><a href="#">Selling On Here</a></li>
+                <li><a href="#">Articls & Tips</a></li>
+              </ul>
             </div>
           </div>
         </div>
-        
+
+        <div class="col-lg-4 offset-lg-1 col-sm-6">
+          <div class="footer-widget about-widget">
+            <h2>Company Policy</h2>
+            <div class=" d-flex justify-content-between">
+              <ul>
+                <li><a href="">Terms of Use</a></li>
+                <li><a href="#">Payment Policy</a></li>
+                <li><a href="#">Refund Policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="terms-condition.html">Terms & Conditions</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+
+              <ul>
+                <li><a href="category.html">Online Training</a></li>
+                <li><a href="single.html">Free Courses</a></li>
+                <li><a href="store.html">Premium Courses</a></li>
+                <li><a href="single-blog.html">Learn with Blogs</a></li>
+                <li><a href="blog.html">Blog</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+
       </div>
     </div>
 
-    <!--============================= Start Footer Area==============================-->
-    <section class="footer-section">
-      <div class="container">
-        <div class="footer-logo text-center">
-          <a href="index.html"><img src="main-img/core-img/logo2.png" alt=""></a>
+  </section>
+
+  <footer class="footer-bottom">
+    <!-- Container Start -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-12">
+          <!-- Copyright -->
+          <div class="copyright">
+            <p>Copyright ©
+              <script>
+                var CurrentYear = new Date().getFullYear()
+                document.write(CurrentYear)
+              </script>. All Rights Reserved <a class="text-primary" href="https://handshive.com"
+                target="_blank">HandsHive.com</a>
+            </p>
+          </div>
         </div>
-        <div class="row">
-
-          <div class="col-lg-3 col-sm-6">
-            <div class="footer-widget about-widget">
-              <h2>About</h2>
-              <p>Donec vitae purus nunc. Morbi faucibus erat sit amet congue mattis. Nullam frin-gilla faucibus urna, id
-                dapibus erat iaculis ut. Integer ac sem.</p>
-              <img src="main-img/core-img/cards.png" alt="">
-              <a class="footer-play-icon" href="" target="_blank">
-                <svg width="171" height="60" viewBox="0 0 171 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="170.087" height="60" rx="8" fill="white"></rect>
-                  <g clip-path="url(#clip0_1363_76620)">
-                    <path
-                      d="M42.9358 26.8603C40.6125 25.5608 36.8834 23.4741 31.0993 20.2355C30.7094 19.9779 30.2607 19.9442 29.873 20.0754L39.7969 29.9993L42.9358 26.8603Z"
-                      fill="#32BBFF"></path>
-                    <path
-                      d="M29.8736 20.0754C29.8009 20.1 29.7302 20.1297 29.6626 20.1655C29.2345 20.3971 28.9199 20.8427 28.9199 21.4062V38.5922C28.9199 39.1558 29.2345 39.6014 29.6626 39.8329C29.7301 39.8687 29.8007 39.8985 29.8733 39.9233L39.7974 29.9992L29.8736 20.0754Z"
-                      fill="#32BBFF"></path>
-                    <path
-                      d="M39.7971 29.9993L29.873 39.9233C30.2608 40.0555 30.7095 40.0243 31.0996 39.763C36.7089 36.622 40.3959 34.5601 42.7462 33.2495C42.8116 33.2128 42.8757 33.1768 42.939 33.1412L39.7971 29.9993Z"
-                      fill="#32BBFF"></path>
-                    <path
-                      d="M28.9199 29.9993V38.5923C28.9199 39.1558 29.2345 39.6014 29.6626 39.8329C29.7301 39.8687 29.8007 39.8985 29.8733 39.9233L39.7974 29.9993H28.9199Z"
-                      fill="#2C9FD9"></path>
-                    <path
-                      d="M31.0994 20.2355C30.6363 19.9297 30.0902 19.9384 29.6621 20.1656L39.6463 30.1498L42.9358 26.8603C40.6125 25.5608 36.8835 23.4741 31.0994 20.2355Z"
-                      fill="#29CC5E"></path>
-                    <path
-                      d="M39.6464 29.8487L29.6621 39.8329C30.0902 40.06 30.6363 40.0732 31.0994 39.763C36.7087 36.622 40.3957 34.56 42.746 33.2495C42.8114 33.2127 42.8755 33.1768 42.9389 33.1412L39.6464 29.8487Z"
-                      fill="#D93F21"></path>
-                    <path
-                      d="M47.08 29.9993C47.08 29.5231 46.8397 29.0425 46.3635 28.7761C46.3635 28.7761 45.4729 28.2791 42.7431 26.7523L39.4961 29.9993L42.7463 33.2495C45.4461 31.7336 46.3634 31.2224 46.3634 31.2224C46.8397 30.956 47.08 30.4754 47.08 29.9993Z"
-                      fill="#FFD500"></path>
-                    <path
-                      d="M46.3635 31.2225C46.8397 30.956 47.08 30.4754 47.08 29.9993H39.4961L42.7463 33.2495C45.4461 31.7336 46.3635 31.2225 46.3635 31.2225Z"
-                      fill="#FFAA00"></path>
-                  </g>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M90.7493 37.9349C90.2168 37.5089 89.7907 36.7633 89.5777 36.3373L91.2819 35.5917C91.3884 35.8047 91.6014 36.1243 91.8144 36.4438C92.2405 36.8698 92.8795 37.2959 93.5186 37.2959C94.1576 37.2959 94.9032 36.9763 95.3292 36.4438C95.6487 35.9112 95.8617 35.3787 95.8617 34.6331V33.9941C94.5836 35.5917 91.9209 35.3787 90.4298 33.6746C88.8321 31.9704 88.8321 29.0947 90.4298 27.3905C92.0274 25.7929 94.3706 25.5799 95.7552 27.071V26.3254H97.5659V34.3136C97.5659 36.3373 96.8203 37.5089 95.8617 38.2544C95.2227 38.787 94.2641 39 93.4121 39C92.4535 38.8935 91.4949 38.574 90.7493 37.9349ZM135.377 38.3609L137.187 34.1006L133.992 26.7515H135.803L138.039 31.9704L140.276 26.7515H142.087L137.187 38.3609H135.377ZM126.749 34.3136C126.217 33.7811 126.004 33.0355 126.004 32.2899C126.004 31.6509 126.217 31.0118 126.643 30.5858C127.388 29.8402 128.453 29.5207 129.625 29.5207C130.371 29.5207 131.01 29.6272 131.542 29.9467C131.542 28.6686 130.477 28.1361 129.625 28.1361C128.88 28.1361 128.134 28.5621 127.814 29.3077L126.217 28.6686C126.536 27.9231 127.388 26.5385 129.519 26.5385C130.584 26.5385 131.649 26.858 132.288 27.6036C132.927 28.3491 133.14 29.2012 133.14 30.3728V34.8462H131.329V34.1006C131.116 34.4201 130.69 34.6331 130.371 34.8462C129.945 35.0592 129.412 35.1657 128.879 35.1657C128.24 35.0592 127.282 34.8462 126.749 34.3136ZM69.9801 30.4793C69.9801 28.3491 71.5777 26.0059 74.4535 26.0059C77.2227 26.0059 78.9268 28.3491 78.9268 30.4793C78.9268 32.6095 77.3292 34.9527 74.4535 34.9527C71.5777 34.9527 69.9801 32.6095 69.9801 30.4793ZM79.5659 30.4793C79.5659 28.3491 81.1635 26.0059 84.0393 26.0059C86.8085 26.0059 88.5126 28.3491 88.5126 30.4793C88.5126 32.6095 86.915 34.9527 84.0393 34.9527C81.27 34.9527 79.5659 32.6095 79.5659 30.4793ZM57.9446 32.8225C55.2819 30.1598 55.3884 25.7929 58.0511 23.0237C59.4357 21.6391 61.1399 21 62.9505 21C64.6546 21 66.3588 21.6391 67.6369 22.9172L66.3588 24.3018C64.4416 22.3846 61.3529 22.4911 59.5422 24.4083C57.6251 26.432 57.6251 29.5207 59.5422 31.5444C61.4594 33.568 64.6546 33.6746 66.5718 31.6509C67.2109 31.0118 67.4239 30.1598 67.5304 29.3077H63.057V27.3905H69.341C69.4475 27.8166 69.4476 28.3491 69.4476 28.8817C69.4476 30.4793 68.8085 32.0769 67.7434 33.142C66.5718 34.3136 64.8677 34.9527 63.1635 34.9527C61.2464 34.8462 59.3292 34.2071 57.9446 32.8225ZM102.998 33.568C101.4 31.8639 101.4 28.9882 102.998 27.1775C104.595 25.4734 107.258 25.4734 108.749 27.1775C109.282 27.7101 109.601 28.4556 109.921 29.2012L104.063 31.6509C104.382 32.3964 105.128 33.0355 106.193 33.0355C107.152 33.0355 107.791 32.716 108.43 31.7574L110.027 32.8225C109.814 33.0355 109.601 33.2485 109.495 33.4615C107.684 35.2722 104.595 35.2722 102.998 33.568ZM114.075 34.8462V23.0237H117.909C120.146 23.0237 121.956 24.6213 121.956 26.5385C121.956 28.4556 120.359 30.0533 118.335 30.0533H115.992V34.7396H114.075V34.8462ZM123.022 34.8462V23.0237H124.832V34.8462H123.022ZM98.9505 34.6331V21.426H100.868V34.6331H98.9505ZM131.436 31.3314C131.01 31.0118 130.371 30.9053 129.732 30.9053C128.453 30.9053 127.708 31.5444 127.708 32.2899C127.708 33.0355 128.453 33.4615 129.199 33.4615C130.264 33.4615 131.436 32.6095 131.436 31.3314ZM76.9032 30.4793C76.9032 29.2012 76.0511 27.8166 74.4535 27.8166C72.8558 27.8166 72.0038 29.2012 72.0038 30.4793C72.0038 31.7574 72.8558 33.142 74.4535 33.142C75.9446 33.142 76.9032 31.7574 76.9032 30.4793ZM86.489 30.4793C86.489 29.2012 85.6369 27.8166 84.0393 27.8166C82.4416 27.8166 81.5896 29.2012 81.5896 30.4793C81.5896 31.7574 82.4416 33.142 84.0393 33.142C85.6369 33.142 86.489 31.7574 86.489 30.4793ZM95.9683 31.2248C95.9683 31.1183 95.9683 31.0118 96.0748 30.9053C96.0748 30.7988 96.0748 30.5858 96.0748 30.4793C96.0748 30.3728 96.0748 30.1598 96.0748 30.0533V29.9467C96.0748 29.8402 95.9683 29.6272 95.9683 29.5207C95.6487 28.4556 94.6901 27.7101 93.7316 27.7101C92.4535 27.7101 91.3884 28.9882 91.3884 30.3728C91.3884 31.8639 92.4535 33.0355 93.8381 33.0355C94.6902 33.142 95.5422 32.3964 95.9683 31.2248ZM103.743 30.2663L107.684 28.5621C107.258 27.8166 106.619 27.6036 106.087 27.6036C104.489 27.7101 103.53 29.4142 103.743 30.2663ZM120.039 26.645C120.039 25.5799 119.187 24.8343 118.016 24.8343H115.885V28.5621H118.122C119.187 28.5621 120.039 27.7101 120.039 26.645Z"
-                    fill="#232C6A"></path>
-                  <defs>
-                    <clipPath id="clip0_1363_76620">
-                      <rect width="20" height="20" fill="white" transform="translate(28 20)"></rect>
-                    </clipPath>
-                  </defs>
-                </svg>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3  offset-lg-1   col-sm-6">
-            <div class="footer-widget about-widget">
-              <h2>Help & Support</h2>
-              <div class=" d-flex justify-content-between">
-                <ul>
-                  <li><a href="">About Us</a></li>
-                  <li><a href="">Track Orders</a></li>
-                  <li><a href="">Returns</a></li>
-                  <li><a href="">Jobs</a></li>
-                  <li><a href="">Partners</a></li>
-                  <li><a href="">Support</a></li>
-                </ul>
-                <ul>
-                  <li><a href="#">Get To Know Us</a></li>
-                  <li><a href="#">How We Works</a></li>
-                  <li><a href="#">Hiring On Here</a></li>
-                  <li><a href="#">Buying On Here</a></li>
-                  <li><a href="#">Selling On Here</a></li>
-                  <li><a href="#">Articls & Tips</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 offset-lg-1 col-sm-6">
-            <div class="footer-widget about-widget">
-              <h2>Company Policy</h2>
-              <div class=" d-flex justify-content-between">
-                <ul>
-                  <li><a href="">Terms of Use</a></li>
-                  <li><a href="#">Payment Policy</a></li>
-                  <li><a href="#">Refund Policy</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="terms-condition.html">Terms & Conditions</a></li>
-                  <li><a href="#">Blog</a></li>
-                </ul>
-
-                <ul>
-                  <li><a href="category.html">Online Training</a></li>
-                  <li><a href="single.html">Free Courses</a></li>
-                  <li><a href="store.html">Premium Courses</a></li>
-                  <li><a href="single-blog.html">Learn with Blogs</a></li>
-                  <li><a href="blog.html">Blog</a></li>
-                </ul>
-              </div>
-
-            </div>
-          </div>
-
-
+        <div class="col-sm-6 col-12">
+          <!-- Social Icons -->
+          <ul class="social-media-icons text-right">
+            <li><a class="fa fa-facebook" href="https://www.facebook.com/themefisher" target="_blank"></a></li>
+            <li><a class="fa fa-twitter" href="https://www.twitter.com/themefisher" target="_blank"></a></li>
+            <li><a class="fa fa-pinterest-p" href="https://www.pinterest.com/themefisher" target="_blank"></a></li>
+            <li><a class="fa fa-vimeo" href=""></a></li>
+          </ul>
         </div>
       </div>
+    </div>
+    <!-- Container End -->
+  </footer>
+  <!--============================= End Footer Area==============================-->
 
-    </section>
-
-    <footer class="footer-bottom">
-      <!-- Container Start -->
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 col-12">
-            <!-- Copyright -->
-            <div class="copyright">
-              <p>Copyright ©
-                <script>
-                  var CurrentYear = new Date().getFullYear()
-                  document.write(CurrentYear)
-                </script>. All Rights Reserved <a class="text-primary" href="https://handshive.com"
-                  target="_blank">HandsHive.com</a>
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-12">
-            <!-- Social Icons -->
-            <ul class="social-media-icons text-right">
-              <li><a class="fa fa-facebook" href="https://www.facebook.com/themefisher" target="_blank"></a></li>
-              <li><a class="fa fa-twitter" href="https://www.twitter.com/themefisher" target="_blank"></a></li>
-              <li><a class="fa fa-pinterest-p" href="https://www.pinterest.com/themefisher" target="_blank"></a></li>
-              <li><a class="fa fa-vimeo" href=""></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- Container End -->
-    </footer>
-    <!--============================= End Footer Area==============================-->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // JavaScript Document
-        (function () {
-
-          var wizard = {
-            formstate: 0,
-            emptyInputs: 0,
-            inactiveSections: [1, 2],
-            setInactiveSections: function () {
-              if (this.formstate === 0) {
-                this.inactiveSections = [1, 2];
-              }
-              else if (this.formstate === 1) {
-                this.inactiveSections = [0, 2];
-              }
-              else {
-                this.inactiveSections = [0, 1];
-              }
-            },
-            setInactiveCircles: function () {
-              if (this.formstate === 0) {
-                var inactiveCirclea = document.querySelector(this.circlesections[this.inactiveSections[0]]);
-                var inactiveCircleb = document.querySelector(this.circlesections[this.inactiveSections[1]]);
-                inactiveCirclea.classList.remove("activecirculo");
-                inactiveCircleb.classList.remove("activecirculo");
-              }
-              else if (this.formstate === 1) {
-                var inactiveCircles = document.querySelector(this.circlesections[this.inactiveSections[1]]);
-                inactiveCircles.classList.remove("activecirculo");
-
-              }
-
-            },
-            formsections: ['#aboutcont', '#addrescont', '#verifycont'],
-            circlesections: ['.aboutblock .circulo', '.addressblock .circulo', '.verifyblock .circulo'],
-            prevbtn: 'prevbtn',
-            nextbtn: 'nextbtn',
-
-            initiateForm: function () {
-
-              var currsection = document.querySelector(this.formsections[this.formstate]);
-              var inactiveSecta = document.querySelector(this.formsections[this.inactiveSections[0]]);
-              var inactiveSectb = document.querySelector(this.formsections[this.inactiveSections[1]]);
-              var currcircle = document.querySelector(this.circlesections[this.formstate]);
-              var progressbar = document.querySelector('#progresswizard');
-              var currsectionprogress = currsection.getAttribute('data-progress');
-
-              progressbar.style.width = currsectionprogress;
-              currsection.style.display = "block";
-              inactiveSecta.style.display = "none";
-              inactiveSectb.style.display = "none";
-
-              if (this.formstate === 0) {
-                document.getElementById(this.prevbtn).style.display = "none";
-              }
-              else {
-                document.getElementById(this.prevbtn).style.display = "inline-block";
-              }
-
-              currcircle.classList.add("activecirculo");
-              this.setInactiveCircles();
-
-
-              if (this.formstate === 2) {
-                document.querySelector("#nextbtn").style.display = "none";
-                document.querySelector("#submitForm").style.display = "inline-block";
-              }
-              else {
-                document.querySelector("#nextbtn").style.display = "inline-block";
-                document.querySelector("#submitForm").style.display = "none";
-              }
-
-              this.checkInput();
-            },
-            nextSection: function () {
-              this.validateInput();
-              if (this.emptyInputs === 0) {
-                if (this.formstate < 2) {
-
-                  this.formstate++;
-                  this.setInactiveSections();
-                  wizard.initiateForm();
-                }
-              }
-
-            },
-            prevSection: function () {
-              if (this.emptyInputs === 0) {
-                if (this.formstate > 0) {
-                  this.formstate--;
-                  this.setInactiveSections();
-                  wizard.initiateForm();
-                }
-              }
-            },
-            validateInput: function () {
-
-              var currsection = this.formsections[this.formstate];
-              var inputfields = document.querySelectorAll(currsection + " input");
-              for (var i = 0; i < inputfields.length; i++) {
-                if (inputfields[i].value.length === 0) {
-                  inputfields[i].classList.add("is-invalid");
-                  this.emptyInputs++;
-                }
-              }
-            },
-            checkInput: function () {
-
-              var currsection = this.formsections[this.formstate];
-              var inputfields = document.querySelectorAll(currsection + " input");
-              for (var i = 0; i < inputfields.length; i++) {
-                var currElement = inputfields[i];
-                currElement.addEventListener('focusout', inputValidation, false);
-              }
-              function inputValidation(event) {
-                console.log(event.target.id);
-
-                var currentInput = document.getElementById(event.target.id);
-
-                if (currentInput.value.length > 3) {
-                  currentInput.classList.remove("is-invalid");
-                  if (wizard.emptyInputs > 0) {
-                    wizard.emptyInputs--;
-                  }
-                }
-                console.log(wizard.emptyInputs);
-              }
-            }
-          };
-
-          wizard.initiateForm();
-          document.getElementById(wizard.nextbtn).addEventListener("click", function () { wizard.nextSection(); });
-          document.getElementById(wizard.prevbtn).addEventListener("click", function () { wizard.prevSection(); });
-
-        })();
-    </script>
-    <script src="assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
 
 </body>
 

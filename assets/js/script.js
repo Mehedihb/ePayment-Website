@@ -47,21 +47,24 @@ document.querySelectorAll(".btn-navigate-form-step").forEach((formNavigationBtn)
 
 // >>>>> Start JavaScript to handle the custom select behavior
 document.addEventListener("DOMContentLoaded", function () {
-  var customSelect = document.querySelector(".custom-select");
-  var selectedOption = customSelect.querySelector(".select-selected");
-  var dropdownItems = customSelect.querySelector(".select-items").children;
+  const customSelects = document.querySelectorAll(".custom-select");
 
-  selectedOption.addEventListener("click", function () {
-    var selectItems = this.nextElementSibling;
-    selectItems.style.display = selectItems.style.display === "block" ? "none" : "block";
-  });
+  customSelects.forEach(customSelect => {
+    const selectedOption = customSelect.querySelector(".select-selected");
+    const dropdownItems = customSelect.querySelectorAll(".select-items > div");
 
-  for (var i = 0; i < dropdownItems.length; i++) {
-    dropdownItems[i].addEventListener("click", function () {
-      selectedOption.textContent = this.textContent;
-      selectedOption.click();
+    selectedOption.addEventListener("click", function () {
+      const selectItems = this.nextElementSibling;
+      selectItems.style.display = selectItems.style.display === "block" ? "none" : "block";
     });
-  }
+
+    dropdownItems.forEach(item => {
+      item.addEventListener("click", function () {
+        selectedOption.textContent = this.textContent;
+        selectedOption.click();
+      });
+    });
+  });
 });
 // <<<<< End JavaScript to handle the custom select behavior
 

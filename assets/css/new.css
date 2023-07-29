@@ -136,10 +136,9 @@ ul {
 .form-group.custom-select {
     position: relative;
     background: var(--ice-whiteApp);
-    padding: 1rem 2rem;
+    padding: 12px 24px 0px 24px;
     display: flex;
     flex-direction: column;
-    gap: 6px;
     border-radius: 12px;
     border: 1px solid var(--border-color);
     margin-bottom: 2rem;
@@ -167,6 +166,7 @@ ul {
     font-weight: 500;
     color: var(--primary-black);
     background-color: transparent;
+    padding: 8px 0px 12px 0px;
 }
 .form-group.custom-select .select-selected::after {
     position: absolute;
@@ -766,24 +766,9 @@ ul.form-stepper {
 
 ul.form-stepper .form-stepper-circle {
     position: relative;
-}
-
-ul.form-stepper .form-stepper-circle span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-}
-
-ul.form-stepper>li:not(:last-of-type) {
-    margin-bottom: 0.625rem;
-    -webkit-transition: margin-bottom 0.4s;
-    -o-transition: margin-bottom 0.4s;
-    transition: margin-bottom 0.4s;
-}
-
-ul.form-stepper>li:not(:last-of-type) {
-    margin-bottom: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ul.form-stepper li {
@@ -801,6 +786,17 @@ ul.form-stepper li {
     transition: 0.5s;
 }
 
+/* ul.form-stepper>li:not(:last-of-type) {
+    margin-bottom: 0.625rem;
+    -webkit-transition: margin-bottom 0.4s;
+    -o-transition: margin-bottom 0.4s;
+    transition: margin-bottom 0.4s;
+}
+
+ul.form-stepper>li:not(:last-of-type) {
+    margin-bottom: 0 !important;
+} */
+
 ul.form-stepper li:not(:last-child):after {
     position: relative;
     -webkit-box-flex: 1;
@@ -813,8 +809,8 @@ ul.form-stepper li:not(:last-child):after {
 }
 
 ul.form-stepper li:after {
-    margin: 0px 20px;
-    background-color: #B0EBC7;
+    margin: 0px 16px;
+    background-color: #D7F5E3;
 }
 
 ul.form-stepper li.form-stepper-completed:after {

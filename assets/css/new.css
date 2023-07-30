@@ -33,7 +33,7 @@
     --white: #ffffff;
     --primary-black: #172B4D;
     --secondary-black: #71828A;
-    --border-color: #E5F5FE;
+    --border-color: #e4edf4;
     --ice-whiteApp: #F7FBFD;
     --ice-whiteWeb: #F3F5F9;
     --red: #df2a43;
@@ -578,44 +578,44 @@ ul {
 /*>>>>> End Header Sction Area <---------- */
 
 .footer-section {
-    background: var(--primary-black);
-    padding-top: 2rem;
-}
-.footer-section a:hover,
-.footer-section a:focus {
-    text-decoration: none;
-    outline: none;
-}
-.footer-section ul {
-    padding: 0;
-    margin: 0;
-}
-.footer-logo {
-    padding-bottom: 60px;
-}
-.footer-logo img {
-    height: 50px;
+    background: #e4edf4;
+    padding-top: 40px;
+    cursor: default;
 }
 .footer-widget {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
     overflow: hidden;
 }
 .footer-widget h2 {
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    color: var(--white);
-    margin-bottom: 35px;
+    color: var(--primary-black);
+    margin-bottom: 16px;
 }
 .footer-widget p {
     color: var(--secondary-black);
     font-size: 14px;
-    line-height: 1.6;
 }
 .footer-widget.about-widget p {
-    margin-bottom: 50px;
-    letter-spacing: -0.01em;
+    color: var(--secondary-black);
+    font-size: 14px;
+    line-height: 2;
+    margin-bottom: 16px;
 }
+.footer-play-icon {
+    display: flex;
+    align-items: center;
+    height: 68px;
+    width: 200px;
+    border-radius: 12px;
+    background-color: var(--white);
+}
+.footer-play-icon img{
+    height: 28px;
+    margin-left: 24px;
+}
+
 .footer-widget ul {
     list-style: none;
     float: left;
@@ -646,7 +646,7 @@ ul {
     transition: all 0.2s;
 }
 .footer-widget ul li a:hover {
-    color: var(--white);
+    color: var(--primary-black);
 }
 .footer-widget ul li a:hover:after {
     width: 7px;
@@ -656,9 +656,13 @@ ul {
 }
 .footer-bottom {
     position: relative;
-    background: var(--primary-black);
-    padding: 25px 0;
-    border-top: 1px solid #343a40;
+    background: #e4edf4;
+    padding: 4px 0;
+    border-top: 1px solid var(--white);
+}
+.footer-bottom img{
+    /* height: 60px; */
+    width: 100%;
 }
 @media (max-width: 480px) {
 .footer-bottom {
@@ -667,20 +671,6 @@ ul {
 .footer-bottom .copyright p {
     color: var(--border-color);
     margin-bottom: 0;
-}
-.social-media-icons {
-    text-align: center !important;
-}
-.social-media-icons li {
-    display: inline-block;
-}
-.social-media-icons li a {
-    color: var(--secondary-black);
-    padding: 0 20px;
-}
-.social-media-icons li a:hover {
-    color: va!important;
-    text-decoration: none;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 .footer-widget ul {

@@ -493,6 +493,7 @@ ul {
     margin-left: 3rem;
 }
 .user-btn {
+    cursor: pointer;
     padding: 0rem 2rem 0rem 1rem;
     height: 60px;
     display: -webkit-inline-box;
@@ -586,9 +587,10 @@ ul {
     padding: 40px 0px 0px 0px;
     position: relative;
     overflow: hidden;
+    margin-top: 40px;
 }
 .footer-widget {
-    margin-bottom: 40px;
+    margin-bottom: 16px;
     overflow: hidden;
 }
 .footer-widget h2 {
@@ -612,7 +614,8 @@ ul {
     display: flex;
     align-items: center;
     height: 68px;
-    width: 200px;
+    min-width: 200px;
+    width: 100%;
     border-radius: 12px;
     background-color: var(--white);
 }
@@ -623,8 +626,9 @@ ul {
 
 .footer-widget ul {
     list-style: none;
-    float: left;
-    margin-right: 37px;
+    margin-right: 20px;
+    width: 100%;
+    padding: 0px;
 }
 .footer-widget ul:last-child {
     margin-right: 0;
@@ -640,10 +644,11 @@ ul {
 .footer-widget ul li a:after {
     position: absolute;
     content: "";
-    width: 5px;
-    height: 5px;
+    width: 6px;
+    height: 6px;
     left: 0;
-    top: 8px;
+    top: 50%;
+    transform: translateY(-50%);
     border: 1px solid var(--brand-color);
     border-radius: 50%;
     -webkit-transition: all 0.2s;
@@ -654,12 +659,12 @@ ul {
     color: var(--primary-black);
 }
 .footer-widget ul li a:hover:after {
-    width: 7px;
-    height: 7px;
-    top: 6px;
+    width: 8px;
+    height: 8px;
     background: var(--brand-color);
 }
 .getway {
+    cursor: default;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -667,7 +672,7 @@ ul {
     width: 100%;
     padding: 16px;
     border-radius: 24px;
-    border: 1px solid var(--white);
+    border: 1px solid var(--border-color);
     background: linear-gradient(90.25deg, hsla(0, 0%, 98.8%, .6) 5.68%, hsla(0, 0%, 98.8%, .6) 143.91%);
     -webkit-backdrop-filter: blur(30px);
     backdrop-filter: blur(30px);

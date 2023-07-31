@@ -1199,64 +1199,7 @@
 }
 
 
-/* ----------> Start Web Layout Area <<<<<*/
 
-
-.btn-primary{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--black);
-    font-weight: 600;
-    font-size: var(--font14);
-    background-color: var(--brand-color);
-    border-color: var(--brand-color);
-    border-radius: 4px;
-    height: 40px;
-    min-width: 150px;
-  }
-  .btn-primary:hover{
-    background-color: var(--brand-color);
-    border-color: var(--brand-color);
-  }
-  .btn-primary.outline{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--black);
-    font-weight: 600;
-    font-size: var(--font14);
-    background-color: var(--white);
-    border-color: var(--brand-color);
-    border-radius: 4px;
-    height: 40px;
-    min-width: 150px;
-  }
-  .btn-primary.outline:hover{
-    color: var(--black);
-    background-color: var(--white);
-    border-color: var(--brand-color);
-  }
-  .btn-primary:focus,
-  .btn-primary.outline:focus{
-    outline: none;
-    box-shadow: none;
-  }
-  
-  .section-header h5 {
-    font-size: var(--font18);
-    color: var(--text-black);
-  }
-  .section-header hr.colorgraph {
-    height: 5px;
-    border-top: 0;
-    background: #c4e17f;
-    background: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-    background: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-    background: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-    background: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-    }
-  /*>>>>> End Web layout Area <---------- */
   
   /* -->Master--------> Start Category Sidebar Area <<<<< */
   .category-sidebar {

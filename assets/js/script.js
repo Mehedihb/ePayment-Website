@@ -1,4 +1,4 @@
-// >>>>> Start Wizard Form Area
+// Start Wizard Area ---------->>>>>>>>>>>>>>>>>>>>
 const navigateToFormStep = (stepNumber) => {
   // Hide all form steps
   document.querySelectorAll(".step-details").forEach((formStepElement) => {
@@ -43,7 +43,7 @@ document.querySelectorAll(".btn-navigate-form-step").forEach((formNavigationBtn)
     navigateToFormStep(stepNumber);
   });
 });
-// <<<<< End Wizard Form Area
+// End Wizard Area ----------<<<<<<<<<<<<<<<<<<<<
 
 // >>>>> Start JavaScript to handle the custom select behavior
 document.addEventListener("DOMContentLoaded", function () {

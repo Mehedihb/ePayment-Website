@@ -76,7 +76,6 @@
     </header>
     <!--header section end-->
     <div class="master-layout-fixed">
-
         <div class="layout-body container">
             <div class="layout-sidebar">
                 <!--==========>>>>> Start Category Sidebar Area -->
@@ -86,20 +85,16 @@
                         <span class="material-icons categoryClose-btn"> cancel </span>
                     </div>
                     <!-- Sidebar Inner -->
-                    <div id="product-categoray-menu">
+                    <div id="student-menu-wrapper">
                          <!-- Non Accordion Menu -->
-                         <a href="./index-student-panel.html">
-                            <button class="non-accordion-button" type="button" onclick="accordionClose()">
-                                <span class="category-icon"><img src="./assets/images/Home-Icon.svg"
-                                        alt="Home" /></span>
-                                <p>Home</p>
+                        <a href="./index-student-panel.html">
+                            <button class="non-accordion-button" type="button">
+                                <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home"/></span><p>Dashboard</p>
                             </button>
                         </a>
-                        <a href="./my-notice.html">
-                            <button class="non-accordion-button" type="button" onclick="accordionClose()">
-                                <span class="category-icon"><img src="./assets/images/Notice-Icon.svg"
-                                        alt="Offers" /></span>
-                                <p>Pay Now</p>
+                        <a href="./pay-now.html">
+                            <button class="non-accordion-button" type="button">
+                                <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home"/></span><p>Pay Now</p>
                             </button>
                         </a>
                         <!-- Category 1 -->
@@ -116,18 +111,39 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="./my-notice.html">
-                            <button class="non-accordion-button" type="button" onclick="accordionClose()">
-                                <span class="category-icon"><img src="./assets/images/Notice-Icon.svg"
-                                        alt="Offers" /></span>
-                                <p>My Notice</p>
+                        <a href="./payment-history.html">
+                            <button class="non-accordion-button" type="button">
+                                <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home"/></span><p>Payment History</p>
                             </button>
                         </a>
-                        <a href="./history.html">
-                            <button class="non-accordion-button" type="button" onclick="accordionClose()">
-                                <span class="category-icon"><img src="./assets/images/Notice-Icon.svg"
-                                        alt="Wishlist" /></span>
-                                <p>My History</p>
+                        <a href="./fees-list.html">
+                            <button class="non-accordion-button" type="button">
+                                <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home"/></span><p>Fees List</p>
+                            </button>
+                        </a>
+                        <a href="./hostel-fees.html">
+                            <button class="non-accordion-button" type="button">
+                                <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home"/></span><p>Hostel Fees</p>
+                            </button>
+                        </a>
+                        <a href="./admit-card.html">
+                            <button class="non-accordion-button" type="button">
+                                <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home"/></span><p>Admit Card</p>
+                            </button>
+                        </a>
+                        <a href="./result.html">
+                            <button class="non-accordion-button" type="button">
+                                <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home"/></span><p>Result</p>
+                            </button>
+                        </a>
+                        <a href="./result.html">
+                            <button class="non-accordion-button" type="button">
+                                <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home"/></span><p>Subject Choice</p>
+                            </button>
+                        </a>
+                        <a href="./result.html">
+                            <button class="non-accordion-button" type="button">
+                                <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home"/></span><p>Payment History</p>
                             </button>
                         </a>
                     </div>
@@ -410,82 +426,6 @@
                                 <button type="submit" class="btn btn-primary">Change Password</button>
                             </div>
                         </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Start Manage Address Modal -->
-        <div class="modal fade" id="manage-address-modal" tabindex="-1" role="dialog" aria-labelledby="popupmodal"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        <h5 class="modal-title">Manage Address</h5>
-                        <div class="row">
-                            <!-- Single Item -->
-                            <div class="col-12">
-                                <div class="address-card">
-                                    <label class="shipping-address-card">
-                                        <input class="form-check-input" type="radio" name="address" checked />
-                                        <div class="address-details">
-                                            <h5 class="address-head">Home</h5>
-                                            <p>58/A Sukrabad, Dhanmondi 32</p>
-                                        </div>
-                                    </label>
-                                    <span class="material-icons-round"> delete </span>
-                                </div>
-                            </div>
-                            <!-- Single Item -->
-                            <div class="col-12">
-                                <button class="btn btn-primary outline" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#add-new-address" aria-expanded="false"
-                                    aria-controls="add-new-address">
-                                    <span class="material-icons-round mr-4"> add </span> Add New Address
-                                </button>
-
-                                <div class="collapse" id="add-new-address">
-                                    <div class="card card-body">
-                                        <div class="row">
-                                            <!-- Single Item -->
-                                            <div class="form-group">
-                                                <label class="form-label" for="email">Email Address</label>
-                                                <input class="form-control" type="email" name="email" placeholder="Username@gmail.com" />
-                                              </div>
-                                            <!-- Single Item -->
-                                             <div class="form-group">
-                                                <label class="form-label" for="email">Email Address</label>
-                                                <input class="form-control" type="email" name="email" placeholder="Username@gmail.com" />
-                                              </div>
-                                            <!-- Single Item -->
-                                            <div class="form-group custom-select">
-                                                <label class="form-label" for="gender">Gender</label>
-                                                <div class="select-selected">Select an option</div>
-                                                <div class="select-items">
-                                                  <div>Option 1</div>
-                                                  <div>Option 2</div>
-                                                  <div>Option 3</div>
-                                                </div>
-                                              </div>
-                                            <!-- Single Item -->
-                                            <div class="form-group custom-select">
-                                                <label class="form-label" for="gender">Gender</label>
-                                                <div class="select-selected">Select an option</div>
-                                                <div class="select-items">
-                                                  <div>Option 1</div>
-                                                  <div>Option 2</div>
-                                                  <div>Option 3</div>
-                                                </div>
-                                              </div>
-                             
-                                            <div class="col-12 mt-3 d-flex justify-content-center">
-                                                <button class="btn btn-primary" type="button">Add Address</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

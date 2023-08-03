@@ -338,14 +338,6 @@ ul {
 /* End Layout Area */
 
 
-
-
-
-
-
-
-
-
 /* >>>>> Start Header Sction Area ---------- */
 .header {
     position: absolute;
@@ -974,3 +966,163 @@ ul.form-stepper li .form-stepper-circle {
     font-size: var(--font12);
 }
 /* <<<<< End Footer Sction Area ---------- */
+
+
+
+  
+/* -->Master--------> Start Category Sidebar Area <<<<< */
+  .category-sidebar {
+    width: 350px;
+    height: 100%;
+    padding: 24px 16px;
+    background-color: var(--white);
+    border-radius: 12px 12px 0px 0px;
+    transition: left 200ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+.show-hide{
+    display: none;
+}
+.category-sidebar .header-mobile{
+    display: none;
+}
+@media (max-width: 992px) {
+  .category-sidebar {
+    display: block;
+    background-color: var(--white);
+    position: fixed;
+    right: -300px;
+    bottom: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    z-index: 10000;
+    overflow: visible;
+    transition: right 200ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  }
+  .category-sidebar .header-mobile {
+    display: block;
+    position: relative;
+    color: var(--white);
+    background-color: var(--brand-color);
+    cursor: pointer;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-sidebar .header-mobile h5 {
+    font-size: var(--font18);
+    margin: 0px;
+  }
+  .show-hide{
+    display: block;
+    right: 0;
+  }
+}
+/* --Sidebar Inner--*/
+#student-menu-wrapper button:hover,
+#student-menu-wrapper button.active{
+  color: var(--white) !important;
+  background-color: var(--brand-color);
+  border-radius: 4px;
+}
+#student-menu-wrapper .accordion-body {
+  padding: 0px;
+}
+#student-menu-wrapper .accordion-item {
+  border-bottom: none;
+}
+#student-menu-wrapper .accordion-item .accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.3rem 1rem;
+  font-size: var(--font14);
+  color: var(--black);
+  box-shadow: none;
+  border-bottom: 1px solid transparent;
+  border-left: 3px solid transparent;
+}
+#student-menu-wrapper .non-accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 12px 12px;
+  font-size: var(--font14);
+  color: var(--black);
+  outline: none;
+  box-shadow: none;
+  background-color: var(--white);
+  border: 1px solid transparent;
+  border-left: 3px solid transparent;
+}
+#student-menu-wrapper .accordion-button-x {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 12px 12px;
+  font-size: var(--font14);
+  color: var(--black);
+  outline: none;
+  box-shadow: none;
+  background-color: var(--white);
+  border: 1px solid transparent;
+  border-left: 3px solid transparent;
+}
+#student-menu-wrapper .accordion-item .accordion-button:focus {
+  box-shadow: none;
+}
+#student-menu-wrapper .accordion-item .accordion-button::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  color: var(--black);
+  flex-shrink: 0;
+  content: "\e5cf";
+  background: none;
+  transition: transform 0.2s ease-in-out;
+}
+#student-menu-wrapper .accordion-item .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: var(--brand-color) !important;
+  border-bottom: 1px solid transparent !important;
+}
+#student-menu-wrapper .accordion-item .accordion-button:not(.collapsed)::after {
+  color: var(--brand-color);
+}
+#student-menu-wrapper .non-accordion-button .category-icon,
+#student-menu-wrapper .accordion-item .accordion-button .category-icon {
+  background-color: var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: 36px;
+  border-radius: 4px;
+  margin-right: 1rem;
+  padding: 5px;
+}
+#student-menu-wrapper .non-accordion-button .category-icon img,
+#student-menu-wrapper .accordion-item .accordion-button .category-icon img {
+  height: 100%;
+  width: 100%;
+}
+#student-menu-wrapper .accordion-button-x .material-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: 36px;
+  border-radius: 4px;
+  margin-right: 1rem;
+  padding: 5px;
+}
+/*>>>>> End Category Sidebar Area <---------- */

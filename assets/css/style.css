@@ -5,15 +5,17 @@
 .hero {
     width: 100vw;
     margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-wrapper {
     width: calc(100% - 10rem);
     height: 100%;
-    margin: 0 auto;
     border-radius: 3rem;
     background-color: #f0f7fc;
-    padding: 18.4rem 0 9.9rem 0
+    padding: 18.4rem 0 9.9rem 0;
 }
 
 .hero .main-heading {
@@ -1546,4 +1548,42 @@
   }
   /*-- End Trams & Condition Area <<<<<==========--*/
   
-  
+#multi-item-carousel{
+    margin-top: -45px;
+    width: calc(100% - 10rem);
+}
+
+  .payment-box {
+    background-color: var(--border-color);
+    display: flex;
+    height: 140px;
+    width: 100%;
+    align-items: center;
+    padding: 16px;
+    border-radius: 12px;
+  }
+  .payment-type{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    background-color: var(--white);
+    padding: 0px 15px;
+  }
+  .payment-title{  
+    font-size: var(--font16);
+    color: var(--text-black);
+    font-weight: 600;
+  }
+  .payment-description{
+    font-size: var(--font14);
+    color: var(--text-black);
+  }
+  .paybtn{
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    flex-grow: 1;
+    background-color: #3890f0;
+  }

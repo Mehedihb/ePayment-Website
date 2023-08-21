@@ -1,6 +1,3 @@
-
-
-
 /* ----------> Start Hero Section Area <<<<<*/
 .hero {
     width: 100vw;
@@ -13,9 +10,9 @@
 .hero-wrapper {
     width: calc(100% - 10rem);
     height: 100%;
-    border-radius: 3rem;
+    border-radius: 4rem;
     background-color: #f0f7fc;
-    padding: 18.4rem 0 9.9rem 0;
+    padding: 18rem 0 12rem 0;
 }
 
 .hero .main-heading {
@@ -41,7 +38,7 @@
 }
 
 .hero-img img {
-    height: 30%;
+    width: 38%;
     z-index: 10;
     position: relative;
     filter: drop-shadow(0px 20px 10px rgba(75, 80, 84, 0.2));
@@ -53,8 +50,8 @@
     content: "";
     display: block;
     position: absolute;
-    width: 50rem;
-    height: 50rem;
+    width: 40rem;
+    height: 40rem;
     border-radius: 50%;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -1202,44 +1199,51 @@
 
 
 
-  
-  
-  /*--==========>>>>> Start Modal Section Area --*/
-  .modal-body{
+
+
+/*--==========>>>>> Start Modal Section Area --*/
+.modal-body {
     position: relative;
     border-radius: 0px;
-  }
-  .modal-body .btn-close{
+}
+
+.modal-body .btn-close {
     position: absolute;
     width: 0.4em;
     height: 0.4em;
     top: 15px;
     right: 15px;
-  }
-  /*-- Start Authentication Modal Area --*/
-  #authentication-modal .modal-dialog,
-  #password-recovery-modal .modal-dialog{
+}
+
+/*-- Start Authentication Modal Area --*/
+#authentication-modal .modal-dialog,
+#password-recovery-modal .modal-dialog {
     max-width: 575px;
-  }
-  #authentication-modal .modal-body{
+}
+
+#authentication-modal .modal-body {
     padding: 0px;
-  }
-  /* Start Auth Tab Area */
-  #authentication-modal .modal-body .form-tab {
+}
+
+/* Start Auth Tab Area */
+#authentication-modal .modal-body .form-tab {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--white);
     padding: 2rem 2rem;
-  }
-  #authentication-modal .modal-body .form-tab .nav.nav-tabs {
+}
+
+#authentication-modal .modal-body .form-tab .nav.nav-tabs {
     border-bottom: 1px solid var(--border-color);
     margin-bottom: 15px;
-  }
-  #authentication-modal .modal-body .form-tab .nav.nav-tabs .nav-item {
+}
+
+#authentication-modal .modal-body .form-tab .nav.nav-tabs .nav-item {
     margin-bottom: 0px;
-  }
-  #authentication-modal .modal-body .form-tab .nav.nav-tabs .nav-item .nav-link {
+}
+
+#authentication-modal .modal-body .form-tab .nav.nav-tabs .nav-item .nav-link {
     font-weight: 600;
     font-size: var(--font18);
     color: var(--text-black);
@@ -1252,22 +1256,26 @@
     border-bottom: 1px solid transparent;
     background-color: transparent;
     transition: all 0.35s ease;
-  }
-  #authentication-modal .modal-body .form-tab .nav.nav-tabs .nav-item .nav-link:hover,
-  #authentication-modal .modal-body .form-tab .nav.nav-tabs .nav-item .nav-link:focus {
+}
+
+#authentication-modal .modal-body .form-tab .nav.nav-tabs .nav-item .nav-link:hover,
+#authentication-modal .modal-body .form-tab .nav.nav-tabs .nav-item .nav-link:focus {
     color: var(--brand-color);
-  }
-  #authentication-modal .modal-body .form-tab .nav.nav-tabs .nav-item .nav-link:focus {
+}
+
+#authentication-modal .modal-body .form-tab .nav.nav-tabs .nav-item .nav-link:focus {
     outline: none !important;
-  }
-  #authentication-modal .modal-body .form-tab .nav.nav-tabs .nav-item .nav-link.active {
+}
+
+#authentication-modal .modal-body .form-tab .nav.nav-tabs .nav-item .nav-link.active {
     border-radius: 0px;
     color: var(--brand-color);
     border-bottom-color: var(--brand-color);
-  }
-  /* Start Custom Form Area */
+}
 
-  #authentication-modal .modal-body .form-tab .form-footer {
+/* Start Custom Form Area */
+
+#authentication-modal .modal-body .form-tab .form-footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1276,33 +1284,39 @@
     margin-bottom: 1rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid var(--border-color);
-  }
-  #authentication-modal .modal-body .form-tab .form-footer .forgot-link {
+}
+
+#authentication-modal .modal-body .form-tab .form-footer .forgot-link {
     cursor: pointer;
     font-size: var(--font14);
     color: var(--brand-color);
     margin-bottom: 1rem;
-  }
-  #authentication-modal .modal-body .form-tab .form-footer .custom-checkbox{
+}
+
+#authentication-modal .modal-body .form-tab .form-footer .custom-checkbox {
     display: flex;
     align-items: center;
-  }
-  #authentication-modal .modal-body .form-tab .form-footer .custom-checkbox .custom-control-label{
+}
+
+#authentication-modal .modal-body .form-tab .form-footer .custom-checkbox .custom-control-label {
     font-size: var(--font14);
     color: var(--black);
     margin-left: 5px;
-  }
-  #authentication-modal .modal-body .form-tab .form-footer .custom-checkbox .custom-control-label a{
+}
+
+#authentication-modal .modal-body .form-tab .form-footer .custom-checkbox .custom-control-label a {
     color: var(--brand-color);
-  }
-  /* Start Auth Social Area */
-  #authentication-modal .modal-body .form-tab .auth-social p {
+}
+
+/* Start Auth Social Area */
+#authentication-modal .modal-body .form-tab .auth-social p {
     font-weight: 400;
     font-size: var(--font14);
     color: var(--low-black);
     margin-bottom: 1rem;
-  }
-  #authentication-modal .modal-body .form-tab .auth-social .btn.btn-login {
+}
+
+#authentication-modal .modal-body .form-tab .auth-social .btn.btn-login {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1312,33 +1326,39 @@
     color: var(--text-black);
     padding: .3rem 1rem;
     border: 1px solid var(--border-color);
-  }
-  #authentication-modal .modal-body .form-tab .auth-social .btn.btn-login:hover,
-  #authentication-modal .modal-body .form-tab .auth-social .btn.btn-login:focus {
+}
+
+#authentication-modal .modal-body .form-tab .auth-social .btn.btn-login:hover,
+#authentication-modal .modal-body .form-tab .auth-social .btn.btn-login:focus {
     background-color: var(--brand-color);
     border: 1px solid var(--brand-color);
-  }
-  #authentication-modal .modal-body .form-tab .auth-social .btn.btn-login img {
+}
+
+#authentication-modal .modal-body .form-tab .auth-social .btn.btn-login img {
     height: 30px;
     width: 30px;
     margin-right: 10px;
-  }
-  #authentication-modal .modal-body .form-tab .auth-social .col-sm-6:not(:last-child) {
+}
+
+#authentication-modal .modal-body .form-tab .auth-social .col-sm-6:not(:last-child) {
     margin-bottom: 0.6rem;
-  }
-  @media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 576px) {
     #authentication-modal .modal-body .form-tab .auth-social .col-sm-6:not(:last-child) {
-      margin-bottom: 0;
+        margin-bottom: 0;
     }
-  }
-  #password-recovery-modal .modal-body{
+}
+
+#password-recovery-modal .modal-body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--white);
     padding: 2rem 2rem;
-  }
-  #password-recovery-modal .modal-body h5 {
+}
+
+#password-recovery-modal .modal-body h5 {
     font-weight: 600;
     font-size: var(--font18);
     color: var(--text-black);
@@ -1346,19 +1366,22 @@
     text-align: center;
     border-bottom: 1px solid var(--brand-color);
     margin-bottom: 15px;
-  }
-  /*-- Start Manage Address Modal --*/
-  #manage-address-modal .modal-dialog{
+}
+
+/*-- Start Manage Address Modal --*/
+#manage-address-modal .modal-dialog {
     max-width: 575px;
-  }
-  #manage-address-modal .modal-body {
+}
+
+#manage-address-modal .modal-body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--white);
     padding: 2rem 2rem;
-  }
-  #manage-address-modal .modal-body .modal-title {
+}
+
+#manage-address-modal .modal-body .modal-title {
     font-weight: 600;
     font-size: var(--font18);
     color: var(--text-black);
@@ -1366,92 +1389,111 @@
     text-align: center;
     border-bottom: 1px solid var(--brand-color);
     margin-bottom: 15px;
-  }
-  #manage-address-modal .modal-body .btn-primary.outline{
+}
+
+#manage-address-modal .modal-body .btn-primary.outline {
     font-size: var(--font16);
     color: var(--brand-color);
     width: 100%;
-  }
-  #manage-address-modal .modal-body .address-card{
+}
+
+#manage-address-modal .modal-body .address-card {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border:1px solid var(--border-color);
+    border: 1px solid var(--border-color);
     padding: 15px;
     margin-bottom: 15px;
-  }
-  #manage-address-modal .modal-body .address-card span.material-icons-round{
+}
+
+#manage-address-modal .modal-body .address-card span.material-icons-round {
     cursor: pointer;
     color: var(--red);
-  }
-  #manage-address-modal .modal-body .address-card .shipping-address-card{
-      display: flex;
-      align-items: center;
-  }
-  #manage-address-modal .modal-body .address-card .shipping-address-card input{
-      margin-right: 15px;
-  }
-  #manage-address-modal .modal-body .address-card .shipping-address-card h5{
-      font-size: var(--font16);
-      color: var(--text-black);
-  }
-  #manage-address-modal .modal-body .address-card .shipping-address-card p{
+}
+
+#manage-address-modal .modal-body .address-card .shipping-address-card {
+    display: flex;
+    align-items: center;
+}
+
+#manage-address-modal .modal-body .address-card .shipping-address-card input {
+    margin-right: 15px;
+}
+
+#manage-address-modal .modal-body .address-card .shipping-address-card h5 {
+    font-size: var(--font16);
+    color: var(--text-black);
+}
+
+#manage-address-modal .modal-body .address-card .shipping-address-card p {
     font-size: var(--font14);
     color: var(--text-black);
-  }
-  #manage-address-modal .modal-body .address-card .shipping-address-card .form-check-input:focus{
+}
+
+#manage-address-modal .modal-body .address-card .shipping-address-card .form-check-input:focus {
     box-shadow: none;
-  }
-  #manage-address-modal .modal-body .address-card .shipping-address-card .form-check-input:checked {
+}
+
+#manage-address-modal .modal-body .address-card .shipping-address-card .form-check-input:checked {
     background-color: var(--brand-color);
     border-color: var(--brand-color);
-  }
-  #manage-address-modal .modal-body #add-new-address {
+}
+
+#manage-address-modal .modal-body #add-new-address {
     margin-top: 20px;
     padding: 0px;
-  }
-  #manage-address-modal .modal-body #add-new-address .card-body{
+}
+
+#manage-address-modal .modal-body #add-new-address .card-body {
     border-radius: 4px;
     border: none;
     background-color: var(--ice-white);
-  }
-  /*--==========>>>>> Start Breadcrumbs Area --*/
-  .breadcrumbs {
-      border-bottom: 1px dotted var(--brand-color);
-      padding: 20px 0px;
+}
+
+/*--==========>>>>> Start Breadcrumbs Area --*/
+.breadcrumbs {
+    border-bottom: 1px dotted var(--brand-color);
+    padding: 20px 0px;
     /* margin-bottom: 30px; */
-  }
-  .breadcrumbs .bread-list {
-      display: flex;
+}
+
+.breadcrumbs .bread-list {
+    display: flex;
     align-items: center;
     margin: 0px;
-  }
-  .breadcrumbs .bread-list li{
-      display: flex;
+}
+
+.breadcrumbs .bread-list li {
+    display: flex;
     align-items: center;
-  }
-  .breadcrumbs .bread-list li span {
-      margin: 0px 10px;
-      font-size: var(--font18);
-      font-weight: 600;
-      color: var(--text-black);
-  }
-  .breadcrumbs .bread-list li a {
-      color: var(--text-black);
-      font-size: var(--font14);
-      font-weight: 400;
-      text-transform: capitalize;
-  }
-  .breadcrumbs .bread-list li.active a {
-      color: var(--brand-color);
-  }
-  .breadcrumbs .bread-list li a:hover{
-      color:var(--brand-color);
-  }
-  /*-- End Breadcrumbs Area <<<<<==========--*/
-  
-  /*--==========>>>>> End Profile Card Area --*/
-  .profile-card{
+}
+
+.breadcrumbs .bread-list li span {
+    margin: 0px 10px;
+    font-size: var(--font18);
+    font-weight: 600;
+    color: var(--text-black);
+}
+
+.breadcrumbs .bread-list li a {
+    color: var(--text-black);
+    font-size: var(--font14);
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.breadcrumbs .bread-list li.active a {
+    color: var(--brand-color);
+}
+
+.breadcrumbs .bread-list li a:hover {
+    color: var(--brand-color);
+}
+
+/*-- End Breadcrumbs Area <<<<<==========--*/
+
+/*--==========>>>>> End Profile Card Area --*/
+.profile-card {
     background: var(--goldish-white);
     display: flex;
     flex-direction: column;
@@ -1459,20 +1501,23 @@
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 15px;
-  }
-  .profile-card .user-img{
+}
+
+.profile-card .user-img {
     position: relative;
     height: 120px;
     width: 120px;
     border-radius: 50%;
     border: 2px solid var(--brand-color);
     overflow: hidden;
-  }
-  .profile-card .user-img img{
+}
+
+.profile-card .user-img img {
     height: 100%;
     width: 100%;
-  }
-  .profile-card .user-img input[type=file]{
+}
+
+.profile-card .user-img input[type=file] {
     cursor: pointer;
     position: absolute;
     bottom: 0px;
@@ -1482,8 +1527,9 @@
     padding: 8px 0px;
     z-index: 2;
     opacity: 0;
-  }
-  .profile-card .user-img .upload-btn{
+}
+
+.profile-card .user-img .upload-btn {
     cursor: pointer;
     position: absolute;
     bottom: 0px;
@@ -1497,33 +1543,38 @@
     background-color: var(--brand-color);
     z-index: 1;
     opacity: .8;
-  }
-  .profile-card .user-name{
+}
+
+.profile-card .user-name {
     margin-top: 15px;
     font-size: var(--font16);
     color: var(--text-black);
-  }
-  /*-- End Profile Card Area <<<<<==========--*/
-  
-  
-  .empty-state {
+}
+
+/*-- End Profile Card Area <<<<<==========--*/
+
+
+.empty-state {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 50px 0px;
-  }
-  .empty-state .illustration{
+}
+
+.empty-state .illustration {
     height: 350px;
     width: 350px;
     margin-bottom: 15px;
-  }
-  .empty-state h5{
+}
+
+.empty-state h5 {
     color: var(--text-black);
     font-size: var(--font18);
-  }
-  /*-- End Empty State Area <<<<<==========--*/
-  
-  .terms-header {
+}
+
+/*-- End Empty State Area <<<<<==========--*/
+
+.terms-header {
     font-size: var(--font22);
     width: 100%;
     display: flex;
@@ -1533,57 +1584,63 @@
     background-color: var(--black);
     padding: 30px 0;
     margin-top: -30px;
-  }
-  .terms-content h5{
-    font-weight: 600;
-    font-size: var(--font16);
-    color:var(--text-black);
-    line-height: 30px;
-    margin-top: 30px;
-  }
-  .terms-content p {
-    font-size: var(--font14);
-    color:var(--text-black);
-    line-height: 30px;
-  }
-  /*-- End Trams & Condition Area <<<<<==========--*/
-  
-#multi-item-carousel{
-    margin-top: -45px;
-    width: calc(100% - 10rem);
 }
 
-  .payment-box {
-    background-color: var(--border-color);
-    display: flex;
-    height: 140px;
-    width: 100%;
-    align-items: center;
-    padding: 16px;
-    border-radius: 12px;
-  }
-  .payment-type{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    border-radius: 12px;
-    background-color: var(--white);
-    padding: 0px 15px;
-  }
-  .payment-title{  
+.terms-content h5 {
+    font-weight: 600;
     font-size: var(--font16);
     color: var(--text-black);
-    font-weight: 600;
-  }
-  .payment-description{
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+.terms-content p {
     font-size: var(--font14);
     color: var(--text-black);
-  }
-  .paybtn{
-    height: 100%;
+    line-height: 30px;
+}
+
+/*-- End Trams & Condition Area <<<<<==========--*/
+
+#multi-item-carousel {
+    margin-top: -70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glide__slides li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment-box {
+    height: 140px;
     width: 100%;
-    padding: 0px;
-    flex-grow: 1;
-    background-color: #3890f0;
-  }
+    max-width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    gap: 4px;
+    border-radius: 100px;
+    border: 8px solid var(--white);
+    background-color: var(--border-color);
+}
+
+.payment-box:hover {
+    opacity: 1;
+}
+
+.payment-box img {
+    height: 56px;
+    width: 56px;
+}
+
+.payment-box .payment-title {
+    font-size: var(--font14);
+    color: var(--primary-black);
+    font-weight: 600;
+}

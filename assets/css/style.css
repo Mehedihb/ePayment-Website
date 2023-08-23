@@ -1603,7 +1603,7 @@
 /*-- End Trams & Condition Area <<<<<==========--*/
 
 #multi-item-carousel {
-    margin-top: -70px;
+    margin-top: -62px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1616,7 +1616,7 @@
 }
 
 .payment-box {
-    height: 140px;
+    height: 124px;
     width: 100%;
     max-width: 260px;
     display: flex;

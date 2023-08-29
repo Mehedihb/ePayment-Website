@@ -1574,199 +1574,58 @@
 
 
 
-  .faq-section{
-    padding: 80px 0;
+  .faq-section {
+      padding: 80px 0;
   }
-.accordion-item {
-    position: relative;
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
-    background-color: green;
-    margin-bottom: 12px;
-    border-radius: 0px;
-    border: 1px solid var(--brand-color);
-    padding: 6px;
-}
-.accordion-item:before {
-    content: '';
-    position: absolute;
-    top: 2px;
-    bottom: 2px;
-    left: 2px;
-    right: 2px;
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#ff4eb5), to(#ffa065));
-    background-image: linear-gradient(0deg, #ff4eb5 0%, #ffa065 100%);
-    -webkit-transition: -webkit-transform .4s ease;
-    transition: -webkit-transform .4s ease;
-    transition: transform .4s ease;
-    transition: transform .4s ease, -webkit-transform .4s ease;
-}
-.accordion-item:not(:first-of-type) {
-    border-top: 1px solid var(--brand-color);
-}
-.accordion-item:first-of-type .accordion-button {
-    border-radius: 0px;
-}
-.accordion-button:not(.collapsed) {
-    color: var(--bs-accordion-active-color);
-    background-color: transparent;
-    box-shadow: none;
-    border-color: transparent;
-}
 
+  .accordion-item {
+      position: relative;
+      -webkit-transition: all .4s ease;
+      transition: all .4s ease;
+      background-color: rgba(98, 214, 143, 0.2);
+      margin-bottom: 12px;
+      border-radius: 16px !important;
+      border: none;
+      padding: 12px;
+  }
+
+  .accordion-button:not(.collapsed) {
+      color: var(--bs-accordion-active-color);
+      background-color: transparent;
+      box-shadow: none;
+      border-color: transparent;
+  }
 
   .accordion-button {
-    color: var(--primary-black);
-    font-weight: 600;
-    font-size: var(--font16);
-    background-color: transparent;
-    padding: 20px 16px;
-    /* border: 1px solid #efefef; */
-    border-radius: 0px;
-    position: relative;
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
-}
-.accordion-button:hover {
-    z-index: 2;
-}
-.accordion-button:not(.collapsed) {
-    color: var(--brand-color);
-    background-color: transparent;
-    box-shadow: none;
-    border-color: transparent;
-}
-.accordion-button:focus {
-    z-index: 3;
-    border-color: var(--bs-accordion-btn-focus-border-color);
-    outline: 0;
-    box-shadow: none;
-}
+      color: var(--primary-black);
+      font-weight: 600;
+      font-size: var(--font16);
+      background-color: transparent;
+      padding: 16px 16px;
+      border-radius: 0px;
+      position: relative;
+      -webkit-transition: all .4s ease;
+      transition: all .4s ease;
+  }
 
-.accordion-body {
-    color: var(--primary-black);
-    font-size: var(--font14);
-    padding: 0px 16px 16px 16px;
-}
+  .accordion-button:hover {
+      z-index: 2;
+  }
 
-/*
-* 11. accrodion styles
-*/
-  
-/* .faq-accrodion .accrodion {
-    position: relative;
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
+  .accordion-button:not(.collapsed) {
+      color: var(--brand-color);
+      box-shadow: none;
+      border-color: transparent;
   }
-  .faq-accrodion .accrodion:before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    bottom: -2px;
-    left: 0px;
-    right: 0px;
-    border-radius: 7px;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#ff4eb5), to(#ffa065));
-    background-image: linear-gradient(0deg, #ff4eb5 0%, #ffa065 100%);
-    -webkit-transition: -webkit-transform .4s ease;
-    transition: -webkit-transform .4s ease;
-    transition: transform .4s ease;
-    transition: transform .4s ease, -webkit-transform .4s ease;
-  }
-  .faq-accrodion .accrodion + .accrodion {
-    margin-top: 20px;
-  }
-  .faq-accrodion .accrodion.active {
-    -webkit-box-shadow: 0px 20px 60px 0px rgba(244, 151, 190, 0.3);
-            box-shadow: 0px 20px 60px 0px rgba(244, 151, 190, 0.3);
-  }
-  .faq-accrodion .accrodion.active .accrodion-inner {
-    margin: 0 2px;
-  }
-  .faq-accrodion .accrodion.active:before {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-  .faq-accrodion .accrodion.active .accrodion-title:before {
-    content: '\f068';
-    color: #ff4eb5;
-  }
-  .faq-accrodion .accrodion.active .accrodion-title {
-    padding-bottom: 0;
-  }
-  .faq-accrodion .accrodion.active .accrodion-title h4 {
-    color: #ff4eb5;
-  }
-  .faq-accrodion .accrodion .accrodion-inner {
-    background-color: #fff;
-    padding: 32px 0;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #efefef;
-    border-radius: 7px;
-    position: relative;
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
-  }
-  .faq-accrodion .accrodion .accrodion-title {
-    padding: 0px 40px;
-    cursor: pointer;
-    position: relative;
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
-  }
-  @media (max-width: 375px) {
-    .faq-accrodion .accrodion .accrodion-title {
-      padding-right: 50px;
-    }
-  }
-  .faq-accrodion .accrodion .accrodion-title:before {
-    content: '\f067';
-    font-family: 'FontAwesome';
-    font-size: 14px;
-    color: #2a2833;
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: absolute;
-    top: 50%;
-    right: 40px;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-  .faq-accrodion .accrodion .accrodion-title h4 {
-    margin: 0;
-    color: #2a2833;
-    font-size: 18px;
-    font-weight: 500;
-  }
-  @media (max-width: 375px) {
-    .faq-accrodion .accrodion .accrodion-title h4 {
-      line-height: 1.4em;
-    }
-  }
-  .faq-accrodion .accrodion .accrodion-content .inner {
-    padding: 0 40px;
-    padding-top: 25px;
-    padding-bottom: 0px;
-  }
-  .faq-accrodion .accrodion .accrodion-content p {
-    margin: 0;
-    color: #74727a;
-    font-size: 16px;
-    line-height: 30px;
-  }
- */
 
-  
+  .accordion-button:focus {
+      box-shadow: none;
+  }
+
+  .accordion-body {
+      color: var(--primary-black);
+      font-size: var(--font14);
+      padding: 16px;
+      background-color: var(--white);
+      border-radius: 12px;
+  }

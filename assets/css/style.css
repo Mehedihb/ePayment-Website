@@ -1574,29 +1574,28 @@
 
 
 
-
-
-
-  #accordionExample .accordion-item {
+  .faq-section{
+    padding: 80px 0;
+  }
+.accordion-item {
     position: relative;
     -webkit-transition: all .4s ease;
     transition: all .4s ease;
-    background-color: transparent;
-    margin-bottom: 10px;
-    border: 1 px solid #efefef;
+    background-color: green;
+    margin-bottom: 12px;
     border-radius: 0px;
+    border: 1px solid var(--brand-color);
+    padding: 6px;
 }
-
-#accordionExample .accordion-item:before {
+.accordion-item:before {
     content: '';
     position: absolute;
-    top: -20px;
-    bottom: -2px;
-    left: 0px;
-    right: 0px;
-    border-radius: 7px;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
     background-image: -webkit-gradient(linear, left bottom, left top, from(#ff4eb5), to(#ffa065));
     background-image: linear-gradient(0deg, #ff4eb5 0%, #ffa065 100%);
     -webkit-transition: -webkit-transform .4s ease;
@@ -1604,32 +1603,59 @@
     transition: transform .4s ease;
     transition: transform .4s ease, -webkit-transform .4s ease;
 }
-
+.accordion-item:not(:first-of-type) {
+    border-top: 1px solid var(--brand-color);
+}
+.accordion-item:first-of-type .accordion-button {
+    border-radius: 0px;
+}
 .accordion-button:not(.collapsed) {
     color: var(--bs-accordion-active-color);
     background-color: transparent;
     box-shadow: none;
     border-color: transparent;
 }
+
+
   .accordion-button {
+    color: var(--primary-black);
+    font-weight: 600;
+    font-size: var(--font16);
     background-color: transparent;
-    padding: 24px 16px;
+    padding: 20px 16px;
     /* border: 1px solid #efefef; */
     border-radius: 0px;
     position: relative;
     -webkit-transition: all .4s ease;
     transition: all .4s ease;
-    /* background-color: #0db8ff; */
 }
+.accordion-button:hover {
+    z-index: 2;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--brand-color);
+    background-color: transparent;
+    box-shadow: none;
+    border-color: transparent;
+}
+.accordion-button:focus {
+    z-index: 3;
+    border-color: var(--bs-accordion-btn-focus-border-color);
+    outline: 0;
+    box-shadow: none;
+}
+
 .accordion-body {
-    padding: 16px 16px;
+    color: var(--primary-black);
+    font-size: var(--font14);
+    padding: 0px 16px 16px 16px;
 }
 
 /*
 * 11. accrodion styles
 */
   
-.faq-accrodion .accrodion {
+/* .faq-accrodion .accrodion {
     position: relative;
     -webkit-transition: all .4s ease;
     transition: all .4s ease;
@@ -1741,6 +1767,6 @@
     font-size: 16px;
     line-height: 30px;
   }
-
+ */
 
   

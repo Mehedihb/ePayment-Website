@@ -1774,7 +1774,7 @@ span.circle2 {
   transition: all .4s ease;
   background-color: rgba(98, 214, 143, 0.2);
   margin-bottom: 12px;
-  border-radius: 12px !important;
+  border-radius: 12  px !important;
   border: none;
   padding: 12px;
 }

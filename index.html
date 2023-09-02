@@ -52,6 +52,7 @@
             <li><a href="#global-notice">Notice</a></li>
             <li><a href="#about-app">About</a></li>
             <li><a href="#faq-section">FAQ</a></li>
+            <li><a href="#faq-section">Check Invoice</a></li>
           </ul>
         </div>
 
@@ -531,23 +532,37 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title" id="paymentModalLabel">Modal title</h1>
+        <h1 class="modal-title" id="paymentModalLabel">ভর্তি বাতিল ফি</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <div class="row">
           <div class="col-lg-12">
             <div class="form-group">
-              <label class="form-label" for="rollNo">Admission/College Roll <span>*</span></label>
-              <input class="form-control" type="text" name="rollNo" id="rollNo" placeholder="Enter Roll"
+              <label class="form-label" for="fullName">Full Name <span>*</span></label>
+              <input class="form-control" type="text" name="fullName" id="fullName" placeholder="Enter Name"
                 required />
             </div>
           </div>
           <div class="col-lg-12">
             <div class="form-group">
-              <label class="form-label" for="registrationNo">Registration No <span>*</span></label>
-              <input class="form-control" type="text" name="registrationNo" id="registrationNo"
+              <label class="form-label" for="fatherName">Father's Name <span>*</span></label>
+              <input class="form-control" type="text" name="fatherName" id="fatherName" placeholder="Enter Name"
+                required />
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="form-group">
+              <label class="form-label" for="mobile">Mobile <span>*</span></label>
+              <input class="form-control" type="text" name="mobile" id="mobile"
                 placeholder="Enter No" required />
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="form-group">
+              <label class="form-label" for="rollNo">Admission/College Roll <span>*</span></label>
+              <input class="form-control" type="text" name="rollNo" id="rollNo" placeholder="Enter Roll"
+                required />
             </div>
           </div>
           <div class="col-lg-6">
@@ -583,23 +598,13 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-12">
             <div class="form-group custom-select">
               <label class="form-label" for="studentClass">Class <span>*</span></label>
               <div class="select-selected">Select an option</div>
               <div class="select-items">
                 <div>1st Year</div>
                 <div>2nd Year</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="form-group custom-select">
-              <label class="form-label" for="studentType">Student Type <span>*</span></label>
-              <div class="select-selected">Select an option</div>
-              <div class="select-items">
-                <div>Regular</div>
-                <div>Irregular</div>
               </div>
             </div>
           </div>

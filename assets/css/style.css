@@ -1377,3 +1377,165 @@
 }
 
 /*-- Start Authentication Modal Area --*/
+
+
+
+
+/*--------- Start Slab Discount List Table Area ---------*/
+.feeList-table{
+    display: flex;
+    flex-direction: column;
+    empty-cells: show;
+    border-spacing: 0;
+    box-sizing: border-box;
+    height: 100%;
+  }
+  .feeList-table tr{
+    width: 100%;
+    display:flex;
+  }
+  .feeList-table td,
+  .feeList-table th{
+    flex-grow:1;
+    display: block;
+    padding: 0rem 1rem;
+  }
+  /* Start Table Head Area */
+  .feeList-table thead{ 
+    position:relative;
+    display: block;
+    width:100%;
+  }
+  .feeList-table thead tr{
+    min-height: 48px;
+    font-size: var(--font14);
+    text-transform: uppercase;
+    color: var(--brand-color);
+    border-bottom: 1px solid var(--border-color);
+  }
+  .feeList-table thead tr th{
+    min-height: 48px;
+    display:flex;
+    align-items: center;
+  }
+  /* Start Table Body Area */
+  .feeList-table tbody{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    overflow-y:auto;
+    font-size: var(--font14);
+    color:var(--primary-black);
+    height: 200px;
+  }
+  .feeList-table tbody tr{
+    position: relative;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    min-height: 48px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  .feeList-table tbody tr td{
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+  }
+  /* Start Table Alignment Area*/
+  .feeList-table thead th:nth-child(1),
+  .feeList-table tbody td:nth-child(1){
+    flex-basis:30%;
+    display: flex;
+    justify-content: start;
+  }
+  .feeList-table thead th:nth-child(2),
+  .feeList-table tbody td:nth-child(2){
+    flex-basis: 20%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .feeList-table thead th:nth-child(3),
+  .feeList-table tbody td:nth-child(3){
+    flex-basis: 20%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .feeList-table thead th:nth-child(4),
+  .feeList-table tbody td:nth-child(4){
+    flex-basis:20%;
+    display: flex;
+    justify-content: center;
+  }
+  .feeList-table thead th:nth-child(5),
+  .feeList-table tbody td:nth-child(5){
+    flex-basis:10%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .payment-card{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    background-color: var(--border-color);
+    padding: 16px;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+  }
+  .payment-card .card-header{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--brand-color);
+    padding: 24px 16px;
+    border-radius: 12px;
+  }
+  .payment-card .card-header h1{
+    font-size: var(--font28);
+    color: var(--white);
+  }
+  .payment-card .card-header h1 span{
+    margin-right: 4px;
+  }
+
+  .payment-card .card-header p{
+    font-size: var(--font18);
+    color: var(--primary-black);
+  }
+  .payment-card .card-header h1 span{
+    color: var(--white);
+    margin-right: 4px;
+  }
+
+  .payment-card .card-invoice{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font14);
+    color: var(--secondary-black);
+  }
+  .payment-card .card-invoice span{
+    color: var(--primary-black);
+  }

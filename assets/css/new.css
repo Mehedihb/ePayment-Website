@@ -1090,6 +1090,12 @@ ul.form-stepper li .form-stepper-circle {
 }
 
 /* --Sidebar Inner--*/
+#student-menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 #student-menu-wrapper button:hover,
 #student-menu-wrapper button.active {
   color: var(--white) !important;

@@ -87,12 +87,12 @@
                     <!-- Sidebar Inner -->
                     <div id="student-menu-wrapper">
                          <!-- Non Accordion Menu -->
-                        <a href="dashobard.htmls">
-                            <button class="non-accordion-button" type="button">
+                        <a href="./index-student-panel.html">
+                            <button class="non-accordion-button active" type="button">
                                 <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home"/></span><p>Dashboard</p>
                             </button>
                         </a>
-                        <a href="pay-now.html">
+                        <a href="./pay-now.html">
                             <button class="non-accordion-button" type="button">
                                 <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home"/></span><p>Pay Now</p>
                             </button>
@@ -117,8 +117,8 @@
                                 <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home"/></span><p>Admit Card</p>
                             </button>
                         </a>
-                        <a href="result.html">
-                            <button class="non-accordion-button active" type="button">
+                        <a href="./result.html">
+                            <button class="non-accordion-button" type="button">
                                 <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home"/></span><p>Result</p>
                             </button>
                         </a>
@@ -138,104 +138,96 @@
             </div>
 
             <div class="layout-details">
-                <div class="layout-inner h-100">
+                <div class="layout-inner">
                     <!--==========>>>>> Start Breadcrumbs Area -->
                     <div class="breadcrumbs">
                         <ul class="bread-list">
                             <li><a href="index.html">Home</a> <span class="material-symbols-rounded"> trending_flat
                                 </span>
                             </li>
-                            <li class="active"><a href="">Result</a></li>
+                            <li class="active"><a href="./profile.html">Profile</a></li>
                         </ul>
                     </div>
                     <!-- End Breadcrumbs Area <<<<<==========-->
 
-                    <div class="row justify-content-center">
-
-
-                   
-
-
-
-
-
-
-
-
-
-
-
-                        <div class="col-12 col-lg-8 py-5">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                  <div class="form-group">
-                                    <label class="form-label" for="rollNo">Admission/College Roll <span>*</span></label>
-                                    <input class="form-control" type="text" name="rollNo" id="rollNo" placeholder="Enter Roll"
-                                      required />
-                                  </div>
+                    <div class="p-5">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="section-header">
+                                    <h5>Edit your profile. It's always easy.</h5>
+                                    <hr class="colorgraph" />
                                 </div>
-                                <div class="col-lg-12">
-                                  <div class="form-group">
-                                    <label class="form-label" for="registrationNo">Registration No <span>*</span></label>
-                                    <input class="form-control" type="text" name="registrationNo" id="registrationNo"
-                                      placeholder="Enter No" required />
-                                  </div>
-                                </div>
-                                <div class="col-lg-6">
-                                  <div class="form-group custom-select">
-                                    <label class="form-label" for="gender">Academic Session <span>*</span></label>
-                                    <div class="select-selected">Select an option</div>
-                                    <div class="select-items">
-                                      <div>2021 - 2023</div>
-                                      <div>2022 - 2024</div>
-                                      <div>2023 - 2025</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-12">
+                                <!--==========>>>>> Start Profile Card Area -->
+                                <div class="profile-card">
+                                    <div class="user-img">
+                                        <img src="./assets/images/user-img.png" alt="User Image" />
+                                        <input type="file" name="image" id="profile-photo" />
+                                        <span class="upload-btn">Change</span>
                                     </div>
-                                  </div>
+                                    <h5 class="user-name">Mehedi Hassan</h5>
                                 </div>
-                                <div class="col-lg-6">
-                                  <div class="form-group custom-select">
-                                    <label class="form-label" for="academicLevel">Academic Level <span>*</span></label>
-                                    <div class="select-selected">Select an option</div>
-                                    <div class="select-items">
-                                      <div>Master’s Regular</div>
-                                      <div>HSC Regular</div>
-                                      <div>Honour's Regular</div>
+                                <!-- End Profile Card Area <<<<<==========-->
+                            </div>
+
+                            <div class="col-lg-9 col-md-8 col-12">
+                                <form action="#">
+                                    <div class="row">
+                                        <!-- Single Item -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="password">Email Address</label>
+                                                <input class="form-control" type="password" name="password" placeholder="Enter Password" />
+                                              </div>
+                                        </div>
+                                        <!-- Single Item -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group custom-select">
+                                                <label class="form-label" for="gender">Gender</label>
+                                                <div class="select-selected">Select an option</div>
+                                                <div class="select-items">
+                                                  <div>Option 1</div>
+                                                  <div>Option 2</div>
+                                                  <div>Option 3</div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group custom-select">
+                                                <label class="form-label" for="gender">Gender</label>
+                                                <div class="select-selected">Select an option</div>
+                                                <div class="select-items">
+                                                  <div>Option 1</div>
+                                                  <div>Option 2</div>
+                                                  <div>Option 3</div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                        <!-- Single Item -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="password">Email Address</label>
+                                                <input class="form-control" type="password" name="password" placeholder="Enter Password" />
+                                              </div>
+                                        </div>
+                                        <!-- Single Item -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="password">Email Address</label>
+                                                <input class="form-control" type="password" name="password" placeholder="Enter Password" />
+                                              </div>
+                                        </div>
                                     </div>
-                                  </div>
-                                </div>
-                                <div class="col-lg-12">
-                                  <div class="form-group custom-select">
-                                    <label class="form-label" for="studentDepartment">Department/Group <span>*</span></label>
-                                    <div class="select-selected">Select an option</div>
-                                    <div class="select-items">
-                                      <div>Science</div>
-                                      <div>Arts</div>
-                                      <div>Commerce</div>
+                                    <div class="row">
+                                        <div class="col-12 d-flex justify-content-center mt-4">
+                                            <button type="submit" class="btn btn-primary">Edit Profile</button>
+                                        </div>
                                     </div>
-                                  </div>
-                                </div>
-                                <div class="col-lg-6">
-                                  <div class="form-group custom-select">
-                                    <label class="form-label" for="studentClass">Class <span>*</span></label>
-                                    <div class="select-selected">Select an option</div>
-                                    <div class="select-items">
-                                      <div>1st Year</div>
-                                      <div>2nd Year</div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-lg-6">
-                                  <div class="form-group custom-select">
-                                    <label class="form-label" for="studentType">Student Type <span>*</span></label>
-                                    <div class="select-selected">Select an option</div>
-                                    <div class="select-items">
-                                      <div>Regular</div>
-                                      <div>Irregular</div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            <button type="submit" class="btn btn-primary mt-5">Find Result</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
 

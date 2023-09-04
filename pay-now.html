@@ -87,13 +87,13 @@
                     <!-- Sidebar Inner -->
                     <div id="student-menu-wrapper">
                          <!-- Non Accordion Menu -->
-                        <a href="dashobard.htmls">
+                        <a href="./index-student-panel.html">
                             <button class="non-accordion-button" type="button">
                                 <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home"/></span><p>Dashboard</p>
                             </button>
                         </a>
-                        <a href="pay-now.html">
-                            <button class="non-accordion-button" type="button">
+                        <a href="./pay-now.html">
+                            <button class="non-accordion-button active" type="button">
                                 <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home"/></span><p>Pay Now</p>
                             </button>
                         </a>
@@ -117,8 +117,8 @@
                                 <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home"/></span><p>Admit Card</p>
                             </button>
                         </a>
-                        <a href="result.html">
-                            <button class="non-accordion-button active" type="button">
+                        <a href="./result.html">
+                            <button class="non-accordion-button" type="button">
                                 <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home"/></span><p>Result</p>
                             </button>
                         </a>
@@ -145,97 +145,34 @@
                             <li><a href="index.html">Home</a> <span class="material-symbols-rounded"> trending_flat
                                 </span>
                             </li>
-                            <li class="active"><a href="">Result</a></li>
+                            <li class="active"><a href="">Pay Now</a></li>
                         </ul>
                     </div>
                     <!-- End Breadcrumbs Area <<<<<==========-->
 
                     <div class="row justify-content-center">
-
-
-                   
-
-
-
-
-
-
-
-
-
-
-
                         <div class="col-12 col-lg-8 py-5">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                  <div class="form-group">
-                                    <label class="form-label" for="rollNo">Admission/College Roll <span>*</span></label>
-                                    <input class="form-control" type="text" name="rollNo" id="rollNo" placeholder="Enter Roll"
-                                      required />
-                                  </div>
+                            <div class="payment-card">
+                                <div class="card-header">
+                                    <h1><span>00.00</span>BDT</h1>
+                                    <p>Please Select Payment Type</p>
+                                    <!-- <p>Included <span>39.99</span> Taka Service Charge</p> -->
                                 </div>
-                                <div class="col-lg-12">
-                                  <div class="form-group">
-                                    <label class="form-label" for="registrationNo">Registration No <span>*</span></label>
-                                    <input class="form-control" type="text" name="registrationNo" id="registrationNo"
-                                      placeholder="Enter No" required />
-                                  </div>
+                                <div class="card-invoice">
+                                    <p>Invoice: <span>32189713</span> </p>
+                                    <p>Date: <span>2 Sept 2023</span> </p>
                                 </div>
-                                <div class="col-lg-6">
-                                  <div class="form-group custom-select">
-                                    <label class="form-label" for="gender">Academic Session <span>*</span></label>
+                                <div class="form-group custom-select">
+                                    <label class="form-label" for="gender">Payment Type</label>
                                     <div class="select-selected">Select an option</div>
                                     <div class="select-items">
-                                      <div>2021 - 2023</div>
-                                      <div>2022 - 2024</div>
-                                      <div>2023 - 2025</div>
+                                      <div>Admission Fee</div>
+                                      <div>Seminner Fee</div>
+                                      <div>Option 3</div>
                                     </div>
                                   </div>
-                                </div>
-                                <div class="col-lg-6">
-                                  <div class="form-group custom-select">
-                                    <label class="form-label" for="academicLevel">Academic Level <span>*</span></label>
-                                    <div class="select-selected">Select an option</div>
-                                    <div class="select-items">
-                                      <div>Master’s Regular</div>
-                                      <div>HSC Regular</div>
-                                      <div>Honour's Regular</div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-lg-12">
-                                  <div class="form-group custom-select">
-                                    <label class="form-label" for="studentDepartment">Department/Group <span>*</span></label>
-                                    <div class="select-selected">Select an option</div>
-                                    <div class="select-items">
-                                      <div>Science</div>
-                                      <div>Arts</div>
-                                      <div>Commerce</div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-lg-6">
-                                  <div class="form-group custom-select">
-                                    <label class="form-label" for="studentClass">Class <span>*</span></label>
-                                    <div class="select-selected">Select an option</div>
-                                    <div class="select-items">
-                                      <div>1st Year</div>
-                                      <div>2nd Year</div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-lg-6">
-                                  <div class="form-group custom-select">
-                                    <label class="form-label" for="studentType">Student Type <span>*</span></label>
-                                    <div class="select-selected">Select an option</div>
-                                    <div class="select-items">
-                                      <div>Regular</div>
-                                      <div>Irregular</div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            <button type="submit" class="btn btn-primary mt-5">Find Result</button>
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-5">Proceed to Payment</button>
                         </div>
                     </div>
 

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
-  --brand-color: #62D68F;
+  --brand-color: red;
   --white: #ffffff;
   --primary-black: #172B4D;
   --secondary-black: #71828A;
@@ -423,24 +423,25 @@ ul {
 .header-logo {
   display: flex;
   align-items: center;
+  justify-content: start;
 }
 
 .header-logo img {
   height: 60px;
-  margin-right: 2rem;
 }
 
 .header-logo h1 {
-  font-size: 2rem;
+  flex-basis:80%;
   font-weight: 800;
+  font-size: var(--font18);
   color: var(--primary-black);
-  padding: 0px;
-  margin: 0px;
 }
+
 
 .header-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header-nav-primary {
@@ -646,6 +647,10 @@ ul {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0 5rem
+  }
+
+  .header-nav{
+    display: none;
   }
 
   .header-nav-primary {

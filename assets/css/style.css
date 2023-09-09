@@ -1,4 +1,5 @@
 /* ----------> Start Hero Section Area <<<<<*/
+
 .hero {
     width: 100vw;
     margin-top: 5rem;
@@ -11,22 +12,25 @@
     width: calc(100% - 10rem);
     height: 100%;
     border-radius: 4rem;
-    background-color: rgba(98, 214, 143, 0.1);
+    background-color: var(--brand-color-10);
     padding: 22rem 0 12rem 0;
 }
+.hero-context{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
-.hero .main-heading {
-    font-size: 4rem;
+.hero-context .main-heading {
+    font-size: 3.5rem;
     font-weight: 600;
     color: var(--primary-black);
     width: 100%
 }
 
-.hero .paragraph {
-    font-size: 2rem;
-    line-height: 2rem;
+.hero-context .paragraph {
+    font-size: var(--font22);
     color: var(--secondary-black);
-    margin: 2rem 0 2rem 0
 }
 
 .hero-img {
@@ -56,7 +60,7 @@
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    background: #62D68F;
+    background: var(--brand-color-100);
     background: linear-gradient(180deg, #62D68F 0%, #1FB95B 100%);
     background-size: 200% 200%;
     background-position: left bottom;
@@ -756,7 +760,7 @@
 
 /*--==========>>>>> Start Breadcrumbs Area --*/
 .breadcrumbs {
-    border-bottom: 1px dotted var(--brand-color);
+    border-bottom: 1px dotted var(--brand-color-100);
     padding: 20px 0px;
     /* margin-bottom: 30px; */
 }
@@ -776,22 +780,22 @@
     margin: 0px 10px;
     font-size: var(--font18);
     font-weight: 600;
-    color: var(--text-black);
+    color: var(--primary-black);
 }
 
 .breadcrumbs .bread-list li a {
-    color: var(--text-black);
+    color: var(--primary-black);
     font-size: var(--font14);
     font-weight: 400;
     text-transform: capitalize;
 }
 
 .breadcrumbs .bread-list li.active a {
-    color: var(--brand-color);
+    color: var(--brand-color-100);
 }
 
 .breadcrumbs .bread-list li a:hover {
-    color: var(--brand-color);
+    color: var(--brand-color-100);
 }
 
 /*-- End Breadcrumbs Area <<<<<==========--*/
@@ -812,7 +816,7 @@
     height: 120px;
     width: 120px;
     border-radius: 50%;
-    border: 2px solid var(--brand-color);
+    border: 2px solid var(--brand-color-100);
     overflow: hidden;
 }
 
@@ -843,8 +847,8 @@
     padding: 8px 0px;
     font-size: var(--font14);
     font-weight: 600;
-    color: var(--text-black);
-    background-color: var(--brand-color);
+    color: var(--primary-black);
+    background-color: var(--brand-color-100);
     z-index: 1;
     opacity: .8;
 }
@@ -852,7 +856,7 @@
 .profile-card .user-name {
     margin-top: 15px;
     font-size: var(--font16);
-    color: var(--text-black);
+    color: var(--primary-black);
 }
 
 /*-- End Profile Card Area <<<<<==========--*/
@@ -872,7 +876,7 @@
 }
 
 .empty-state h5 {
-    color: var(--text-black);
+    color: var(--primary-black);
     font-size: var(--font18);
 }
 
@@ -893,14 +897,14 @@
 .terms-content h5 {
     font-weight: 600;
     font-size: var(--font16);
-    color: var(--text-black);
+    color: var(--primary-black);
     line-height: 30px;
     margin-top: 30px;
 }
 
 .terms-content p {
     font-size: var(--font14);
-    color: var(--text-black);
+    color: var(--primary-black);
     line-height: 30px;
 }
 
@@ -912,11 +916,11 @@
     display: inline-block;
     vertical-align: middle;
     outline: none;
-    font-size: 16px;
+    font-size: var(--font16);
     font-weight: 500;
-    color: #2a2833;
+    color: var(--primary-black);
     padding: 13px 41px;
-    border-radius: 5px;
+    border-radius: 4px;
     -webkit-transition: background .4s ease, color .4s ease;
     transition: background .4s ease, color .4s ease;
     background-image: -webkit-gradient(linear, left top, right top, from(#ff4eb5), to(#ffa065));
@@ -931,8 +935,8 @@
     right: 2px;
     bottom: 2px;
     left: 2px;
-    border-radius: 5px;
-    background-color: #fff;
+    border-radius: 4px;
+    background-color: var(--white);
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
     -webkit-transition: -webkit-transform .4s ease;
@@ -946,7 +950,7 @@
 }
 
 .thm-btn:hover {
-    color: #fff;
+    color: var(--white);
 }
 
 .thm-btn:hover:before {
@@ -1379,8 +1383,6 @@
 /*-- Start Authentication Modal Area --*/
 
 
-
-
 /*--------- Start Slab Discount List Table Area ---------*/
 .feeList-table{
     display: flex;
@@ -1410,7 +1412,7 @@
     min-height: 48px;
     font-size: var(--font14);
     text-transform: uppercase;
-    color: var(--brand-color);
+    color: var(--brand-color-100);
     border-bottom: 1px solid var(--border-color);
   }
   .feeList-table thead tr th{
@@ -1508,7 +1510,7 @@
     gap: 16px;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--brand-color);
+    background-color: var(--brand-color-100);
     padding: 24px 16px;
     border-radius: 12px;
   }

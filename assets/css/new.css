@@ -1801,3 +1801,39 @@ span.circle2 {
   border-radius: 12px;
 }
 /*>>>>> End FAQ Section Area <---------- */
+
+
+#profileTab.nav-tabs {
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: 16px;
+}
+#profileTab.nav-tabs .nav-item .nav-link, 
+#profileTab.nav-tabs .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font16);
+  color: var(--primary-black);
+  background-color: transparent;
+  border: none;
+  padding: 16px;
+}
+#profileTab.nav-tabs .nav-item.show .nav-link, 
+#profileTab.nav-tabs .nav-link.active{
+  color: var(--brand-color-100);
+  position: relative;
+}
+#profileTab.nav-tabs .nav-item.show .nav-link::after, 
+#profileTab.nav-tabs .nav-link.active::after{
+  content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 8px;
+    bottom: -4px;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: var(--brand-color-100);
+}

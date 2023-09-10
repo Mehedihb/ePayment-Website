@@ -381,7 +381,7 @@ ul,li {
 
 @media (max-width: 640px) {
   .layout-sidebar {
-    display: none;
+    margin-right: 0px;
   }
 }
 
@@ -678,7 +678,7 @@ ul,li {
   }
 
   .header-logo h1 {
-    font-size: var(--font16);
+    font-size: 1rem;
     font-weight: 800;
     color: var(--primary-black);
     padding: 0px;

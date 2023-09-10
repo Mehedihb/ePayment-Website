@@ -31,7 +31,6 @@
 
                 <div class="header-nav">
                     <ul class="header-nav-primary">
-
                         <li class="nav__dropdown" id="service-list">
                             <a href="#" class="dropdown-info">
                                 Services
@@ -48,28 +47,24 @@
                         <li><a href="#check-invoice">About</a></li>
                         <li><a href="#faq">FAQ</a></li>
                     </ul>
+                    <ul>
+                        <li class="nav__dropdown" id="menu-list">
+                            <div href="#" class="dropdown-info user-btn">
+                                <img src="./assets/images/user-img.png" alt="">
+                                <p class="user-context">User Name <span class="material-symbols-rounded"> arrow_drop_down
+                                    </span></p>
+                                <span class="header__bars material-symbols-rounded category-menu-mobile"> menu_open </span>
+                            </div>
+                            <ul class="nav__dropdown-box mt-4">
+                                <!-- <li><a href="index-student-panel.html">Student Panel</a></li> -->
+                                <li><a href="index.html">Back Website</a></li>
+                                <li><a href="#">Log Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
 
-                <ul class="btn-group">
-                    <!-- <li>
-            <a href="login.html" class="guestuser-btn">
-              Login/ Sign Up
-            </a>
-          </li> -->
-                    <li class="nav__dropdown" id="menu-list">
-                        <div href="#" class="dropdown-info user-btn">
-                            <img src="./assets/images/user-img.png" alt="">
-                            <p class="user-context">User Name <span class="material-symbols-rounded"> arrow_drop_down
-                                </span></p>
-                            <span class="header__bars material-symbols-rounded category-menu-mobile"> menu_open </span>
-                        </div>
-                        <ul class="nav__dropdown-box mt-4">
-                            <!-- <li><a href="index-student-panel.html">Student Panel</a></li> -->
-                            <li><a href="index.html">Back Website</a></li>
-                            <li><a href="#">Log Out</a></li>
-                        </ul>
-                    </li>
-                </ul>
+
 
             </div>
         </div>
@@ -98,7 +93,7 @@
                             </button>
                         </a>
                         <a href="pay-now.html">
-                            <button class="single-menu active" type="button">
+                            <button class="single-menu" type="button">
                                 <span class="menu-icon"><img src="./assets/images/PayNow-Icon.svg" alt="Pay Now"/></span>Pay Now
                             </button>
                         </a>
@@ -128,7 +123,7 @@
                             </button>
                         </a>
                         <a href="subject-choice.html">
-                            <button class="single-menu" type="button">
+                            <button class="single-menu active" type="button">
                                 <span class="menu-icon"><img src="./assets/images/SubjectChoice-Icon.svg" alt="Subject Choice"/></span>Subject Choice
                             </button>
                         </a>
@@ -143,43 +138,17 @@
             </div>
 
             <div class="layout-details">
-                <div class="layout-inner h-100">
+                <div class="layout-inner">
                     <!--==========>>>>> Start Breadcrumbs Area -->
                     <div class="breadcrumbs">
                         <ul class="bread-list">
-                            <li><a href="index.html">Home</a> <span class="material-symbols-rounded"> trending_flat
+                            <li><a href="dashobard.html">Home</a> <span class="material-symbols-rounded"> trending_flat
                                 </span>
                             </li>
-                            <li class="active"><a href="">Pay Now</a></li>
+                            <li class="active"><a href="./profile.html">Dashboard</a></li>
                         </ul>
                     </div>
                     <!-- End Breadcrumbs Area <<<<<==========-->
-
-                    <div class="inner-content">
-                        <div class="col-12 col-lg-8">
-                            <div class="payment-card">
-                                <div class="card-header">
-                                    <h1><span>00.00</span>BDT</h1>
-                                    <p>Please Select Payment Type</p>
-                                    <!-- <p>Included <span>39.99</span> Taka Service Charge</p> -->
-                                </div>
-                                <div class="card-invoice">
-                                    <p>Invoice: <span>32189713</span> </p>
-                                    <p>Date: <span>2 Sept 2023</span> </p>
-                                </div>
-                                <div class="form-group custom-select">
-                                    <label class="form-label" for="gender">Payment Type</label>
-                                    <div class="select-selected">Select an option</div>
-                                    <div class="select-items">
-                                      <div>Admission Fee</div>
-                                      <div>Seminner Fee</div>
-                                      <div>Option 3</div>
-                                    </div>
-                                  </div>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Proceed to Payment</button>
-                    </div>
 
                 </div>
             </div>

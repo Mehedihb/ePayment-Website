@@ -81,8 +81,8 @@ window.addEventListener('scroll', handleScrollHeader);
 // <<<<< End Function to handle scroll event and toggle class 'fixed' for .headerScroll
 
 // >>>>> Start Category Sidebar Area
-var categorySidebar = document.querySelector('.category-sidebar');
-var categoryToggle = document.querySelectorAll('.category-menu , .category-menu-mobile');
+var categorySidebar = document.querySelector('.menu-sidebar');
+var categoryToggle = document.querySelectorAll('.category-menu-mobile');
 var categoryClose = document.querySelector('.categoryClose-btn')
 categoryToggle.forEach((node) => {
   node.addEventListener('click', () => {

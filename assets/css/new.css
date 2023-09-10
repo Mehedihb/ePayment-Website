@@ -191,7 +191,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--black);
+  color: var(--primary-black);
   font-weight: 600;
   font-size: var(--font14);
   background-color: var(--white);
@@ -202,7 +202,7 @@ ul {
 }
 
 .btn-primary.outline:hover {
-  color: var(--black);
+  color: var(--primary-black);
   background-color: var(--white);
   border-color: var(--brand-color-100);
 }
@@ -381,9 +381,14 @@ ul {
 .layout-inner {
   border-radius: 12px;
   width: 100%;
+  min-height: 100%;
   background-color: var(--white);
 }
-
+@media (max-width: 640px) {
+  .layout-sidebar{
+    display: none;
+  }
+}
 /* End Layout Area */
 
 
@@ -678,7 +683,7 @@ ul {
   }
 
   .header-logo h1 {
-    font-size: 1.8rem;
+    font-size: 1rem;
     font-weight: 800;
     color: var(--primary-black);
     padding: 0px;
@@ -1029,7 +1034,7 @@ ul.form-stepper li .form-stepper-circle {
 
 
 /* -->Master--------> Start Category Sidebar Area <<<<< */
-.category-sidebar {
+.menu-sidebar {
   width: 350px;
   height: 100%;
   padding: 24px 16px;
@@ -1042,12 +1047,12 @@ ul.form-stepper li .form-stepper-circle {
   display: none;
 }
 
-.category-sidebar .header-mobile {
+.menu-sidebar .header-mobile {
   display: none;
 }
 
 @media (max-width: 992px) {
-  .category-sidebar {
+  .menu-sidebar {
     display: block;
     background-color: var(--white);
     position: fixed;
@@ -1063,7 +1068,7 @@ ul.form-stepper li .form-stepper-circle {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   }
 
-  .category-sidebar .header-mobile {
+  .menu-sidebar .header-mobile {
     display: block;
     position: relative;
     color: var(--white);
@@ -1075,7 +1080,7 @@ ul.form-stepper li .form-stepper-circle {
     justify-content: space-between;
   }
 
-  .category-sidebar .header-mobile h5 {
+  .menu-sidebar .header-mobile h5 {
     font-size: var(--font18);
     margin: 0px;
   }
@@ -1090,125 +1095,38 @@ ul.form-stepper li .form-stepper-circle {
 #student-menu-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
 }
 
-#student-menu-wrapper button:hover,
-#student-menu-wrapper button.active {
+#student-menu-wrapper .single-menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  font-size: var(--font14);
+  color: var(--primary-black);
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: var(--white);
+}
+#student-menu-wrapper .single-menu:hover,
+#student-menu-wrapper .single-menu.active {
   color: var(--white) !important;
   background-color: var(--brand-color-100);
-  border-radius: 4px;
+  border-radius: 8px;
 }
-
-#student-menu-wrapper .accordion-body {
-  padding: 0px;
-}
-
-#student-menu-wrapper .accordion-item {
-  border-bottom: none;
-}
-
-#student-menu-wrapper .accordion-item .accordion-button {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 0.3rem 1rem;
-  font-size: var(--font14);
-  color: var(--black);
-  box-shadow: none;
-  border-bottom: 1px solid transparent;
-  border-left: 3px solid transparent;
-}
-
-#student-menu-wrapper .non-accordion-button {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 12px 12px;
-  font-size: var(--font14);
-  color: var(--black);
-  outline: none;
-  box-shadow: none;
-  background-color: var(--white);
-  border: 1px solid transparent;
-  border-left: 3px solid transparent;
-}
-
-#student-menu-wrapper .accordion-button-x {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 12px 12px;
-  font-size: var(--font14);
-  color: var(--black);
-  outline: none;
-  box-shadow: none;
-  background-color: var(--white);
-  border: 1px solid transparent;
-  border-left: 3px solid transparent;
-}
-
-#student-menu-wrapper .accordion-item .accordion-button:focus {
-  box-shadow: none;
-}
-
-#student-menu-wrapper .accordion-item .accordion-button::after {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  color: var(--black);
-  flex-shrink: 0;
-  content: "\e5cf";
-  background: none;
-  transition: transform 0.2s ease-in-out;
-}
-
-#student-menu-wrapper .accordion-item .accordion-button:not(.collapsed) {
-  background-color: transparent;
-  color: var(--brand-color-100) !important;
-  border-bottom: 1px solid transparent !important;
-}
-
-#student-menu-wrapper .accordion-item .accordion-button:not(.collapsed)::after {
-  color: var(--brand-color-100);
-}
-
-#student-menu-wrapper .non-accordion-button .category-icon,
-#student-menu-wrapper .accordion-item .accordion-button .category-icon {
-  background-color: var(--border-color);
+#student-menu-wrapper .single-menu .menu-icon{
+  background-color: var(--brand-color-15);
   display: flex;
   align-items: center;
   justify-content: center;
   height: 36px;
   width: 36px;
-  border-radius: 4px;
-  margin-right: 1rem;
-  padding: 5px;
+  border-radius: 8px;
+  margin-right: 12px;
+  padding: 4px;
 }
-
-#student-menu-wrapper .non-accordion-button .category-icon img,
-#student-menu-wrapper .accordion-item .accordion-button .category-icon img {
-  height: 100%;
-  width: 100%;
-}
-
-#student-menu-wrapper .accordion-button-x .material-icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 36px;
-  width: 36px;
-  border-radius: 4px;
-  margin-right: 1rem;
-  padding: 5px;
-}
-
 /*>>>>> End Category Sidebar Area <---------- */
 
 
@@ -1802,29 +1720,32 @@ span.circle2 {
 }
 /*>>>>> End FAQ Section Area <---------- */
 
-
-#profileTab.nav-tabs {
+.profileTab{
+  padding: 0px 16px 16px 16px;
+}
+.profileTab .nav-tabs {
   border-bottom: 2px solid var(--border-color);
   margin-bottom: 16px;
 }
-#profileTab.nav-tabs .nav-item .nav-link, 
-#profileTab.nav-tabs .nav-link {
+.profileTab .nav-tabs .nav-item .nav-link, 
+.profileTab .nav-tabs .nav-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--font16);
+  font-weight: 600;
+  font-size: var(--font14);
   color: var(--primary-black);
   background-color: transparent;
   border: none;
-  padding: 16px;
+  padding: 16px 24px;
 }
-#profileTab.nav-tabs .nav-item.show .nav-link, 
-#profileTab.nav-tabs .nav-link.active{
+.profileTab .nav-tabs .nav-item.show .nav-link, 
+.profileTab .nav-tabs .nav-link.active{
   color: var(--brand-color-100);
   position: relative;
 }
-#profileTab.nav-tabs .nav-item.show .nav-link::after, 
-#profileTab.nav-tabs .nav-link.active::after{
+.profileTab .nav-tabs .nav-item.show .nav-link::after, 
+.profileTab .nav-tabs .nav-link.active::after{
   content: "";
     display: block;
     position: absolute;

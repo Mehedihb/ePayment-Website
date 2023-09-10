@@ -760,9 +760,8 @@
 
 /*--==========>>>>> Start Breadcrumbs Area --*/
 .breadcrumbs {
-    border-bottom: 1px dotted var(--brand-color-100);
-    padding: 20px 0px;
-    /* margin-bottom: 30px; */
+    border-bottom: 1px solid var(--border-color);
+    padding: 20px 16px;
 }
 
 .breadcrumbs .bread-list {

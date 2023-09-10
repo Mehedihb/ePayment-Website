@@ -64,7 +64,7 @@
                     </ul>
                 </div>
 
-
+                <span class="header__bars material-symbols-rounded category-menu-mobile"> menu_open </span>
 
             </div>
         </div>
@@ -73,8 +73,8 @@
     <div class="master-layout-fixed">
         <div class="layout-body container">
             <div class="layout-sidebar">
-                <!--==========>>>>> Start Category Sidebar Area -->
-                <aside class="category-sidebar">
+                <!--==========>>>>> Start Menu Sidebar Area -->
+                <aside class="menu-sidebar">
                     <div class="header-mobile">
                         <h5>Category</h5>
                         <span class="material-icons categoryClose-btn"> cancel </span>
@@ -83,90 +83,98 @@
                     <div id="student-menu-wrapper">
                          <!-- Non Accordion Menu -->
                         <a href="dashobard.html">
-                            <button class="non-accordion-button" type="button">
-                                <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home"/></span><p>Dashboard</p>
+                            <button class="single-menu" type="button">
+                                <span class="menu-icon"><img src="./assets/images/Dashboard-Icon.svg" alt="Dashboard" class="icon-svg"/></span>Dashboard
                             </button>
                         </a>
                         <a href="profile.html">
-                            <button class="non-accordion-button active" type="button">
-                                <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home"/></span><p>Profile</p>
+                            <button class="single-menu active" type="button">
+                                <span class="menu-icon"><img src="./assets/images/Profile-Icon.svg" alt="Profile"/></span>Profile
                             </button>
                         </a>
-                        <a href="./pay-now.html">
-                            <button class="non-accordion-button" type="button">
-                                <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home"/></span><p>Pay Now</p>
+                        <a href="pay-now.html">
+                            <button class="single-menu" type="button">
+                                <span class="menu-icon"><img src="./assets/images/PayNow-Icon.svg" alt="Pay Now"/></span>Pay Now
                             </button>
                         </a>
-                        <a href="./payment-history.html">
-                            <button class="non-accordion-button" type="button">
-                                <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home"/></span><p>Payment History</p>
+                        <a href="payment-history.html">
+                            <button class="single-menu" type="button">
+                                <span class="menu-icon"><img src="./assets/images/PaymentHistory-Icon.svg" alt="Payment History"/></span>Payment History
                             </button>
                         </a>
-                        <a href="./fees-list.html">
-                            <button class="non-accordion-button" type="button">
-                                <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home"/></span><p>Fees List</p>
+                        <a href="fees-list.html">
+                            <button class="single-menu" type="button">
+                                <span class="menu-icon"><img src="./assets/images/FeeList-Icon.svg" alt="Fee List"/></span>Fees List
                             </button>
                         </a>
-                        <a href="./hostel-fees.html">
-                            <button class="non-accordion-button" type="button">
-                                <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home"/></span><p>Hostel Fees</p>
+                        <a href="hostel-fees.html">
+                            <button class="single-menu" type="button">
+                                <span class="menu-icon"><img src="./assets/images/HostelFees-Icon.svg" alt="Hostel Fees"/></span>Hostel Fees
                             </button>
                         </a>
-                        <a href="./admit-card.html">
-                            <button class="non-accordion-button" type="button">
-                                <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home"/></span><p>Admit Card</p>
+                        <a href="admit-card.html">
+                            <button class="single-menu" type="button">
+                                <span class="menu-icon"><img src="./assets/images/AdmitCard-Icon.svg" alt="Admit Card"/></span>Admit Card
                             </button>
                         </a>
-                        <a href="./result.html">
-                            <button class="non-accordion-button" type="button">
-                                <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home"/></span><p>Result</p>
+                        <a href="result.html">
+                            <button class="single-menu" type="button">
+                                <span class="menu-icon"><img src="./assets/images/Result-Icon.svg" alt="Result"/></span>Result
                             </button>
                         </a>
-                        <a href="./result.html">
-                            <button class="non-accordion-button" type="button">
-                                <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home"/></span><p>Subject Choice</p>
+                        <a href="subject-choice.html">
+                            <button class="single-menu" type="button">
+                                <span class="menu-icon"><img src="./assets/images/SubjectChoice-Icon.svg" alt="Subject Choice"/></span>Subject Choice
                             </button>
                         </a>
-                        <a href="./result.html">
-                            <button class="non-accordion-button" type="button">
-                                <span class="category-icon"><img src="./assets/images/Home-Icon.svg" alt="Home"/></span><p>Payment History</p>
+                        <a href="change-password.html">
+                            <button class="single-menu" type="button">
+                                <span class="menu-icon"><img src="./assets/images/ChangePassword-Icon.svg" alt="ChangePassword"/></span>Change Password
                             </button>
                         </a>
                     </div>
                 </aside>
-                <!-- End Category Sidebar Area <<<<<==========-->
+                <!-- End Menu Sidebar Area <<<<<==========-->
             </div>
 
             <div class="layout-details">
                 <div class="layout-inner">
-
-
                     <!--==========>>>>> Start Breadcrumbs Area -->
                     <div class="breadcrumbs">
                         <ul class="bread-list">
-                            <li><a href="index.html">Home</a> <span class="material-symbols-rounded"> trending_flat
-                                </span>
+                            <li>
+                                <a href="dashobard.html">Home</a>
+                                <span class="material-symbols-rounded"> trending_flat</span>
                             </li>
-                            <li class="active"><a href="./profile.html">Profile</a></li>
+                            <li class="active"><a href="profile.html">Profile</a></li>
                         </ul>
                     </div>
                     <!-- End Breadcrumbs Area <<<<<==========-->
-                    <div class="col-12 p-5">
+
+                    <div class="profileTab">
                         <ul class="nav nav-tabs" id="profileTab" role="tablist">
                             <li class="nav-item">
-                                <button class="nav-link active"  data-bs-toggle="tab" data-bs-target="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Tab 1</button>
+                                <button class="nav-link active"  data-bs-toggle="tab" data-bs-target="#studentInfo" role="tab" aria-controls="studentInfo">Student Info</button>
                             </li>
                             <li class="nav-item">
-                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Tab 2</button>
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#academicInfo" role="tab" aria-controls="academicInfo">Academic Info</button>
                             </li>
                             <li class="nav-item">
-                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Tab 3</button>
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#subjectList" role="tab" aria-controls="subjectList">Subject List</button>
                             </li>
                         </ul>
     
                         <div class="tab-content" id="profileTab-Content">
-                            <div class="tab-pane fade show active" id="tab1">
+                            <div class="tab-pane fade show active" id="studentInfo">
                                 <div class="row">
+
+                                    <div class="col-12">
+                                        <div class="section-header">
+                                            <h5>Student Basic</h5>
+                                            <hr class="colorgraph" />
+                                        </div>
+                                    </div>
+
                                     <div class="col-lg-3 col-md-4 col-12">
                                         <!--==========>>>>> Start Profile Card Area -->
                                         <div class="profile-card">
@@ -237,10 +245,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="tab2">
+                            <div class="tab-pane fade" id="academicInfo">
                                 Content of Tab 2
                             </div>
-                            <div class="tab-pane fade" id="tab3">
+                            <div class="tab-pane fade" id="subjectList">
                                 Content of Tab 3
                             </div>
                         </div>

@@ -26,16 +26,14 @@
 
                 <a class="header-logo" href="index.html">
                     <img src="assets/images/CollegeLogo.svg" alt="logo">
-                    <h1>সরকারি রাজেন্দ্র কলেজ, ফরিদপুর</h1>
+                    <h1>জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমান সরকারি কলেজ, শরীয়তপুর</h1>
                 </a>
 
                 <div class="header-nav">
-                    <ul class="header-nav-primary">
-                        <li class="nav__dropdown" id="service-list">
-                            <a href="#" class="dropdown-info">
-                                Services
-                            </a>
-                            <ul class="nav__dropdown-box">
+                    <ul class="nav-items">
+                        <li class="nav-dropdown" id="service-list">
+                            <a href="#" class="dropdown-head">Services</a>
+                            <ul class="dropdown-items">
                                 <li><a href="student-registration.html">Student Registration</a></li>
                                 <li><a href="student-admission.html">Student Admission</a></li>
                                 <li><a href="application-fee.html">Application Fee</a></li>
@@ -47,24 +45,27 @@
                         <li><a href="#check-invoice">About</a></li>
                         <li><a href="#faq">FAQ</a></li>
                     </ul>
-                    <ul>
-                        <li class="nav__dropdown" id="menu-list">
-                            <div href="#" class="dropdown-info user-btn">
-                                <img src="./assets/images/user-img.png" alt="">
-                                <p class="user-context">User Name <span class="material-symbols-rounded"> arrow_drop_down
-                                    </span></p>
-                                <!-- <span class="header__bars material-symbols-rounded category-menu-mobile"> menu_open </span> -->
+
+                    <ul class="d-flex align-items-center">
+                        <!-- <a href="login.html" class="login-btn"> Login </a> -->
+                        <li class="nav-dropdown" id="menu-list">
+                            <div class="dropdown-head">
+                                <div class="user-btn">
+                                    <img src="./assets/images/user-img.png" alt="">
+                                    <p class="user-context">User Name <span class="material-symbols-rounded"> arrow_drop_down</span></p>
+                                </div>
                             </div>
-                            <ul class="nav__dropdown-box mt-4">
+                            <ul class="dropdown-items mt-4">
                                 <!-- <li><a href="index-student-panel.html">Student Panel</a></li> -->
                                 <li><a href="index.html">Back Website</a></li>
                                 <li><a href="#">Log Out</a></li>
                             </ul>
                         </li>
+                        <li class="mobile-hamburger"><span class="material-symbols-rounded"> menu_open </span></li>
                     </ul>
                 </div>
 
-                <span class="header__bars material-symbols-rounded category-menu-mobile"> menu_open </span>
+                
 
             </div>
         </div>
@@ -76,9 +77,14 @@
                 <!--==========>>>>> Start Menu Sidebar Area -->
                 <aside class="menu-sidebar">
                     <div class="header-mobile">
-                        <h5>Category</h5>
+                        <div class="user-btn">
+                            <img src="./assets/images/user-img.png" alt="">
+                            <p class="user-context">User Name</p>
+                        </div>
+                        <!-- <a href="login.html" class="login-btn show"> Login </a> -->
                         <span class="material-icons categoryClose-btn"> cancel </span>
                     </div>
+
                     <!-- Sidebar Inner -->
                     <div id="student-menu-wrapper">
                          <!-- Non Accordion Menu -->

@@ -82,7 +82,7 @@ window.addEventListener('scroll', handleScrollHeader);
 
 // >>>>> Start Category Sidebar Area
 var categorySidebar = document.querySelector('.menu-sidebar');
-var categoryToggle = document.querySelectorAll('.category-menu-mobile');
+var categoryToggle = document.querySelectorAll('.mobile-hamburger');
 var categoryClose = document.querySelector('.categoryClose-btn')
 categoryToggle.forEach((node) => {
   node.addEventListener('click', () => {

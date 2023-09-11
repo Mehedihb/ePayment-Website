@@ -237,46 +237,6 @@ ul.form-stepper li .form-stepper-circle {
   display: none;
 }
 
-@media (max-width: 992px) {
-  .menu-sidebar {
-    display: block;
-    background-color: var(--white);
-    position: fixed;
-    right: -300px;
-    bottom: 0;
-    top: 0;
-    margin: 0;
-    padding: 0;
-    width: 300px;
-    z-index: 10000;
-    overflow: visible;
-    transition: right 200ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-  }
-
-  .menu-sidebar .header-mobile {
-    display: block;
-    position: relative;
-    color: var(--white);
-    background-color: var(--brand-color-100);
-    cursor: pointer;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .menu-sidebar .header-mobile h5 {
-    font-size: var(--font18);
-    margin: 0px;
-  }
-
-  .show-hide {
-    display: block;
-    right: 0;
-  }
-}
-
 /* --Sidebar Inner--*/
 #student-menu-wrapper {
   display: flex;
@@ -316,6 +276,42 @@ ul.form-stepper li .form-stepper-circle {
   border-radius: 8px;
   margin-right: 12px;
   padding: 4px;
+}
+@media (max-width: 992px) {
+  .menu-sidebar {
+    display: block;
+    background-color: var(--white);
+    position: fixed;
+    right: -300px;
+    bottom: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    z-index: 10000;
+    overflow: visible;
+    transition: right 200ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  }
+  .show-hide {
+    display: block;
+    right: 0;
+  }
+  .menu-sidebar .header-mobile {
+    padding: 16px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: space-between;
+    color: var(--white);
+    background-color: var(--brand-color-100);
+  }
+  .menu-sidebar #student-menu-wrapper{
+    padding: 16px;
+  }
+
 }
 /*>>>>> End Category Sidebar Area <---------- */
 
@@ -415,6 +411,32 @@ ul.form-stepper li .form-stepper-circle {
   .notice-wrapper {
       padding: 5rem 0
   }
+  .notice-card {
+      padding: 8px 12px
+  }
+  .notice-card h6 {
+    border-radius: 0px;
+    background: none;
+    display: inline-block;
+    color: #ec9d5f;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: var(--font12);
+    padding: 0px;
+    margin-bottom: 2px;
+  }
+  .notice-card h4 {
+    color: var(--primary-black);
+    font-weight: 600;
+    font-size: var(--font14);
+    line-height: 24px;
+    margin-bottom: 2px;
+    -webkit-transition: all 300ms linear 0s;
+    -o-transition: all 300ms linear 0s;
+    transition: all 300ms linear 0s;
+  }
+  
+
 }
 
 @media (max-width: 768px) {
@@ -948,15 +970,6 @@ span.circle2 {
     transform: translateY(-50%);
     background: var(--brand-color-100);
 }
-
-
-
-
-
-
-
-
-
 
 .inner-content{
   height: 100%;

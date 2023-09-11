@@ -30,43 +30,49 @@
       <div class="header-wrapper">
 
         <a class="header-logo" href="index.html">
-          <img src="assets/images/CollegeLogo.svg" alt="logo">
-          <h1>জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমান সরকারি কলেজ, শরীয়তপুর</h1>
+            <img src="assets/images/CollegeLogo.svg" alt="logo">
+            <h1>জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমান সরকারি কলেজ, শরীয়তপুর</h1>
         </a>
+
         <div class="header-nav">
-          <ul class="header-nav-primary">
-            <li class="nav__dropdown" id="service-list">
-              <a href="#" class="dropdown-info">
-                Services
-              </a>
-              <ul class="nav__dropdown-box">
-                <li><a href="student-registration.html">Student Registration</a></li>
-                <li><a href="student-admission.html">Student Admission</a></li>
-                <li><a href="application-fee.html">Application Fee</a></li>
-                <li><a href="admission-fee.html">Admission Fee</a></li>
-                <li><a href="find-admission-invoice.html">Find Admission Invoice</a></li>
-              </ul>
-            </li>
-            <li><a href="#global-notice">Notice</a></li>
-            <li><a href="#faq">FAQ</a></li>
-          </ul>
-          <a href="login.html" class="login-btn"> Login </a>
-          <!-- <ul>
-            <li class="nav__dropdown" id="menu-list">
-              <div href="#" class="dropdown-info user-btn">
-                <img src="./assets/images/user-img.png" alt="">
-                <p class="user-context">User Name <span class="material-symbols-rounded"> arrow_drop_down </span></p>
-                <span class="header__bars material-symbols-rounded"> menu_open </span>
-              </div>
-              <ul class="nav__dropdown-box mt-4">
-                <li><a href="index-student-panel.html">Student Panel</a></li>
-                <li><a href="index.html">Back Website</a></li>
-                <li><a href="#">Log Out</a></li>
-              </ul>
-            </li>
-          </ul> -->
+            <ul class="nav-items">
+                <li class="nav-dropdown" id="service-list">
+                    <a href="#" class="dropdown-head">Services</a>
+                    <ul class="dropdown-items">
+                        <li><a href="student-registration.html">Student Registration</a></li>
+                        <li><a href="student-admission.html">Student Admission</a></li>
+                        <li><a href="application-fee.html">Application Fee</a></li>
+                        <li><a href="admission-fee.html">Admission Fee</a></li>
+                        <li><a href="find-admission-invoice.html">Find Admission Invoice</a></li>
+                    </ul>
+                </li>
+                <li><a href="#faq">Notice</a></li>
+                <li><a href="#check-invoice">About</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+
+            <ul class="d-flex align-items-center">
+                <a href="login.html" class="login-btn"> Login </a>
+                <!-- <li class="nav-dropdown" id="menu-list">
+                    <div class="dropdown-head">
+                        <div class="user-btn">
+                            <img src="./assets/images/user-img.png" alt="">
+                            <p class="user-context">User Name <span class="material-symbols-rounded"> arrow_drop_down</span></p>
+                        </div>
+                    </div>
+                    <ul class="dropdown-items mt-4">
+                        <li><a href="index-student-panel.html">Student Panel</a></li>
+                        <li><a href="index.html">Back Website</a></li>
+                        <li><a href="#">Log Out</a></li>
+                    </ul>
+                </li> -->
+                <li class="mobile-hamburger"><span class="material-symbols-rounded"> menu_open </span></li>
+            </ul>
         </div>
-      </div>
+
+        
+
+    </div>
     </div>
   </header>
   <!--header section end-->
@@ -580,7 +586,73 @@
     </div>
   </div>
 </div>
+                <!--==========>>>>> Start Menu Sidebar Area -->
+                <aside class="menu-sidebar">
+                  <div class="header-mobile">
+                      <!-- <div class="user-btn">
+                          <img src="./assets/images/user-img.png" alt="">
+                          <p class="user-context">User Name</p>
+                      </div> -->
+                      <a href="login.html" class="login-btn show"> Login </a>
+                      <span class="material-icons categoryClose-btn"> cancel </span>
+                  </div>
 
+                  <!-- Sidebar Inner -->
+                  <div id="student-menu-wrapper">
+                       <!-- Non Accordion Menu -->
+                      <a href="dashobard.html">
+                          <button class="single-menu" type="button">
+                              <span class="menu-icon"><img src="./assets/images/Dashboard-Icon.svg" alt="Dashboard" class="icon-svg"/></span>Dashboard
+                          </button>
+                      </a>
+                      <a href="profile.html">
+                          <button class="single-menu active" type="button">
+                              <span class="menu-icon"><img src="./assets/images/Profile-Icon.svg" alt="Profile"/></span>Profile
+                          </button>
+                      </a>
+                      <a href="pay-now.html">
+                          <button class="single-menu" type="button">
+                              <span class="menu-icon"><img src="./assets/images/PayNow-Icon.svg" alt="Pay Now"/></span>Pay Now
+                          </button>
+                      </a>
+                      <a href="payment-history.html">
+                          <button class="single-menu" type="button">
+                              <span class="menu-icon"><img src="./assets/images/PaymentHistory-Icon.svg" alt="Payment History"/></span>Payment History
+                          </button>
+                      </a>
+                      <a href="fees-list.html">
+                          <button class="single-menu" type="button">
+                              <span class="menu-icon"><img src="./assets/images/FeeList-Icon.svg" alt="Fee List"/></span>Fees List
+                          </button>
+                      </a>
+                      <a href="hostel-fees.html">
+                          <button class="single-menu" type="button">
+                              <span class="menu-icon"><img src="./assets/images/HostelFees-Icon.svg" alt="Hostel Fees"/></span>Hostel Fees
+                          </button>
+                      </a>
+                      <a href="admit-card.html">
+                          <button class="single-menu" type="button">
+                              <span class="menu-icon"><img src="./assets/images/AdmitCard-Icon.svg" alt="Admit Card"/></span>Admit Card
+                          </button>
+                      </a>
+                      <a href="result.html">
+                          <button class="single-menu" type="button">
+                              <span class="menu-icon"><img src="./assets/images/Result-Icon.svg" alt="Result"/></span>Result
+                          </button>
+                      </a>
+                      <a href="subject-choice.html">
+                          <button class="single-menu" type="button">
+                              <span class="menu-icon"><img src="./assets/images/SubjectChoice-Icon.svg" alt="Subject Choice"/></span>Subject Choice
+                          </button>
+                      </a>
+                      <a href="change-password.html">
+                          <button class="single-menu" type="button">
+                              <span class="menu-icon"><img src="./assets/images/ChangePassword-Icon.svg" alt="ChangePassword"/></span>Change Password
+                          </button>
+                      </a>
+                  </div>
+              </aside>
+              <!-- End Menu Sidebar Area <<<<<==========-->
 
 
 

@@ -23,20 +23,16 @@
     <header class="header fixed">
         <div class="container">
             <div class="header-wrapper">
-
                 <a class="header-logo" href="index.html">
                     <img src="assets/images/CollegeLogo.svg" alt="logo">
-                    <h1>সরকারি রাজেন্দ্র কলেজ, ফরিদপুর</h1>
+                    <h1>জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমান সরকারি কলেজ, শরীয়তপুর</h1>
                 </a>
 
                 <div class="header-nav">
-                    <ul class="header-nav-primary">
-
-                        <li class="nav__dropdown" id="service-list">
-                            <a href="#" class="dropdown-info">
-                                Services
-                            </a>
-                            <ul class="nav__dropdown-box">
+                    <ul class="nav-items d-none">
+                        <li class="nav-dropdown" id="service-list">
+                            <a href="#" class="dropdown-head">Services</a>
+                            <ul class="dropdown-items">
                                 <li><a href="student-registration.html">Student Registration</a></li>
                                 <li><a href="student-admission.html">Student Admission</a></li>
                                 <li><a href="application-fee.html">Application Fee</a></li>
@@ -48,28 +44,28 @@
                         <li><a href="#check-invoice">About</a></li>
                         <li><a href="#faq">FAQ</a></li>
                     </ul>
+
+                    <ul class="d-flex align-items-center">
+                        <!-- <a href="login.html" class="login-btn"> Login </a> -->
+                        <li class="nav-dropdown" id="menu-list">
+                            <div class="dropdown-head">
+                                <div class="user-btn">
+                                    <img src="./assets/images/user-img.png" alt="">
+                                    <p class="user-context">User Name <span class="material-symbols-rounded">
+                                            arrow_drop_down</span></p>
+                                </div>
+                            </div>
+                            <ul class="dropdown-items mt-4">
+                                <!-- <li><a href="index-student-panel.html">Student Panel</a></li> -->
+                                <li><a href="index.html">Back Website</a></li>
+                                <li><a href="#">Log Out</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-hamburger"><span class="material-symbols-rounded"> menu_open </span></li>
+                    </ul>
                 </div>
 
-                <ul class="btn-group">
-                    <!-- <li>
-            <a href="login.html" class="guestuser-btn">
-              Login/ Sign Up
-            </a>
-          </li> -->
-                    <li class="nav__dropdown" id="menu-list">
-                        <div href="#" class="dropdown-info user-btn">
-                            <img src="./assets/images/user-img.png" alt="">
-                            <p class="user-context">User Name <span class="material-symbols-rounded"> arrow_drop_down
-                                </span></p>
-                            <span class="header__bars material-symbols-rounded category-menu-mobile"> menu_open </span>
-                        </div>
-                        <ul class="nav__dropdown-box mt-4">
-                            <!-- <li><a href="index-student-panel.html">Student Panel</a></li> -->
-                            <li><a href="index.html">Back Website</a></li>
-                            <li><a href="#">Log Out</a></li>
-                        </ul>
-                    </li>
-                </ul>
+
 
             </div>
         </div>

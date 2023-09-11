@@ -24,20 +24,17 @@
   <header class="header fixed">
     <div class="container">
       <div class="header-wrapper">
-  
+
         <a class="header-logo" href="index.html">
           <img src="assets/images/CollegeLogo.svg" alt="logo">
-          <h1>সরকারি রাজেন্দ্র কলেজ, ফরিদপুর</h1>
+          <h1>জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমান সরকারি কলেজ, শরীয়তপুর</h1>
         </a>
-  
-        <div class="header-nav">
-          <ul class="header-nav-primary">
 
-            <li class="nav__dropdown" id="service-list">
-              <a href="#" class="dropdown-info">
-                Services
-              </a>
-              <ul class="nav__dropdown-box">
+        <div class="header-nav">
+          <ul class="nav-items">
+            <li class="nav-dropdown" id="service-list">
+              <a href="#" class="dropdown-head">Services</a>
+              <ul class="dropdown-items">
                 <li><a href="student-registration.html">Student Registration</a></li>
                 <li><a href="student-admission.html">Student Admission</a></li>
                 <li><a href="application-fee.html">Application Fee</a></li>
@@ -49,152 +46,361 @@
             <li><a href="#check-invoice">About</a></li>
             <li><a href="#faq">FAQ</a></li>
           </ul>
+
+          <ul class="d-flex align-items-center">
+            <a href="login.html" class="login-btn"> Login </a>
+            <!-- <li class="nav-dropdown" id="menu-list">
+                    <div class="dropdown-head">
+                        <div class="user-btn">
+                            <img src="./assets/images/user-img.png" alt="">
+                            <p class="user-context">User Name <span class="material-symbols-rounded"> arrow_drop_down</span></p>
+                        </div>
+                    </div>
+                    <ul class="dropdown-items mt-4">
+                        <li><a href="index-student-panel.html">Student Panel</a></li>
+                        <li><a href="index.html">Back Website</a></li>
+                        <li><a href="#">Log Out</a></li>
+                    </ul>
+                </li> -->
+            <li class="mobile-hamburger"><span class="material-symbols-rounded"> menu_open </span></li>
+          </ul>
         </div>
 
-        <ul class="btn-group">
-          <li>
-            <a href="login.html" class="guestuser-btn">
-              Login/ Sign Up
-            </a>
-          </li>
 
-          <!-- <li class="nav__dropdown" id="menu-list">
-            <div href="#" class="dropdown-info user-btn">
-              <img src="./assets/images/user-img.png" alt="">
-              <p class="user-context">User Name <span class="material-symbols-rounded"> arrow_drop_down </span></p>
-              <span class="header__bars material-symbols-rounded"> menu_open </span>
-            </div>
-            <ul class="nav__dropdown-box mt-4">
-              <li><a href="index-student-panel.html">Student Panel</a></li>
-              <li><a href="index.html">Back Website</a></li>
-              <li><a href="#">Log Out</a></li>
-            </ul>
-          </li> -->
-          
-        </ul>
-     
+
       </div>
     </div>
   </header>
   <!--header section end-->
-  <div class="master-layout ">
+
+  <div class="master-layout">
 
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-12">
-          <div class="terms-content">
-            <h5>Terms 1</h5>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's
-              standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-              make
-              a type specimen book. It has survived not only five centuries, but also the leap into electronic
-              typesetting,
-              remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-              containing
-              Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
-              versions
-              of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-              been
-              the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-              Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-              Aldus
-              PageMaker including versions of Lorem Ipsum.</p>
-            <h5>Terms 1</h5>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's
-              standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-              make
-              a type specimen book. It has survived not only five centuries, but also the leap into electronic
-              typesetting,
-              remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-              containing
-              Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
-              versions
-              of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-              been
-              the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-              Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-              Aldus
-              PageMaker including versions of Lorem Ipsum.</p>
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-6">
+          <div class="form-group custom-select">
+            <label class="form-label" for="studentDepartment">Department/Group <span>*</span></label>
+            <div class="select-selected">Select an option</div>
+            <div class="select-items">
+              <div>Science</div>
+              <div>Arts</div>
+              <div>Commerce</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  
-  </div>
 
-  <!--footer start-->
-  <footer class="footer">
-    <div class="footer__wrapper">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="footer__info">
-              <div class="footer__info--logo">
-                <img src="assets/images/UtkorshoLogo.svg" alt="image">
-              </div>
-              <div class="footer__info--content">
-                <p class="paragraph dark">জীবের মধ্যে সবচেয়ে সম্পূর্ণতা মানুষের। কিন্তু সবচেয়ে অসম্পূর্ণ হয়ে সে জন্মগ্রহণ করে। 
-                  বাঘ ভালুক তার জীবনযাত্রার পনেরো- আনা মূলধন নিয়ে আসে প্রকৃতির মালখানা থেকে।</p>
-                <div class="social">
-                  <ul>
-                    <li class="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li class="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li class="linkedin"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li class="youtube"><a href="#"><i class="fab fa-youtube"></i></a></li>
-                  </ul>
-                </div>
+    <!--Start Notice Section Area-->
+    <section class="notice-section my-5" id="global-notice">
+      <div class="notice-wrapper">
+        <div class="container">
+          <div class="main-title">
+            <h2>Department Name</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-12">
+              <div class="notice-card">
+                <h6>10 August 2023</h6>
+                <a data-bs-toggle="modal" data-bs-target="#viewNotice-modal">
+                  <h4>২০২১-২০২২ শিক্ষাবর্ষের ডিগ্রি পাস ১ম বর্ষের আইডি কার্ড বিতরণ সংক্রান্ত বিজ্ঞপ্তি.</h4>
+                </a>
+                <p>Admission Office</p>
               </div>
             </div>
-          </div>
-          <div class="col-lg-8">
-            <div class="footer__content-wrapper">
-              <div class="footer__list">
-                <ul>
-                  <li>Explore</li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Our Team</a></li>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">How It Works</a></li>
-                </ul>
-              </div>
-              <div class="footer__list">
-                <ul>
-                  <li>Help</li>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Support</a></li>
-                  <li><a href="#">Terms of Service</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </div>
-              <div class="download-buttons">
-                <h5>Download</h5>
-                <a href="#" class="google-play">
-                  <i class="fab fa-google-play"></i>
-                  <div class="button-content">
-                    <h6>GET IT ON <span>Google Play</span></h6>
-                  </div>
+            <div class="col-lg-3 col-md-4 col-12">
+              <div class="notice-card">
+                <h6>10 August 2023</h6>
+                <a data-bs-toggle="modal" data-bs-target="#viewNotice-modal">
+                  <h4>২০২১-২০২২ শিক্ষাবর্ষের ডিগ্রি পাস ১ম বর্ষের আইডি কার্ড বিতরণ সংক্রান্ত বিজ্ঞপ্তি.</h4>
                 </a>
+                <p>Admission Office</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+              <div class="notice-card">
+                <h6>10 August 2023</h6>
+                <a data-bs-toggle="modal" data-bs-target="#viewNotice-modal">
+                  <h4>২০২১-২০২২ শিক্ষাবর্ষের ডিগ্রি পাস ১ম বর্ষের আইডি কার্ড বিতরণ সংক্রান্ত বিজ্ঞপ্তি.</h4>
+                </a>
+                <p>Admission Office</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+              <div class="notice-card">
+                <h6>10 August 2023</h6>
+                <a data-bs-toggle="modal" data-bs-target="#viewNotice-modal">
+                  <h4>২০২১-২০২২ শিক্ষাবর্ষের ডিগ্রি পাস ১ম বর্ষের আইডি কার্ড বিতরণ সংক্রান্ত বিজ্ঞপ্তি.</h4>
+                </a>
+                <p>Admission Office</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+              <div class="notice-card">
+                <h6>10 August 2023</h6>
+                <a data-bs-toggle="modal" data-bs-target="#viewNotice-modal">
+                  <h4>২০২১-২০২২ শিক্ষাবর্ষের ডিগ্রি পাস ১ম বর্ষের আইডি কার্ড বিতরণ সংক্রান্ত বিজ্ঞপ্তি.</h4>
+                </a>
+                <p>Admission Office</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+              <div class="notice-card">
+                <h6>10 August 2023</h6>
+                <a data-bs-toggle="modal" data-bs-target="#viewNotice-modal">
+                  <h4>২০২১-২০২২ শিক্ষাবর্ষের ডিগ্রি পাস ১ম বর্ষের আইডি কার্ড বিতরণ সংক্রান্ত বিজ্ঞপ্তি.</h4>
+                </a>
+                <p>Admission Office</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+              <div class="notice-card">
+                <h6>10 August 2023</h6>
+                <a data-bs-toggle="modal" data-bs-target="#viewNotice-modal">
+                  <h4>২০২১-২০২২ শিক্ষাবর্ষের ডিগ্রি পাস ১ম বর্ষের আইডি কার্ড বিতরণ সংক্রান্ত বিজ্ঞপ্তি.</h4>
+                </a>
+                <p>Admission Office</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+              <div class="notice-card">
+                <h6>10 August 2023</h6>
+                <a data-bs-toggle="modal" data-bs-target="#viewNotice-modal">
+                  <h4>২০২১-২০২২ শিক্ষাবর্ষের ডিগ্রি পাস ১ম বর্ষের আইডি কার্ড বিতরণ সংক্রান্ত বিজ্ঞপ্তি.</h4>
+                </a>
+                <p>Admission Office</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="footer__copy">
-            <h6>&copy; Onnorokom Edtech Ltd.</h6>
+      </div>
+    </section>
+    <!--End Notice Section Area-->
+
+  </div>
+
+  <!--=====>>>>> Start Footer Area ==========-->
+  <footer class="footer-section mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-6">
+          <div class="footer-widget">
+            <h2>About</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
           </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+          <div class="footer-widget">
+            <h2>Help & Support</h2>
+            <div class=" d-flex justify-content-between">
+              <ul>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Check Invoice</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Payment Policy</a></li>
+                <li><a href="#">Refund Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+          <div class="footer-widget">
+            <h2>Company Policy</h2>
+            <div class=" d-flex justify-content-between">
+              <ul>
+                <li><a href="">Terms of Use</a></li>
+                <li><a href="terms-condition.html">Terms & Conditions</a></li>
+              </ul>
+              <ul>
+                <a class="google-play-btn" href="https://play.google.com/store/apps/details?id=com.student.payment"
+                  target="_blank">
+                  <img src="./assets/images/google-play.svg" alt="">
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <img class="getway-img" src="./assets/images/ssl-logo.webp" alt="">
+          <p class="copyright">
+            Copyright ©
+            <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script> সরকারি রাজেন্দ্র কলেজ, ফরিদপুর | <span class="fw-bold mx-2">Support by :</span> <a
+              href="https://dynamichostbd.com/" target="_blank">Dynamic Host BD</a>
+          </p>
         </div>
       </div>
     </div>
   </footer>
-  <!--footer end-->
+  <!--=====<<<<< End Footer Area ==============-->
+
+  <!--==========>>>>> Start Menu Sidebar Area -->
+  <aside class="menu-sidebar show-hide">
+    <div class="header-mobile">
+      <!-- <div class="user-btn">
+          <img src="./assets/images/user-img.png" alt="">
+          <p class="user-context">User Name</p>
+      </div> -->
+      <a href="login.html" class="login-btn show"> Login </a>
+      <span class="material-icons categoryClose-btn"> cancel </span>
+    </div>
+
+    <!-- Sidebar Inner -->
+    <div id="student-menu-wrapper">
+      <!-- Non Accordion Menu -->
+      <a href="dashobard.html">
+        <button class="single-menu" type="button">
+          <span class="menu-icon"><img src="./assets/images/Dashboard-Icon.svg" alt="Dashboard"
+              class="icon-svg" /></span>Dashboard
+        </button>
+      </a>
+      <a href="profile.html">
+        <button class="single-menu active" type="button">
+          <span class="menu-icon"><img src="./assets/images/Profile-Icon.svg" alt="Profile" /></span>Profile
+        </button>
+      </a>
+      <a href="pay-now.html">
+        <button class="single-menu" type="button">
+          <span class="menu-icon"><img src="./assets/images/PayNow-Icon.svg" alt="Pay Now" /></span>Pay Now
+        </button>
+      </a>
+      <a href="payment-history.html">
+        <button class="single-menu" type="button">
+          <span class="menu-icon"><img src="./assets/images/PaymentHistory-Icon.svg"
+              alt="Payment History" /></span>Payment History
+        </button>
+      </a>
+      <a href="fees-list.html">
+        <button class="single-menu" type="button">
+          <span class="menu-icon"><img src="./assets/images/FeeList-Icon.svg" alt="Fee List" /></span>Fees List
+        </button>
+      </a>
+      <a href="hostel-fees.html">
+        <button class="single-menu" type="button">
+          <span class="menu-icon"><img src="./assets/images/HostelFees-Icon.svg" alt="Hostel Fees" /></span>Hostel Fees
+        </button>
+      </a>
+      <a href="admit-card.html">
+        <button class="single-menu" type="button">
+          <span class="menu-icon"><img src="./assets/images/AdmitCard-Icon.svg" alt="Admit Card" /></span>Admit Card
+        </button>
+      </a>
+      <a href="result.html">
+        <button class="single-menu" type="button">
+          <span class="menu-icon"><img src="./assets/images/Result-Icon.svg" alt="Result" /></span>Result
+        </button>
+      </a>
+      <a href="subject-choice.html">
+        <button class="single-menu" type="button">
+          <span class="menu-icon"><img src="./assets/images/SubjectChoice-Icon.svg"
+              alt="Subject Choice" /></span>Subject Choice
+        </button>
+      </a>
+      <a href="change-password.html">
+        <button class="single-menu" type="button">
+          <span class="menu-icon"><img src="./assets/images/ChangePassword-Icon.svg"
+              alt="ChangePassword" /></span>Change Password
+        </button>
+      </a>
+    </div>
+  </aside>
+  <!-- End Menu Sidebar Area <<<<<==========-->
+
+  <!-- View Notice Modal -->
+  <div class="modal fade" id="viewNotice-modal" data-bs-backdrop="static" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title">View Notice</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="form-group">
+                <label class="form-label" for="fullName">Full Name <span>*</span></label>
+                <input class="form-control" type="text" name="fullName" id="fullName" placeholder="Enter Name"
+                  required />
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group">
+                <label class="form-label" for="fatherName">Father's Name <span>*</span></label>
+                <input class="form-control" type="text" name="fatherName" id="fatherName" placeholder="Enter Name"
+                  required />
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group">
+                <label class="form-label" for="mobile">Mobile <span>*</span></label>
+                <input class="form-control" type="text" name="mobile" id="mobile" placeholder="Enter No" required />
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group">
+                <label class="form-label" for="rollNo">Admission/College Roll <span>*</span></label>
+                <input class="form-control" type="text" name="rollNo" id="rollNo" placeholder="Enter Roll" required />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group custom-select">
+                <label class="form-label" for="gender">Academic Session <span>*</span></label>
+                <div class="select-selected">Select an option</div>
+                <div class="select-items">
+                  <div>2021 - 2023</div>
+                  <div>2022 - 2024</div>
+                  <div>2023 - 2025</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group custom-select">
+                <label class="form-label" for="academicLevel">Academic Level <span>*</span></label>
+                <div class="select-selected">Select an option</div>
+                <div class="select-items">
+                  <div>Master’s Regular</div>
+                  <div>HSC Regular</div>
+                  <div>Honour's Regular</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group custom-select">
+                <label class="form-label" for="studentDepartment">Department/Group <span>*</span></label>
+                <div class="select-selected">Select an option</div>
+                <div class="select-items">
+                  <div>Science</div>
+                  <div>Arts</div>
+                  <div>Commerce</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group custom-select">
+                <label class="form-label" for="studentClass">Class <span>*</span></label>
+                <div class="select-selected">Select an option</div>
+                <div class="select-items">
+                  <div>1st Year</div>
+                  <div>2nd Year</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- View Notice Modal -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/script.js"></script>

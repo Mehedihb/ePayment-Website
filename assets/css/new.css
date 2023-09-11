@@ -2346,11 +2346,13 @@ gap: 20px;
 
 
 /*--==========>>>>> Start Modal Section Area --*/
-#paymentModal .modal-dialog {
+#studentRegistration-modal .modal-dialog {
   max-width: 540px;
 }
 
 .modal-body {
+  display: flex;
+  flex-direction: column;
   position: relative;
   border-radius: 0px;
 }

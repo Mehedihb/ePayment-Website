@@ -1142,32 +1142,19 @@ span.circle2 {
 
   .hero-img {
     width: 100%;
-    text-align: center;
   }
 
   .hero-img::before {
-    -webkit-transform: scale(0.8) translate(-50%, 0);
-    transform: scale(0.8) translate(-50%, 0);
-    top: 0;
-    left: 40%
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
 
 }
 
 @media (max-width: 767.98px) {
-  .hero .main-heading {
-    font-size: 3rem;
-    text-align: center;
-
-  }
-
-  .hero .paragraph {
-    font-size: 1.5rem;
-    line-height: 3.4rem
-  }
-
-  .hero .col-lg-6 {
-    height: auto
+  .hero {
+    margin-top: 6rem;
   }
 
   .hero-wrapper {
@@ -1179,10 +1166,9 @@ span.circle2 {
   }
 
   .hero-img::before {
-    -webkit-transform: scale(0.6) translate(-50%, 0);
-    transform: scale(0.6) translate(-50%, 0);
-    top: 0;
-    left: 22.5%
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
 }
 

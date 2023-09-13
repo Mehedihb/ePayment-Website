@@ -824,3 +824,91 @@ ul,li {
 }
 
 /* <<<<< End Footer Sction Area ---------- */
+
+
+
+/*--------- Start Slab Discount List Table Area ---------*/
+.viewData-table {
+  display: flex;
+  flex-direction: column;
+  empty-cells: show;
+  border-spacing: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+.viewData-table tr {
+  width: 100%;
+  display: flex;
+}
+
+.viewData-table td,
+.viewData-table th {
+  flex-grow: 1;
+  display: block;
+  padding: 0rem 1rem;
+  font-size: var(--font14);
+  text-transform: uppercase;
+  color: var(--brand-color-100);
+}
+
+/* Start Table Head Area */
+.viewData-table thead {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+
+.viewData-table thead tr th {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+/* Start Table Body Area */
+.viewData-table tbody {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-y: auto;
+  font-size: var(--font14);
+  color: var(--primary-black);
+  height: 100%;
+}
+
+.viewData-table tbody tr {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.viewData-table tbody tr td {
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  font-size: var(--font14);
+  color: var(--primary-black);
+}
+
+/* Start Table Alignment Area*/
+.viewData-table thead th:nth-child(1),
+.viewData-table tbody td:nth-child(1) {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: start;
+}
+
+.viewData-table thead th:nth-child(2),
+.viewData-table tbody td:nth-child(2) {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+

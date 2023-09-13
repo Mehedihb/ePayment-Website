@@ -572,7 +572,7 @@ span.circle2 {
   gap: 8px;
   box-shadow: 0 11px 20px rgb(123 149 162 / 15%);
   line-height: 26px;
-  padding: 24px;
+  padding: 16px;
   border-radius: 12px 12px 12px 12px;
   margin-top: 40px;
   position: relative;
@@ -2275,10 +2275,6 @@ span.circle2 {
 /*--==========>>>>> Start Modal Section Area --*/
 #studentRegistration-modal .modal-dialog {
   max-width: 540px;
-}
-
-#viewNotice-modal .modal-dialog {
-  max-width: 70%;
 }
 
 .modal-body {

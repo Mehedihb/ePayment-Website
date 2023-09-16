@@ -525,10 +525,10 @@ span.circle2 {
   display: inline-block;
 }
 
-/* .header-nav .nav-items>li:first-child a {
+.header-nav .nav-items>li:first-child a {
   font-weight: 800;
   color: var(--brand-color-100);
-} */
+}
 
 .header-nav .nav-items>li:nth-child(n+2) {
   margin-left: 16px;

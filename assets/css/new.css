@@ -815,40 +815,38 @@ ul.form-stepper li .form-stepper-circle {
 
 /*--==========>>>>> Start Breadcrumbs Area --*/
 .breadcrumbs {
+  width: 100%;
   border-bottom: 1px solid var(--border-color);
   padding: 20px 16px;
-}
-
-.breadcrumbs .bread-list {
   display: flex;
   align-items: center;
-  margin: 0px;
+  margin-bottom: 16px;
 }
 
-.breadcrumbs .bread-list li {
+.breadcrumbs li {
   display: flex;
   align-items: center;
 }
 
-.breadcrumbs .bread-list li span {
+.breadcrumbs li span {
   margin: 0px 10px;
   font-size: var(--font18);
   font-weight: 600;
   color: var(--primary-black);
 }
 
-.breadcrumbs .bread-list li a {
+.breadcrumbs li a {
   color: var(--primary-black);
   font-size: var(--font14);
   font-weight: 400;
   text-transform: capitalize;
 }
 
-.breadcrumbs .bread-list li.active a {
+.breadcrumbs li.active a {
   color: var(--brand-color-100);
 }
 
-.breadcrumbs .bread-list li a:hover {
+.breadcrumbs li a:hover {
   color: var(--brand-color-100);
 }
 

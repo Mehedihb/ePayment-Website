@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -11,14 +11,11 @@
     <!--stylesheet-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/new.css">
 </head>
 
-<body class="h-100">
+<body>
     <!--header section start-->
     <header class="header fixed">
         <div class="container">
@@ -74,63 +71,73 @@
     <div class="master-layout-fixed">
         <div class="layout-body container">
             <div class="layout-sidebar">
-                 <!--==========>>>>> Start Menu Sidebar Area -->
-                 <aside class="menu-sidebar">
+                <!--==========>>>>> Start Menu Sidebar Area -->
+                <aside class="menu-sidebar">
                     <div class="header-mobile">
                         <h5>Category</h5>
                         <span class="material-icons categoryClose-btn"> cancel </span>
                     </div>
                     <!-- Sidebar Inner -->
                     <div id="student-menu-wrapper">
-                         <!-- Non Accordion Menu -->
+                        <!-- Non Accordion Menu -->
                         <a href="dashobard.html">
                             <button class="single-menu" type="button">
-                                <span class="menu-icon"><img src="./assets/images/Dashboard-Icon.svg" alt="Dashboard" class="icon-svg"/></span>Dashboard
+                                <span class="menu-icon"><img src="./assets/images/Dashboard-Icon.svg" alt="Dashboard"
+                                        class="icon-svg" /></span>Dashboard
                             </button>
                         </a>
                         <a href="profile.html">
                             <button class="single-menu" type="button">
-                                <span class="menu-icon"><img src="./assets/images/Profile-Icon.svg" alt="Profile"/></span>Profile
+                                <span class="menu-icon"><img src="./assets/images/Profile-Icon.svg"
+                                        alt="Profile" /></span>Profile
                             </button>
                         </a>
                         <a href="pay-now.html">
                             <button class="single-menu" type="button">
-                                <span class="menu-icon"><img src="./assets/images/PayNow-Icon.svg" alt="Pay Now"/></span>Pay Now
+                                <span class="menu-icon"><img src="./assets/images/PayNow-Icon.svg"
+                                        alt="Pay Now" /></span>Pay Now
                             </button>
                         </a>
                         <a href="payment-history.html">
                             <button class="single-menu active" type="button">
-                                <span class="menu-icon"><img src="./assets/images/PaymentHistory-Icon.svg" alt="Payment History"/></span>Payment History
+                                <span class="menu-icon"><img src="./assets/images/PaymentHistory-Icon.svg"
+                                        alt="Payment History" /></span>Payment History
                             </button>
                         </a>
                         <a href="fees-list.html">
                             <button class="single-menu" type="button">
-                                <span class="menu-icon"><img src="./assets/images/FeeList-Icon.svg" alt="Fee List"/></span>Fees List
+                                <span class="menu-icon"><img src="./assets/images/FeeList-Icon.svg"
+                                        alt="Fee List" /></span>Fees List
                             </button>
                         </a>
                         <a href="hostel-fees.html">
                             <button class="single-menu" type="button">
-                                <span class="menu-icon"><img src="./assets/images/HostelFees-Icon.svg" alt="Hostel Fees"/></span>Hostel Fees
+                                <span class="menu-icon"><img src="./assets/images/HostelFees-Icon.svg"
+                                        alt="Hostel Fees" /></span>Hostel Fees
                             </button>
                         </a>
                         <a href="admit-card.html">
                             <button class="single-menu" type="button">
-                                <span class="menu-icon"><img src="./assets/images/AdmitCard-Icon.svg" alt="Admit Card"/></span>Admit Card
+                                <span class="menu-icon"><img src="./assets/images/AdmitCard-Icon.svg"
+                                        alt="Admit Card" /></span>Admit Card
                             </button>
                         </a>
                         <a href="result.html">
                             <button class="single-menu" type="button">
-                                <span class="menu-icon"><img src="./assets/images/Result-Icon.svg" alt="Result"/></span>Result
+                                <span class="menu-icon"><img src="./assets/images/Result-Icon.svg"
+                                        alt="Result" /></span>Result
                             </button>
                         </a>
                         <a href="subject-choice.html">
                             <button class="single-menu" type="button">
-                                <span class="menu-icon"><img src="./assets/images/SubjectChoice-Icon.svg" alt="Subject Choice"/></span>Subject Choice
+                                <span class="menu-icon"><img src="./assets/images/SubjectChoice-Icon.svg"
+                                        alt="Subject Choice" /></span>Subject Choice
                             </button>
                         </a>
                         <a href="change-password.html">
                             <button class="single-menu" type="button">
-                                <span class="menu-icon"><img src="./assets/images/ChangePassword-Icon.svg" alt="ChangePassword"/></span>Change Password
+                                <span class="menu-icon"><img src="./assets/images/ChangePassword-Icon.svg"
+                                        alt="ChangePassword" /></span>Change Password
                             </button>
                         </a>
                     </div>
@@ -139,272 +146,72 @@
             </div>
 
             <div class="layout-details">
-                <div class="layout-inner h-100">
+                <div class="layout-inner">
                     <!--==========>>>>> Start Breadcrumbs Area -->
-                    <div class="breadcrumbs">
-                        <ul class="bread-list">
-                            <li><a href="index.html">Home</a> <span class="material-symbols-rounded"> trending_flat
-                                </span>
-                            </li>
-                            <li class="active"><a href="">Fees List</a></li>
-                        </ul>
-                    </div>
+                    <ul class="breadcrumbs">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Payment History</a></li>
+                    </ul>
                     <!-- End Breadcrumbs Area <<<<<==========-->
 
-                    <div class="row h-100">
-                        <div class="col-12">
-                            <table class="feeList-table">
-                                <thead>
-                                  <tr>
-                                    <th>Purpose</th>
-                                    <th>Start Date</th>
-                                    <th>Expired Date</th>
-                                    <th>Additional Date</th>
-                                    <th>Amount</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>
-                                      <p>সেশন ফি (সাধারণ শিক্ষার্থী)</p>
-                                    </td>
-                                    <td>
-                                      <p>01 Jan 2023</p>
-                                    </td>
-                                    <td>
-                                        <p>12 Jan 2023</p>
-                                    </td>
-                                    <td>
-                                        <p>12 Jan 2023</p>
-                                    </td>
-                                    <td>
-                                        <p>১০০০০</p>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td>
-                                      <p>সেশন ফি (সাধারণ শিক্ষার্থী)</p>
-                                    </td>
-                                    <td>
-                                      <p>01 Jan 2023</p>
-                                    </td>
-                                    <td>
-                                        <p>12 Jan 2023</p>
-                                    </td>
-                                    <td>
-                                        <p>12 Jan 2023</p>
-                                    </td>
-                                    <td>
-                                        <p>১০০০০</p>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td>
-                                      <p>সেশন ফি (সাধারণ শিক্ষার্থী)</p>
-                                    </td>
-                                    <td>
-                                      <p>01 Jan 2023</p>
-                                    </td>
-                                    <td>
-                                        <p>12 Jan 2023</p>
-                                    </td>
-                                    <td>
-                                        <p>12 Jan 2023</p>
-                                    </td>
-                                    <td>
-                                        <p>১০০০০</p>
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                        </div>
-                    </div>
-
+                    <table class="table align-middle">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Purpose</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>01</p>
+                                </td>
+                                <td>
+                                    <p>সেশন ফি (সাধারণ শিক্ষার্থী)</p>
+                                </td>
+                                <td>
+                                    <p>01 Jan 2023</p>
+                                </td>
+                                <td>
+                                    <p>1200</p>
+                                </td>
+                                <td>
+                                    <p>Paid</p>
+                                </td>
+                                <td>
+                                    <p>View Invoice</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>01</p>
+                                </td>
+                                <td>
+                                    <p>সেশন ফি (সাধারণ শিক্ষার্থী)</p>
+                                </td>
+                                <td>
+                                    <p>01 Jan 2023</p>
+                                </td>
+                                <td>
+                                    <p>1200</p>
+                                </td>
+                                <td>
+                                    <p>Due</p>
+                                </td>
+                                <td>
+                                    <p>Pay Now</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
 
-        <!--==========>>>>> Start Modal Section Area -->
-        <!-- Start Authentication Modal -->
-        <div class="modal fade" id="authentication-modal" tabindex="-1" role="dialog" aria-labelledby="popupmodal"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        <div class="form-tab">
-                            <ul class="nav nav-tabs nav-justified" role="tablist">
-                                <li class="nav-item">
-                                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#log-in"
-                                        type="button" role="tab" aria-controls="log-in" aria-selected="true">Log
-                                        In</button>
-                                </li>
-                                <li class="nav-item">
-                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#register"
-                                        type="button" role="tab" aria-controls="register"
-                                        aria-selected="false">Register</button>
-                                </li>
-                            </ul>
-                            <div class="tab-content">
-                                <div class="tab-pane fade show active" id="log-in" role="tabpanel">
-                                    <form action="#">
-                                        <div class="row">
-                                            <!-- Single Item -->
-                                            <div class="col-12 form-group">
-                                                <label for="Phone">Phone</label>
-                                                <input type="text" class="form-control" id="Phone" required />
-                                            </div>
-                                            <!-- Single Item -->
-                                            <div class="col-12 form-group">
-                                                <label for="Password">Password</label>
-                                                <input type="password" class="form-control" id="Password" required />
-                                            </div>
-                                        </div>
-                                        <div class="form-footer">
-                                            <span class="forgot-link" data-bs-target="#password-recovery-modal"
-                                                data-bs-toggle="modal" data-bs-dismiss="modal">Forgot Password?</span>
-                                            <button type="submit" class="btn btn-primary">LOG IN<span
-                                                    class="material-icons"> trending_flat </span></button>
-                                        </div>
-                                    </form>
-                                    <!-- Start Auth Social Area -->
-                                    <div class="auth-social">
-                                        <p class="text-center">or sign in with</p>
-                                        <div class="row">
-                                            <div class="col-sm-6 col-12">
-                                                <a href="#" class="btn btn-login">
-                                                    <img src="./asset/img/google.svg" alt="" />
-                                                    Login With Google
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-6 col-12">
-                                                <a href="#" class="btn btn-login">
-                                                    <img src="./asset/img/facebook.svg" alt="" />
-                                                    Login With Facebook
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Start Auth Social Area -->
-                                </div>
-                                <div class="tab-pane fade" id="register" role="tabpanel">
-                                    <form action="#">
-                                        <div class="row">
-                                            <!-- Single Item -->
-                                            <div class="col-12 col-sm-6 form-group">
-                                                <label for="full-name">Full Name</label>
-                                                <input type="text" class="form-control" id="full-name" required />
-                                            </div>
-                                            <!-- Single Item -->
-                                            <div class="col-12 form-group">
-                                                <label for="phone">Phone</label>
-                                                <div class="verify-container">
-                                                    <input type="text" class="form-control" id="Phone" required />
-                                                    <span>Send</span>
-                                                </div>
-                                            </div>
-                                            <!-- Single Item -->
-                                            <div class="col-12 form-group">
-                                                <label for="otp">OTP</label>
-                                                <input type="text" class="form-control" id="otp" required />
-                                            </div>
-                                            <!-- Single Item -->
-                                            <div class="col-12 form-group">
-                                                <label for="email">Email</label>
-                                                <input type="email" class="form-control" id="email" required />
-                                            </div>
-                                            <!-- Single Item -->
-                                            <div class="col-12 form-group">
-                                                <label for="register-password">Password</label>
-                                                <input type="password" class="form-control" id="register-password"
-                                                    required />
-                                            </div>
-                                            <!-- Single Item -->
-                                            <div class="col-12 form-group">
-                                                <label for="confirm-register-password">Confirm Password</label>
-                                                <input type="password" class="form-control"
-                                                    id="confirm-register-password" required />
-                                            </div>
-                                        </div>
-                                        <div class="form-footer">
-                                            <div class="custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="register-policy"
-                                                    required />
-                                                <label class="custom-control-label" for="register-policy">I agree to the
-                                                    <a href="#">privacy policy</a></label>
-                                            </div>
-                                            <button type="submit" class="btn btn-primary">SIGN UP<span
-                                                    class="material-icons"> trending_flat</span></button>
-                                        </div>
-                                    </form>
-                                    <!-- Start Auth Social Area -->
-                                    <div class="auth-social">
-                                        <p class="text-center">or sign in with</p>
-                                        <div class="row">
-                                            <div class="col-sm-6 col-12">
-                                                <a href="#" class="btn btn-login">
-                                                    <img src="./asset/img/google.svg" alt="" />
-                                                    Login With Google
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-6 col-12">
-                                                <a href="#" class="btn btn-login">
-                                                    <img src="./asset/img/facebook.svg" alt="" />
-                                                    Login With Facebook
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Start Auth Social Area -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Start Password Recovery Modal -->
-        <div class="modal fade" id="password-recovery-modal" tabindex="-1" role="dialog" aria-labelledby="popupmodal"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        <h5 class="modal-title">Reset Password</h5>
-                        <form action="#">
-                            <div class="row">
-                                <!-- Single Item -->
-                                <div class="col-12 form-group">
-                                    <label for="phone">Phone</label>
-                                    <div class="verify-container">
-                                        <input type="text" class="form-control" id="Phone" />
-                                        <span>Send</span>
-                                    </div>
-                                </div>
-                                <!-- Single Item -->
-                                <div class="col-12 form-group">
-                                    <label for="otp">OTP</label>
-                                    <input type="text" class="form-control" id="otp" />
-                                </div>
-                                <!-- Single Item -->
-                                <div class="col-12 form-group">
-                                    <label for="new-password">New Password</label>
-                                    <input type="password" class="form-control" id="new-password" />
-                                </div>
-                                <!-- Single Item -->
-                                <div class="col-12 form-group">
-                                    <label for="confirm-new-password">Confirm Password</label>
-                                    <input type="password" class="form-control" id="confirm-new-password" />
-                                </div>
-                            </div>
-                            <div class="form-footer d-flex justify-content-center mt-3">
-                                <button type="submit" class="btn btn-primary">Change Password</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
 

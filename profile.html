@@ -166,16 +166,8 @@
                                     role="tab" aria-controls="studentInfo">Student Info</button>
                             </li>
                             <li class="nav-item">
-                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#guardianInfo" role="tab"
-                                    aria-controls="guardianInfo">Guardian Info</button>
-                            </li>
-                            <li class="nav-item">
                                 <button class="nav-link" data-bs-toggle="tab" data-bs-target="#academicInfo" role="tab"
                                     aria-controls="academicInfo">Academic Info</button>
-                            </li>
-                            <li class="nav-item">
-                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#subjectList" role="tab"
-                                    aria-controls="subjectList">Subject List</button>
                             </li>
                         </ul>
 
@@ -186,144 +178,191 @@
                                         <h5>Personal Info</h5>
                                         <hr class="colorgraph" />
                                     </div>
-                                    <div class="col-lg-3 col-md-4 col-12">
-                                        <div class="user-img-uploader">
-                                            <img src="./assets/images/user-img.png" alt="User Image" />
-                                            <input type="file" name="image" id="profile-photo" />
-                                            <span class="upload-btn">Change</span>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="form-group">
+                                            <label class="form-label" for="fullName">Full Name
+                                                <span>*</span></label>
+                                            <input class="form-control" type="text" name="fullName" id="fullName"
+                                                placeholder="Enter Name" value="Mehedi Hassan" disabled />
                                         </div>
                                     </div>
-
-                                    <div class="col-lg-9 col-md-8 col-12">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-12">
-                                                <div class="form-group">
-                                                    <label class="form-label" for="fullName">Full Name
-                                                        <span>*</span></label>
-                                                    <input class="form-control" type="text" name="fullName"
-                                                        id="fullName" placeholder="Enter Name" required />
-                                                </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="form-group custom-select disabled">
+                                            <label class="form-label" for="gender">Gender<span>*</span></label>
+                                            <div class="select-selected">Male</div>
+                                            <div class="select-items">
+                                                <div>Male</div>
+                                                <div>Female</div>
+                                                <div>Other</div>
                                             </div>
-                                            <div class="col-lg-6 col-12">
-                                                <div class="form-group custom-select">
-                                                    <label class="form-label" for="gender">Gender<span>*</span></label>
-                                                    <div class="select-selected">Select an option</div>
-                                                    <div class="select-items">
-                                                        <div>Male</div>
-                                                        <div>Female</div>
-                                                        <div>Other</div>
-                                                    </div>
-                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="form-group">
+                                            <label class="form-label" for="picture">Picture
+                                                <span>(Passport Size)</span></label>
+                                            <input class="form-control" type="file" name="picture" id="picture" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="form-group custom-select desa">
+                                            <label class="form-label" for="Blood">Blood
+                                                Group<span>*</span></label>
+                                            <div class="select-selected">Select an option</div>
+                                            <div class="select-items">
+                                                <div>A+ (Positive)</div>
+                                                <div>A- (Negative)</div>
+                                                <div>B+ (Positive)</div>
                                             </div>
-                                            <div class="col-lg-6 col-12">
-                                                <div class="form-group custom-select">
-                                                    <label class="form-label" for="Blood">Blood
-                                                        Group<span>*</span></label>
-                                                    <div class="select-selected">Select an option</div>
-                                                    <div class="select-items">
-                                                        <div>A+ (Positive)</div>
-                                                        <div>A- (Negative)</div>
-                                                        <div>B+ (Positive)</div>
-                                                    </div>
-                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="form-group">
+                                            <label class="form-label" for="fatherName">Father's Name
+                                                <span>*</span></label>
+                                            <input class="form-control" type="text" name="fatherName" id="fatherName"
+                                                placeholder="Enter Name" required />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="form-group">
+                                            <label class="form-label" for="motherName">Mother's Name
+                                                <span>*</span></label>
+                                            <input class="form-control" type="text" name="motherName" id="motherName"
+                                                placeholder="Enter Name" required />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="form-group">
+                                            <label class="form-label" for="dob">Date of Birth
+                                                <span>*</span></label>
+                                            <input class="form-control" type="date" name="dob" id="dob" required />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="form-group custom-select disabled">
+                                            <label class="form-label" for="Blood">Religion
+                                                <span>*</span></label>
+                                            <div class="select-selected">Select an option</div>
+                                            <div class="select-items">
+                                                <div>Islam</div>
+                                                <div>Hinduism</div>
                                             </div>
-                                            <div class="col-lg-6 col-12">
-                                                <div class="form-group">
-                                                    <label class="form-label" for="fatherName">Father's Name
-                                                        <span>*</span></label>
-                                                    <input class="form-control" type="text" name="fatherName"
-                                                        id="fatherName" placeholder="Enter Name" required />
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-12">
-                                                <div class="form-group">
-                                                    <label class="form-label" for="motherName">Mother's Name
-                                                        <span>*</span></label>
-                                                    <input class="form-control" type="text" name="motherName"
-                                                        id="motherName" placeholder="Enter Name" required />
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-12">
-                                                <div class="form-group">
-                                                    <label class="form-label" for="address">Address
-                                                        <span>*</span></label>
-                                                    <input class="form-control" type="text" name="address" id="address"
-                                                        placeholder="Village, Post, Upozilla, District" required />
-                                                </div>
-                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="form-group">
+                                            <label class="form-label" for="mobileNo">Mobile No
+                                                <span>*</span></label>
+                                            <input class="form-control" type="tel" name="mobileNo" id="mobileNo"
+                                                placeholder="Enter Mobile" required />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="form-group">
+                                            <label class="form-label" for="email">Email <span>*</span></label>
+                                            <input class="form-control" type="email" name="email" id="email"
+                                                placeholder="Enter Email" required />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="form-group">
+                                            <label class="form-label" for="address">Address
+                                                <span>*</span></label>
+                                            <input class="form-control" type="text" name="address" id="address"
+                                                placeholder="Village, Post, Upozilla, District" required />
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="tab-pane fade" id="guardianInfo">
-                                Content of Tab 3
+                                <div class="row">
+                                    <div class="col-12 section-header">
+                                        <h5>Guardian Info</h5>
+                                        <hr class="colorgraph" />
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="form-group">
+                                            <label class="form-label" for="gurdianName">Gurdian Name
+                                                <span>*</span></label>
+                                            <input class="form-control" type="text" name="gurdianName" id="gurdianName"
+                                                placeholder="Enter Name" required />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="form-group">
+                                            <label class="form-label" for="gurdianMobile">Gurdian Mobile
+                                                <span>*</span></label>
+                                            <input class="form-control" type="text" name="gurdianMobile"
+                                                id="gurdianMobile" placeholder="Enter Name" required />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="form-group">
+                                            <label class="form-label" for="gurdianMobile">Gurdian Relation
+                                                <span>*</span></label>
+                                            <input class="form-control" type="text" name="gurdianMobile"
+                                                id="gurdianMobile" placeholder="Father" disabled />
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Save</button>
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="academicInfo">
-                                <div class="row h-100">
-                                    <div class="col-12 h-100">
-                                        <table class="viewData-table h-100">
-                                            <tbody>
-                                                <tr>
-                                                    <th>Software ID</th>
-                                                    <td>
-                                                        <p>STD-00188</p>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Software ID</th>
-                                                    <td>
-                                                        <p>STD-00188</p>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Software ID</th>
-                                                    <td>
-                                                        <p>STD-00188</p>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Software ID</th>
-                                                    <td>
-                                                        <p>STD-00188</p>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Software ID</th>
-                                                    <td>
-                                                        <p>STD-00188</p>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Software ID</th>
-                                                    <td>
-                                                        <p>STD-00188</p>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Software ID</th>
-                                                    <td>
-                                                        <p>STD-00188</p>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Software ID</th>
-                                                    <td>
-                                                        <p>STD-00188</p>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Software ID</th>
-                                                    <td>
-                                                        <p>STD-00188</p>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="subjectList">
-                                Content of Tab 3
+                                <table class="table align-middle">
+                                    <tbody>
+                                        <tr>
+                                            <th>Software ID</th>
+                                            <td>STD-00188</td>
+                                        </tr>
+                                        <tr>
+                                            <th>College Roll</th>
+                                            <td>20211</td>
+                                        </tr>
+                                        <tr>
+                                            <th>SSC GPA</th>
+                                            <td>--</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Academic Session</th>
+                                            <td>2017-2018</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Department/Group</th>
+                                            <td>Islamic History & Culture</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Academic Level</th>
+                                            <td>(Honour's)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>SAcademic Class</th>
+                                            <td>3rd Year</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Student Type</th>
+                                            <td>Regular</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Admission ID</th>
+                                            <td>123</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Registration No</th>
+                                            <td>6070809</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Readmission College Roll</th>
+                                            <td>--</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Hostel Name</th>
+                                            <td>নবনির্মিত ছাত্রাবাস</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Hostel Room No</th>
+                                            <td>123</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>

@@ -152,12 +152,12 @@ li {
 }
 
 .section-header h5 {
-  font-size: var(--font18);
-  color: var(--text-black);
+  color: var(--primary-black);
+  font-size: var(--font16);
 }
 
 .section-header hr.colorgraph {
-  height: 5px;
+  height: 4px;
   border-top: 0;
   background: #c4e17f;
   background: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
@@ -444,7 +444,7 @@ span.circle2 {
   width: 100%;
   min-height: 100%;
   background-color: var(--white);
-  padding: 16px 24px;
+  padding: 0px 24px 16px 24px;
 }
 
 @media (max-width: 640px) {
@@ -637,8 +637,9 @@ span.circle2 {
   display: none;
 }
 
-.btn-group {
+.btn-group2 {
   display: flex;
+  gap: 16px;
   align-items: center;
   justify-content: center;
 }
@@ -950,9 +951,11 @@ span.circle2 {
   align-items: center;
   justify-content: center;
 }
-.modal-content .modal-body  img{
+
+.modal-content .modal-body img {
   width: 100%;
 }
+
 .modal-footer {
   padding: 16px;
   border-top: 1px solid var(--border-color);
@@ -963,24 +966,24 @@ span.circle2 {
 
 /* <<<<< End Modal Area ---------- */
 
-/*--------- Start Slab Discount List Table Area ---------*/
-
-
+/* >>>>> Start Table Style Area ---------- */
 .table thead tr {
   font-size: var(--font14);
-  text-transform: uppercase;
   border-bottom: 1px solid var(--border-color);
 }
 
-.table thead tr th {
-  color: var(--brand-color-100);
-}
 .table tbody tr {
-  height: 60px;
+  height: 48px;
   font-size: var(--font14);
   border-bottom: 1px solid var(--border-color);
 }
 
-.table tbody tr td {
+.table tr th {
+  text-transform: uppercase;
+  color: var(--brand-color-100);
+}
+
+.table tr td {
   color: var(--primary-black);
 }
+/* <<<<< End Table Style Area ---------- */

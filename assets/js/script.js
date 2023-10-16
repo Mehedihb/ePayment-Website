@@ -52,20 +52,24 @@ document.addEventListener("DOMContentLoaded", function () {
   customSelects.forEach(customSelect => {
     const selectedOption = customSelect.querySelector(".select-selected");
     const dropdownItems = customSelect.querySelectorAll(".select-items > div");
+    const isDisabled = customSelect.classList.contains("disabled"); // Check for the 'disabled' class
 
-    selectedOption.addEventListener("click", function () {
-      const selectItems = this.nextElementSibling;
-      selectItems.style.display = selectItems.style.display === "block" ? "none" : "block";
-    });
-
-    dropdownItems.forEach(item => {
-      item.addEventListener("click", function () {
-        selectedOption.textContent = this.textContent;
-        selectedOption.click();
+    if (!isDisabled) {
+      selectedOption.addEventListener("click", function () {
+        const selectItems = this.nextElementSibling;
+        selectItems.style.display = selectItems.style.display === "block" ? "none" : "block";
       });
-    });
+
+      dropdownItems.forEach(item => {
+        item.addEventListener("click", function () {
+          selectedOption.textContent = this.textContent;
+          selectedOption.click();
+        });
+      });
+    }
   });
 });
+
 // <<<<< End JavaScript to handle the custom select behavior
 
 // >>>>> Start Function to handle scroll event and toggle class 'fixed' for .headerScroll

@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>ePayment | সরকারি রাজেন্দ্র কলেজ, ফরিদপুর</title>
-  <link rel="icon" type="image/svg+xml" sizes="32x32" href="/assets/images/favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon.png">
 
   <!--stylesheet-->
@@ -20,7 +19,7 @@
 
 <body>
 
-  <!--header section start-->
+  <!--==========>>>>> Start Header Section Area -->
   <header class="header headerScroll">
     <div class="container">
       <div class="header-wrapper">
@@ -46,28 +45,28 @@
             <li><a href="notice.html">Notice</a></li>
           </ul>
 
-          <ul class="d-flex align-items-center">
-            <a href="login.html" class="login-btn"> Login </a>
+          <ul class="dynamic-items">
+            <li><a href="login.html" class="login-btn"> Login </a></li>
             <!-- <li class="nav-dropdown" id="menu-list">
-                    <div class="dropdown-head">
-                        <div class="user-btn">
-                            <img src="./assets/images/user-img.png" alt="">
-                            <p class="user-context">User Name <span class="material-symbols-rounded"> arrow_drop_down</span></p>
-                        </div>
-                    </div>
-                    <ul class="dropdown-items mt-4">
-                        <li><a href="index-student-panel.html">Student Panel</a></li>
-                        <li><a href="index.html">Back Website</a></li>
-                        <li><a href="#">Log Out</a></li>
-                    </ul>
-                </li> -->
+              <div class="dropdown-head">
+                <div class="user-btn">
+                  <img src="./assets/images/user-img.png" alt="">
+                  <p class="user-context">User Name <span class="material-symbols-rounded"> arrow_drop_down</span></p>
+                </div>
+              </div>
+              <ul class="dropdown-items mt-4">
+                <li><a href="./dashobard.html">Student Panel</a></li>
+                <li><a href="./index.html">Back Website</a></li>
+                <li><a href="#">Log Out</a></li>
+              </ul>
+            </li> -->
             <li class="mobile-hamburger"><span class="material-symbols-rounded"> menu_open </span></li>
           </ul>
         </div>
       </div>
     </div>
   </header>
-  <!--header section end-->
+  <!-- End Header Section Area <<<<<==========-->
 
   <!--hero section start-->
   <section class="hero-section">
@@ -78,7 +77,7 @@
             <div class="hero-context">
               <h1 class="main-heading">পেমেন্ট হোক এখন সবচেয়ে সহজ</h1>
               <p class="paragraph">শিক্ষার্থী রেজিস্ট্রেশন ও ই-পেমেন্ট সংক্রান্ত নিয়মাবলি</p>
-              <a href="./login.html" class="btn-outline">User Manual<span class="material-symbols-rounded">
+              <a href="./user-manual.html" class="btn-outline">User Manual<span class="material-symbols-rounded">
                   keyboard_arrow_right </span><span class="circle"></span></a>
             </div>
           </div>
@@ -341,7 +340,7 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <img src="./assets/cta-moc-2-1.png" class="cta-two__moc" alt="Awesome Image" />
+          <img src="./assets/images/about-img.png" class="cta-two__moc" alt="Awesome Image" />
         </div>
       </div>
   </section>
@@ -512,12 +511,12 @@
             <h2>Help & Support</h2>
             <div class=" d-flex justify-content-between">
               <ul>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Check Invoice</a></li>
+                <li><a href="./about-us.html">About ePayment</a></li>
+                <li><a href="./notice.html">Notice</a></li>
               </ul>
               <ul>
-                <li><a href="#">Payment Policy</a></li>
-                <li><a href="#">Refund Policy</a></li>
+                <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="./support-policy.html">Support Policy</a></li>
               </ul>
             </div>
           </div>
@@ -528,8 +527,8 @@
             <h2>Company Policy</h2>
             <div class=" d-flex justify-content-between">
               <ul>
-                <li><a href="">Terms of Use</a></li>
-                <li><a href="terms-condition.html">Terms & Conditions</a></li>
+                <li><a href="./refund-policy.html">Refund & Return Policy </a></li>
+                <li><a href="./terms-condition.html">Terms & Conditions</a></li>
               </ul>
               <ul>
                 <a class="google-play-btn" href="https://play.google.com/store/apps/details?id=com.student.payment"
@@ -558,71 +557,81 @@
   <!--=====<<<<< End Footer Area ==============-->
 
   <!--==========>>>>> Start Menu Sidebar Area -->
-  <aside class="menu-sidebar landing">
+  <aside class="menu-sidebar landing-page">
     <div class="header-mobile">
-      <!-- <div class="user-btn">
-          <img src="./assets/images/user-img.png" alt="">
-          <p class="user-context">User Name</p>
-      </div> -->
-      <a href="login.html" class="login-btn show"> Login </a>
-      <span class="material-icons categoryClose-btn"> cancel </span>
+      <div class="user-btn">
+        <img src="./assets/images/user-img.png" alt="">
+        <p class="user-context">User Name</p>
+      </div>
+      <!-- <a href="login.html" class="login-btn show"> Login </a> -->
+      <span class="material-symbols-rounded menuClose-btn"> cancel </span>
     </div>
 
-    <!-- Sidebar Inner -->
     <div id="student-menu-wrapper">
-      <!-- Non Accordion Menu -->
-      <a href="dashobard.html">
-        <button class="single-menu" type="button">
-          <span class="menu-icon"><img src="./assets/images/Dashboard-Icon.svg" alt="Dashboard"
-              class="icon-svg" /></span>Dashboard
+      <a href="dashobard.html" type="button">
+        <button class="single-menu active">
+          <img class="menu-icon" src="./assets/images/Dashboard-Icon.svg" alt="Dashboard" />
+          Dashboard
         </button>
       </a>
       <a href="profile.html">
-        <button class="single-menu active" type="button">
-          <span class="menu-icon"><img src="./assets/images/Profile-Icon.svg" alt="Profile" /></span>Profile
+        <button class="single-menu" type="button">
+          <img class="menu-icon" src="./assets/images/Profile-Icon.svg" alt="Profile" />
+          Profile
         </button>
       </a>
       <a href="pay-now.html">
         <button class="single-menu" type="button">
-          <span class="menu-icon"><img src="./assets/images/PayNow-Icon.svg" alt="Pay Now" /></span>Pay Now
+          <img class="menu-icon" src="./assets/images/PayNow-Icon.svg" alt="PayNow" />
+          Pay Now
         </button>
       </a>
       <a href="payment-history.html">
         <button class="single-menu" type="button">
-          <span class="menu-icon"><img src="./assets/images/PaymentHistory-Icon.svg"
-              alt="Payment History" /></span>Payment History
+          <img class="menu-icon" src="./assets/images/PaymentHistory-Icon.svg" alt="PaymentHistory" />
+          Payment History
         </button>
       </a>
       <a href="fees-list.html">
         <button class="single-menu" type="button">
-          <span class="menu-icon"><img src="./assets/images/FeeList-Icon.svg" alt="Fee List" /></span>Fees List
+          <img class="menu-icon" src="./assets/images/FeeList-Icon.svg" alt="FeeList" />
+          Fees List
         </button>
       </a>
       <a href="hostel-fees.html">
         <button class="single-menu" type="button">
-          <span class="menu-icon"><img src="./assets/images/HostelFees-Icon.svg" alt="Hostel Fees" /></span>Hostel Fees
+          <img class="menu-icon" src="./assets/images/HostelFees-Icon.svg" alt="HostelFees" />
+          Hostel Fees
         </button>
       </a>
       <a href="admit-card.html">
         <button class="single-menu" type="button">
-          <span class="menu-icon"><img src="./assets/images/AdmitCard-Icon.svg" alt="Admit Card" /></span>Admit Card
+          <img class="menu-icon" src="./assets/images/AdmitCard-Icon.svg" alt="AdmitCard" />
+          Admit Card
         </button>
       </a>
       <a href="result.html">
         <button class="single-menu" type="button">
-          <span class="menu-icon"><img src="./assets/images/Result-Icon.svg" alt="Result" /></span>Result
+          <img class="menu-icon" src="./assets/images/Result-Icon.svg" alt="Result" />
+          Result
         </button>
       </a>
       <a href="subject-choice.html">
         <button class="single-menu" type="button">
-          <span class="menu-icon"><img src="./assets/images/SubjectChoice-Icon.svg"
-              alt="Subject Choice" /></span>Subject Choice
+          <img class="menu-icon" src="./assets/images/SubjectChoice-Icon.svg" alt="SubjectChoice" />
+          Subject Choice
         </button>
       </a>
       <a href="change-password.html">
         <button class="single-menu" type="button">
-          <span class="menu-icon"><img src="./assets/images/ChangePassword-Icon.svg"
-              alt="ChangePassword" /></span>Change Password
+          <img class="menu-icon" src="./assets/images/ChangePassword-Icon.svg" alt="ChangePassword" />
+          Change Password
+        </button>
+      </a>
+      <a href="index.html">
+        <button class="single-menu text-danger " type="button">
+          <img class="menu-icon" src="./assets/images/LogOut-Icon.svg" alt="LogOut" />
+          Log Out
         </button>
       </a>
     </div>
@@ -676,7 +685,9 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Processed Application</button>
+          <a href="./online-admission.html">
+            <button type="button" class="btn btn-primary">Processed Application</button>
+          </a>
         </div>
       </div>
     </div>

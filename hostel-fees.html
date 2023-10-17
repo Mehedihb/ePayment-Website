@@ -1,28 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>ePayment | সরকারি রাজেন্দ্র কলেজ, ফরিদপুর</title>
     <link rel="icon" type="image/svg+xml" sizes="32x32" href="/assets/images/favicon.svg">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon.png">
-
-    <!--stylesheet-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/new.css">
 </head>
 
 <body>
-    <!--header section start-->
+    <!--==========>>>>> Start Header Section Area -->
     <header class="header fixed">
         <div class="container">
             <div class="header-wrapper">
+
                 <a class="header-logo" href="index.html">
                     <img src="assets/images/CollegeLogo.svg" alt="logo">
                     <h1>জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমান সরকারি কলেজ, শরীয়তপুর</h1>
@@ -30,6 +24,7 @@
 
                 <div class="header-nav">
                     <ul class="nav-items d-none">
+                        <li><a href="index.html">Home</a></li>
                         <li class="nav-dropdown" id="service-list">
                             <a href="#" class="dropdown-head">Services</a>
                             <ul class="dropdown-items">
@@ -40,13 +35,11 @@
                                 <li><a href="find-admission-invoice.html">Find Admission Invoice</a></li>
                             </ul>
                         </li>
-                        <li><a href="#faq">Notice</a></li>
-                        <li><a href="#check-invoice">About</a></li>
-                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="notice.html">Notice</a></li>
                     </ul>
 
-                    <ul class="d-flex align-items-center">
-                        <!-- <a href="login.html" class="login-btn"> Login </a> -->
+                    <ul class="dynamic-items">
+                        <!-- <li><a href="login.html" class="login-btn"> Login </a></li> -->
                         <li class="nav-dropdown" id="menu-list">
                             <div class="dropdown-head">
                                 <div class="user-btn">
@@ -56,81 +49,101 @@
                                 </div>
                             </div>
                             <ul class="dropdown-items mt-4">
-                                <!-- <li><a href="index-student-panel.html">Student Panel</a></li> -->
-                                <li><a href="index.html">Back Website</a></li>
+                                <!-- <li><a href="./dashobard.html">Student Panel</a></li> -->
+                                <li><a href="./index.html">Back Website</a></li>
                                 <li><a href="#">Log Out</a></li>
                             </ul>
                         </li>
                         <li class="mobile-hamburger"><span class="material-symbols-rounded"> menu_open </span></li>
                     </ul>
                 </div>
-
-
-
             </div>
         </div>
     </header>
-    <!--header section end-->
+    <!-- End Header Section Area <<<<<==========-->
+
     <div class="master-layout-fixed">
         <div class="layout-body container">
             <div class="layout-sidebar">
-                 <!--==========>>>>> Start Menu Sidebar Area -->
-                 <aside class="menu-sidebar">
+                <!--==========>>>>> Start Menu Sidebar Area -->
+                <aside class="menu-sidebar">
                     <div class="header-mobile">
-                        <h5>Category</h5>
-                        <span class="material-icons categoryClose-btn"> cancel </span>
+                        <div class="user-btn">
+                            <img src="./assets/images/user-img.png" alt="">
+                            <p class="user-context">User Name</p>
+                        </div>
+                        <!-- <a href="login.html" class="login-btn show"> Login </a> -->
+                        <span class="material-symbols-rounded menuClose-btn"> cancel </span>
                     </div>
                     <!-- Sidebar Inner -->
                     <div id="student-menu-wrapper">
-                         <!-- Non Accordion Menu -->
-                        <a href="dashobard.html">
-                            <button class="single-menu" type="button">
-                                <span class="menu-icon"><img src="./assets/images/Dashboard-Icon.svg" alt="Dashboard" class="icon-svg"/></span>Dashboard
+                        <a href="dashobard.html" type="button">
+                            <button class="single-menu">
+                                <img class="menu-icon" src="./assets/images/Dashboard-Icon.svg" alt="Dashboard" />
+                                Dashboard
                             </button>
                         </a>
                         <a href="profile.html">
                             <button class="single-menu" type="button">
-                                <span class="menu-icon"><img src="./assets/images/Profile-Icon.svg" alt="Profile"/></span>Profile
+                                <img class="menu-icon" src="./assets/images/Profile-Icon.svg" alt="Profile" />
+                                Profile
                             </button>
                         </a>
                         <a href="pay-now.html">
                             <button class="single-menu" type="button">
-                                <span class="menu-icon"><img src="./assets/images/PayNow-Icon.svg" alt="Pay Now"/></span>Pay Now
+                                <img class="menu-icon" src="./assets/images/PayNow-Icon.svg" alt="PayNow" />
+                                Pay Now
                             </button>
                         </a>
                         <a href="payment-history.html">
                             <button class="single-menu" type="button">
-                                <span class="menu-icon"><img src="./assets/images/PaymentHistory-Icon.svg" alt="Payment History"/></span>Payment History
+                                <img class="menu-icon" src="./assets/images/PaymentHistory-Icon.svg"
+                                    alt="PaymentHistory" />
+                                Payment History
                             </button>
                         </a>
                         <a href="fees-list.html">
                             <button class="single-menu" type="button">
-                                <span class="menu-icon"><img src="./assets/images/FeeList-Icon.svg" alt="Fee List"/></span>Fees List
+                                <img class="menu-icon" src="./assets/images/FeeList-Icon.svg" alt="FeeList" />
+                                Fees List
                             </button>
                         </a>
                         <a href="hostel-fees.html">
                             <button class="single-menu active" type="button">
-                                <span class="menu-icon"><img src="./assets/images/HostelFees-Icon.svg" alt="Hostel Fees"/></span>Hostel Fees
+                                <img class="menu-icon" src="./assets/images/HostelFees-Icon.svg" alt="HostelFees" />
+                                Hostel Fees
                             </button>
                         </a>
                         <a href="admit-card.html">
                             <button class="single-menu" type="button">
-                                <span class="menu-icon"><img src="./assets/images/AdmitCard-Icon.svg" alt="Admit Card"/></span>Admit Card
+                                <img class="menu-icon" src="./assets/images/AdmitCard-Icon.svg" alt="AdmitCard" />
+                                Admit Card
                             </button>
                         </a>
                         <a href="result.html">
                             <button class="single-menu" type="button">
-                                <span class="menu-icon"><img src="./assets/images/Result-Icon.svg" alt="Result"/></span>Result
+                                <img class="menu-icon" src="./assets/images/Result-Icon.svg" alt="Result" />
+                                Result
                             </button>
                         </a>
                         <a href="subject-choice.html">
                             <button class="single-menu" type="button">
-                                <span class="menu-icon"><img src="./assets/images/SubjectChoice-Icon.svg" alt="Subject Choice"/></span>Subject Choice
+                                <img class="menu-icon" src="./assets/images/SubjectChoice-Icon.svg"
+                                    alt="SubjectChoice" />
+                                Subject Choice
                             </button>
                         </a>
                         <a href="change-password.html">
                             <button class="single-menu" type="button">
-                                <span class="menu-icon"><img src="./assets/images/ChangePassword-Icon.svg" alt="ChangePassword"/></span>Change Password
+                                <img class="menu-icon" src="./assets/images/ChangePassword-Icon.svg"
+                                    alt="ChangePassword" />
+                                Change Password
+                            </button>
+                        </a>
+                        <a href="index.html">
+                            <button class="single-menu text-danger " type="button">
+                                <img class="menu-icon" src="./assets/images/LogOut-Icon.svg" alt="LogOut" />
+                                Log Out
                             </button>
                         </a>
                     </div>
@@ -142,7 +155,7 @@
                 <div class="layout-inner">
                     <!--==========>>>>> Start Breadcrumbs Area -->
                     <ul class="breadcrumbs">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="#">Hostel Fees</a></li>
                     </ul>
                     <!-- End Breadcrumbs Area <<<<<==========-->
@@ -161,11 +174,11 @@
                                 <label class="form-label" for="gender">Select Year</label>
                                 <div class="select-selected">Select an option</div>
                                 <div class="select-items">
-                                  <div>2022</div>
-                                  <div>2023</div>
-                                  <div>2024</div>
+                                    <div>2022</div>
+                                    <div>2023</div>
+                                    <div>2024</div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <button type="submit" class="btn btn-primary">Proceed to Payment</button>
                     </div>

@@ -187,6 +187,7 @@ li {
   align-items: center;
   justify-content: center;
 }
+
 .btn-primary {
   display: flex;
   align-items: center;
@@ -760,7 +761,8 @@ span.circle2 {
   transition: all .25s ease;
   letter-spacing: 1px;
 }
-.login-btn:hover{
+
+.login-btn:hover {
   color: var(--brand-color-100);
 }
 
@@ -983,9 +985,6 @@ span.circle2 {
 
 .footer-section .copyright {
   padding: 24px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: var(--font12);
   color: var(--primary-black);
   border-top: 1px solid var(--border-color);
@@ -1235,27 +1234,41 @@ span.circle2 {
   justify-content: center;
 }
 
-#service-slider .glide__arrow {
-  position: absolute;
-  display: block;
-  top: 50%;
-  z-index: 2;
+#service-slider {
+  padding: 80px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#service-slider .swiper-button-next,
+#service-slider .swiper-button-prev {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  top: 55%;
   color: var(--brand-color-100);
-  padding: 12px 12px;
   background-color: transparent;
   border: none;
   border-radius: 4px;
-  box-shadow: none;
   text-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
-  opacity: 1;
-  cursor: pointer;
   transition: opacity 150ms ease, border 300ms ease-in-out;
   transform: translateY(-50%);
-  line-height: 1;
 }
 
-#service-slider .glide__arrow:hover {
-  opacity: 1;
+#service-slider .swiper-button-next {
+  right: 0px;
+}
+
+#service-slider .swiper-button-prev {
+  left: 0px;
+}
+
+#service-slider .swiper-button-next:hover,
+#service-slider .swiper-button-prev:hover {
   color: var(--brand-color-100);
   background: linear-gradient(90.25deg, hsla(0, 0%, 98.8%, .35) 5.68%, hsla(0, 0%, 98.8%, .3) 143.91%);
   -webkit-backdrop-filter: blur(30px);
@@ -1263,10 +1276,10 @@ span.circle2 {
   box-shadow: 0 3px 11px rgba(48, 105, 174, .08);
 }
 
-#service-slider .glide__slides li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#service-slider .swiper-button-next:after,
+#service-slider .swiper-button-prev:after {
+  font-size: 20px;
+  font-weight: 800;
 }
 
 .single-service {
@@ -1309,9 +1322,9 @@ span.circle2 {
 }
 
 .single-service .service-inner img {
-  padding: 16px;
-  width: 60px;
-  height: 60px;
+  padding: 12px;
+  width: 40px;
+  height: 40px;
   -webkit-box-shadow: 0px 20px 40px 0px rgba(58, 212, 173, 0.8);
   box-shadow: 0px 20px 40px 0px rgba(58, 212, 173, 0.8);
   border-radius: 8px;
@@ -1331,7 +1344,7 @@ span.circle2 {
 
 .single-service .service-inner p {
   font-weight: 600;
-  font-size: var(--font14);
+  font-size: var(--font12);
   color: var(--primary-black);
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
@@ -1437,7 +1450,7 @@ span.circle2 {
 
 /* >>>>> Start Latest Notice Area ---------- */
 .notice-section {
-  margin: 80px 0px;
+  margin: 0px 0px 80px 0px;
 }
 
 .notice-wrapper {
@@ -2401,34 +2414,41 @@ ul.form-stepper li .form-stepper-circle {
 .description-1 {
   padding: 15px 0px;
 }
+
 .description-1 h3 {
   font-size: var(--font-title);
   margin-bottom: 10px;
   color: var(--brand-color);
 }
+
 .description-1 p {
   font-size: 14px;
   font-weight: 400;
   color: var(--text-black);
 }
+
 .description-2 {
   margin-bottom: 20px;
 }
+
 .description-2 h3 {
   font-size: var(--font-title);
   margin-bottom: 10px;
   color: var(--brand-color);
 }
+
 .description-2 p {
   font-size: 14px;
   font-weight: 400;
   color: var(--text-black);
 }
+
 .description-2 .border-2,
 .description-2 .border-1 {
   position: relative;
   z-index: 1;
 }
+
 .description-2 .border-2::before,
 .description-2 .border-1::before {
   content: "";
@@ -2439,10 +2459,12 @@ ul.form-stepper li .form-stepper-circle {
   height: 100%;
   border: 3px solid #F0F2F4;
 }
+
 .description-2 .border-1::before {
   bottom: -21px;
   left: -21px;
 }
+
 @media (max-width: 767px) {
   .description-2 .border-1::before {
     bottom: -21px;
@@ -2450,14 +2472,17 @@ ul.form-stepper li .form-stepper-circle {
     left: auto;
   }
 }
+
 .description-2 .border-2::before {
   bottom: -21px;
   right: -21px;
 }
+
 .description-2 .hover-img {
   display: block;
   overflow: hidden;
 }
+
 .description-2 .hover-img img {
   width: 100%;
   -webkit-transition: transform 0.9s ease;
@@ -2465,6 +2490,7 @@ ul.form-stepper li .form-stepper-circle {
   -moz-transition: transform 0.9s ease;
   transition: transform 0.9s ease;
 }
+
 .description-2 .hover-img:hover img {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);

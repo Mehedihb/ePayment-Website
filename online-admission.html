@@ -235,18 +235,128 @@
             </div>
 
             <div class="row">
-                <div class="col-12 section-header">
-                  <h5>Documents</h5>
-                  <hr class="colorgraph" />
-                </div>
-                <div class="col-lg-6 col-12">
-                    <div class="user-img-uploader">
-                        <img src="./assets/images/user-img.png" alt="User Image" />
-                        <input type="file" name="image" id="profile-photo" />
-                        <span class="upload-btn">Change</span>
-                    </div>
+              <div class="col-12 section-header">
+                <h5>Documents</h5>
+                <hr class="colorgraph" />
+              </div>
+
+              <div class="col-lg-6 col-12">
+                <div class="form-group">
+                  <label class="form-label" for="picture">প্রাথমিক আবেদনপত্রের স্ক্যান কপি <span>*</span></label>
+                  <input class="form-control" type="file" name="picture" id="picture" />
                 </div>
               </div>
+
+              <div class="col-lg-6 col-12">
+                <div class="form-group">
+                  <label class="form-label" for="picture">জাতীয় বিশ্ববিদ্যালয়ের আবেদনপত্রের স্ক্যান কপি</label>
+                  <input class="form-control" type="file" name="picture" id="picture" />
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-12">
+                <div class="form-group">
+                  <label class="form-label" for="picture">ডিগ্রি মূল সনদের স্ক্যান কপি <span>*</span></label>
+                  <input class="form-control" type="file" name="picture" id="picture" />
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-12">
+                <div class="form-group">
+                  <label class="form-label" for="picture">ডিগ্রি রেজিস্ট্রেশন কার্ডের স্ক্যান কপি <span>*</span></label>
+                  <input class="form-control" type="file" name="picture" id="picture" />
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-12">
+                <div class="form-group">
+                  <label class="form-label" for="picture">জাতীয় পরিচয়পত্র/জন্মসনদের স্ক্যান কপি</label>
+                  <input class="form-control" type="file" name="picture" id="picture" />
+                </div>
+              </div>
+
+              <!-- <div class="col-lg-6 col-12">
+                    <div class="document-uploader">
+                        <img src="./assets/images/user-img.png" alt="Document" />
+                        <input type="file" name="image"/>
+                        <span class="upload-btn">Upload</span>
+                    </div>
+                </div> -->
+            </div>
+            <div class="row w-100">
+              <div class="col-lg-6 col-12">
+                  <div class="section-header">
+                      <h5>Compulsory Subjects</h5>
+                      <hr class="colorgraph" />
+                    </div>
+                  <ul class="month-list">
+                      <li>
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="Bangla" checked disabled>
+                              <label class="form-check-label" for="Bangla">Bangla (101,102)</label>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="English" checked disabled>
+                              <label class="form-check-label" for="English">English (103,104)</label>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="Physics" checked disabled>
+                              <label class="form-check-label" for="Physics">Physics (107,108)</label>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="Chemistry" checked disabled>
+                              <label class="form-check-label" for="Chemistry">Chemistry (109,110)</label>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-lg-6 col-12">
+                  <div class="section-header">
+                      <h5>4th & Main Subject</h5>
+                      <hr class="colorgraph" />
+                    </div>
+                    <div class="form-group custom-select">
+                      <label class="form-label" for="studentType">4th Subject <span>*</span></label>
+                      <div class="select-selected">Select an option</div>
+                      <div class="select-items">
+                        <div>Math (101,102)</div>
+                        <div>Biology (201,202)</div>
+                      </div>
+                    </div>
+                    <div class="section-header">
+                      <h5>Main Subject</h5>
+                      <hr class="colorgraph" />
+                    </div>
+
+                    <ul class="month-list">
+                      <li>
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="Math">
+                              <label class="form-check-label" for="Math"><span>Math (101,102)</span></label>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="Other-1">
+                              <label class="form-check-label" for="Other-1">Other 1 (103,104)</label>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="Other-2">
+                              <label class="form-check-label" for="Other-2">Other 2 (103,104)</label>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+
             <div class="row d-flex justify-content-center">
               <div class="col-6">
                 <button type="submit" class="btn btn-primary">Submit Application</button>

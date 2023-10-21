@@ -1914,6 +1914,7 @@ span.circle2 {
   outline: none;
   box-shadow: none;
   background-color: var(--white);
+  margin-bottom: 8px;
 }
 .menu-wrapper .single-menu {
   width: 100%;
@@ -2399,6 +2400,8 @@ span.circle2 {
 }
 .month-list li .form-check input{
   margin: 0px;
+  outline: none;
+  box-shadow: none;
 }
 .month-list li .form-check .form-check-input:checked {
   background-color: var(--brand-color-100);

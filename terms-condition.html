@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
   <!--==========>>>>> Start Header Section Area -->
   <header class="header fixed">
     <div class="container">
@@ -26,34 +25,35 @@
         <div class="header-nav">
           <ul class="nav-items">
             <li><a href="index.html">Home</a></li>
+            <li><a href="notice.html">Notice</a></li>
             <li class="nav-dropdown" id="service-list">
               <a href="#" class="dropdown-head">Services</a>
               <ul class="dropdown-items">
-                <li><a href="student-registration.html">Student Registration</a></li>
-                <li><a href="student-admission.html">Student Admission</a></li>
-                <li><a href="application-fee.html">Application Fee</a></li>
-                <li><a href="admission-fee.html">Admission Fee</a></li>
-                <li><a href="find-admission-invoice.html">Find Admission Invoice</a></li>
+                <li><a href="./registration.html">Student Registration</a></li>
+                <li><a data-bs-toggle="modal" data-bs-target="#onlineAdmission-modal">Online Admission</a></li>
+                <li><a data-bs-toggle="modal" data-bs-target="#formDownload-modal">Form Download</a></li>
+                <li><a data-bs-toggle="modal" data-bs-target="#admissionFee-modal">Admission Fee</a></li>
+                <li><a data-bs-toggle="modal" data-bs-target="#applicationFee-modal">Application Fee</a></li>
+                <li><a data-bs-toggle="modal" data-bs-target="#checkInvoice-modal">Check Invoice</a></li>
               </ul>
             </li>
-            <li><a href="notice.html">Notice</a></li>
           </ul>
 
           <ul class="dynamic-items">
             <li><a href="login.html" class="login-btn"> Login </a></li>
             <!-- <li class="nav-dropdown" id="menu-list">
-                <div class="dropdown-head">
-                  <div class="user-btn">
-                    <img src="./assets/images/user-img.png" alt="">
-                    <p class="user-context">User Name <span class="material-symbols-rounded"> arrow_drop_down</span></p>
-                  </div>
+              <div class="dropdown-head">
+                <div class="user-btn">
+                  <img src="./assets/images/user-img.png" alt="">
+                  <p class="user-context">User Name <span class="material-symbols-rounded"> arrow_drop_down</span></p>
                 </div>
-                <ul class="dropdown-items mt-4">
-                  <li><a href="./dashobard.html">Student Panel</a></li>
-                  <li><a href="./index.html">Back Website</a></li>
-                  <li><a href="#">Log Out</a></li>
-                </ul>
-              </li> -->
+              </div>
+              <ul class="dropdown-items mt-4">
+                <li><a href="./dashobard.html">Student Portal</a></li>
+                <li><a href="./index.html">Back Website</a></li>
+                <li><a href="#">Log Out</a></li>
+              </ul>
+            </li> -->
             <li class="mobile-hamburger"><span class="material-symbols-rounded"> menu_open </span></li>
           </ul>
         </div>
@@ -190,83 +190,140 @@
   <!--=====<<<<< End Footer Area ==============-->
 
   <!--==========>>>>> Start Menu Sidebar Area -->
+  <!--==========>>>>> Start Menu Sidebar Area -->
   <aside class="menu-sidebar landing-page">
-    <div class="header-mobile">
-      <div class="user-btn">
+    <div class="sidebar-header">
+      <a class="login-btn" href="login.html"> Login </a>
+      <!-- <div class="user-btn">
         <img src="./assets/images/user-img.png" alt="">
         <p class="user-context">User Name</p>
-      </div>
-      <!-- <a href="login.html" class="login-btn show"> Login </a> -->
+      </div> -->
       <span class="material-symbols-rounded menuClose-btn"> cancel </span>
     </div>
 
-    <div id="student-menu-wrapper">
-      <a href="dashobard.html" type="button">
-        <button class="single-menu active">
-          <img class="menu-icon" src="./assets/images/Dashboard-Icon.svg" alt="Dashboard" />
-          Dashboard
-        </button>
-      </a>
-      <a href="profile.html">
-        <button class="single-menu" type="button">
-          <img class="menu-icon" src="./assets/images/Profile-Icon.svg" alt="Profile" />
-          Profile
-        </button>
-      </a>
-      <a href="pay-now.html">
-        <button class="single-menu" type="button">
-          <img class="menu-icon" src="./assets/images/PayNow-Icon.svg" alt="PayNow" />
-          Pay Now
-        </button>
-      </a>
-      <a href="payment-history.html">
-        <button class="single-menu" type="button">
-          <img class="menu-icon" src="./assets/images/PaymentHistory-Icon.svg" alt="PaymentHistory" />
-          Payment History
-        </button>
-      </a>
-      <a href="fees-list.html">
-        <button class="single-menu" type="button">
-          <img class="menu-icon" src="./assets/images/FeeList-Icon.svg" alt="FeeList" />
-          Fees List
-        </button>
-      </a>
-      <a href="hostel-fees.html">
-        <button class="single-menu" type="button">
-          <img class="menu-icon" src="./assets/images/HostelFees-Icon.svg" alt="HostelFees" />
-          Hostel Fees
-        </button>
-      </a>
-      <a href="admit-card.html">
-        <button class="single-menu" type="button">
-          <img class="menu-icon" src="./assets/images/AdmitCard-Icon.svg" alt="AdmitCard" />
-          Admit Card
-        </button>
-      </a>
-      <a href="result.html">
-        <button class="single-menu" type="button">
-          <img class="menu-icon" src="./assets/images/Result-Icon.svg" alt="Result" />
-          Result
-        </button>
-      </a>
-      <a href="subject-choice.html">
-        <button class="single-menu" type="button">
-          <img class="menu-icon" src="./assets/images/SubjectChoice-Icon.svg" alt="SubjectChoice" />
-          Subject Choice
-        </button>
-      </a>
-      <a href="change-password.html">
-        <button class="single-menu" type="button">
-          <img class="menu-icon" src="./assets/images/ChangePassword-Icon.svg" alt="ChangePassword" />
-          Change Password
-        </button>
-      </a>
-      <a href="index.html">
-        <button class="single-menu text-danger " type="button">
-          <img class="menu-icon" src="./assets/images/LogOut-Icon.svg" alt="LogOut" />
-          Log Out
-        </button>
-      </a>
+    <div class="menu-wrapper">
+      <!-- if the user is logged in and the page belongs to #portal-menu, hide the #home-menu otherwise hide the #portal-menu -->
+      <div id="home-menu">
+        <a class="switch-btn" href="./dashobard.html" type="button">
+          <span class="material-symbols-rounded"> start </span>
+          Student Portal
+        </a>
+        <a href="./notice.html" type="button">
+          <button class="single-menu">
+            <img class="menu-icon" src="./assets/images/service-icon/Notice-Icon-Green.svg" alt="Notice" />
+            Notice
+          </button>
+        </a>
+        <a href="./registration.html">
+          <button class="single-menu" type="button">
+            <img class="menu-icon" src="./assets/images/service-icon/Registration-Icon-Green.svg" alt="Student Registration" />
+            Student Registration
+          </button>
+        </a>
+        <a data-bs-toggle="modal" data-bs-target="#onlineAdmission-modal">
+          <button class="single-menu" type="button">
+            <img class="menu-icon" src="./assets/images/service-icon/OnlineAdmission-Icon-Green.svg" alt="Online Admission" />
+            Online Admission
+          </button>
+        </a>
+        <a data-bs-toggle="modal" data-bs-target="#formDownload-modal">
+          <button class="single-menu" type="button">
+            <img class="menu-icon" src="./assets/images/service-icon/FormDownload-Icon-Green.svg" alt="Form Download" />
+            Form Download 
+          </button>
+        </a>
+        <a data-bs-toggle="modal" data-bs-target="#admissionFee-modal">
+          <button class="single-menu" type="button">
+            <img class="menu-icon" src="./assets/images/service-icon/AdmissionFee-Icon-Green.svg" alt="Admission Fee" />
+            Admission Fee
+          </button>
+        </a>
+        <a data-bs-toggle="modal" data-bs-target="#applicationFee-modal">
+          <button class="single-menu" type="button">
+            <img class="menu-icon" src="./assets/images/service-icon/ApplicationFee-Icon-Green.svg" alt="Application Fee" />
+            Application Fee
+          </button>
+        </a>
+        <a data-bs-toggle="modal" data-bs-target="#checkInvoice-modal">
+          <button class="single-menu" type="button">
+            <img class="menu-icon" src="./assets/images/service-icon/CheckInvoice-Icon-Green.svg" alt="Check Invoice" />
+            Check Invoice
+          </button>
+        </a>
+      </div>
+
+      <!-- <div id="portal-menu">
+        <a class="switch-btn" href="./dashobard.html" type="button">
+          <span class="material-symbols-rounded"> keyboard_tab_rtl </span>
+          Back Website
+        </a>
+        <a href="dashobard.html" type="button">
+          <button class="single-menu active">
+            <img class="menu-icon" src="./assets/images/service-icon/Dashboard-Icon-Green.svg" alt="Dashboard" />
+            Dashboard
+          </button>
+        </a>
+        <a href="profile.html">
+          <button class="single-menu" type="button">
+            <img class="menu-icon" src="./assets/images/service-icon/Profile-Icon-Green.svg" alt="Profile" />
+            Profile
+          </button>
+        </a>
+        <a href="pay-now.html">
+          <button class="single-menu" type="button">
+            <img class="menu-icon" src="./assets/images/service-icon/PayNow-Icon-Green.svg" alt="PayNow" />
+            Pay Now
+          </button>
+        </a>
+        <a href="payment-history.html">
+          <button class="single-menu" type="button">
+            <img class="menu-icon" src="./assets/images/service-icon/PaymentHistory-Icon-Green.svg" alt="PaymentHistory" />
+            Payment History
+          </button>
+        </a>
+        <a href="fees-list.html">
+          <button class="single-menu" type="button">
+            <img class="menu-icon" src="./assets/images/service-icon/FeeList-Icon-Green.svg" alt="FeeList" />
+            Fees List
+          </button>
+        </a>
+        <a href="hostel-fees.html">
+          <button class="single-menu" type="button">
+            <img class="menu-icon" src="./assets/images/service-icon/HostelFees-Icon-Green.svg" alt="HostelFees" />
+            Hostel Fees
+          </button>
+        </a>
+        <a href="admit-card.html">
+          <button class="single-menu" type="button">
+            <img class="menu-icon" src="./assets/images/service-icon/AdmitCard-Icon-Green.svg" alt="AdmitCard" />
+            Admit Card
+          </button>
+        </a>
+        <a href="result.html">
+          <button class="single-menu" type="button">
+            <img class="menu-icon" src="./assets/images/service-icon/Result-Icon-Green.svg" alt="Result" />
+            Result
+          </button>
+        </a>
+        <a href="subject-choice.html">
+          <button class="single-menu" type="button">
+            <img class="menu-icon" src="./assets/images/service-icon/SubjectChoice-Icon-Green.svg" alt="SubjectChoice" />
+            Subject Choice
+          </button>
+        </a>
+        <a href="change-password.html">
+          <button class="single-menu" type="button">
+            <img class="menu-icon" src="./assets/images/service-icon/ChangePassword-Icon-Green.svg" alt="ChangePassword" />
+            Change Password
+          </button>
+        </a>
+        <a href="index.html">
+          <button class="single-menu text-danger " type="button">
+            <img class="menu-icon" src="./assets/images/service-icon/LogOut-Icon-Red.svg" alt="LogOut" />
+            Log Out
+          </button>
+        </a>
+      </div> -->
     </div>
   </aside>
   <!-- End Menu Sidebar Area <<<<<==========-->

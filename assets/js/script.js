@@ -37,16 +37,16 @@ const handleScrollHeader = () => {
 window.addEventListener('scroll', handleScrollHeader);
 // <<<<< End Function to handle scroll event and toggle class 'fixed' for .headerScroll
 
-// >>>>> Start Category Sidebar Area
-var categorySidebar = document.querySelector('.menu-sidebar');
-var categoryToggle = document.querySelectorAll('.mobile-hamburger');
+// >>>>> Start Menu Sidebar Area
+var menuSidebar = document.querySelector('.menu-sidebar');
+var menuToggle = document.querySelectorAll('.mobile-hamburger');
 var menuClose = document.querySelector('.menuClose-btn')
-categoryToggle.forEach((node) => {
+menuToggle.forEach((node) => {
   node.addEventListener('click', () => {
-    categorySidebar.classList.toggle('show-hide');
+    menuSidebar.classList.toggle('show-hide');
   })
 })
 menuClose.addEventListener("click", () => {
-  categorySidebar.classList.remove('show-hide');
+  menuSidebar.classList.remove('show-hide');
 })
-// <<<<< End Category Sidebar Area
+// <<<<< End Menu Sidebar Area

@@ -781,7 +781,7 @@
             <div class="col-lg-12">
               <div class="form-group">
                 <label class="form-label" for="mobile">Mobile <span>*</span></label>
-                <input class="form-control" type="text" name="mobile" id="mobile" placeholder="Enter No" required />
+                <input class="form-control" type="text" name="mobile" id="mobile" placeholder="Enter Mobile No" required />
               </div>
             </div>
           </div>
@@ -949,6 +949,38 @@
   </div>
   <!-- Check Invoice Modal -->
 
+    <!-- Form Download Modal -->
+    <div class="modal fade" id="formDownload-modal" data-bs-backdrop="static" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title">Form Download</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <label class="form-label" for="rollNo">Admission/College Roll <span>*</span></label>
+                  <input class="form-control" type="text" name="rollNo" id="rollNo" placeholder="Enter Roll" required />
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <label class="form-label" for="mobile">Mobile <span>*</span></label>
+                  <input class="form-control" type="text" name="mobile" id="mobile" placeholder="Enter No" required />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Find Form</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Form Download Modal -->
+
   <!-- View Notice Modal -->
   <div class="modal fade" id="viewNotice-modal" data-bs-backdrop="static" aria-hidden="true">
     <div class="modal-dialog modal-xl">
@@ -992,8 +1024,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-secondary">Understood</button>
+          <button type="button" class="btn btn-primary">Download Notice</button>
         </div>
       </div>
     </div>

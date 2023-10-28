@@ -594,20 +594,22 @@
         </a>
         <a href="./registration.html">
           <button class="single-menu" type="button">
-            <img class="menu-icon" src="./assets/images/service-icon/Registration-Icon-Green.svg" alt="Student Registration" />
+            <img class="menu-icon" src="./assets/images/service-icon/Registration-Icon-Green.svg"
+              alt="Student Registration" />
             Student Registration
           </button>
         </a>
         <a data-bs-toggle="modal" data-bs-target="#onlineAdmission-modal">
           <button class="single-menu" type="button">
-            <img class="menu-icon" src="./assets/images/service-icon/OnlineAdmission-Icon-Green.svg" alt="Online Admission" />
+            <img class="menu-icon" src="./assets/images/service-icon/OnlineAdmission-Icon-Green.svg"
+              alt="Online Admission" />
             Online Admission
           </button>
         </a>
         <a data-bs-toggle="modal" data-bs-target="#formDownload-modal">
           <button class="single-menu" type="button">
             <img class="menu-icon" src="./assets/images/service-icon/FormDownload-Icon-Green.svg" alt="Form Download" />
-            Form Download 
+            Form Download
           </button>
         </a>
         <a data-bs-toggle="modal" data-bs-target="#admissionFee-modal">
@@ -618,7 +620,8 @@
         </a>
         <a data-bs-toggle="modal" data-bs-target="#applicationFee-modal">
           <button class="single-menu" type="button">
-            <img class="menu-icon" src="./assets/images/service-icon/ApplicationFee-Icon-Green.svg" alt="Application Fee" />
+            <img class="menu-icon" src="./assets/images/service-icon/ApplicationFee-Icon-Green.svg"
+              alt="Application Fee" />
             Application Fee
           </button>
         </a>
@@ -781,7 +784,8 @@
             <div class="col-lg-12">
               <div class="form-group">
                 <label class="form-label" for="mobile">Mobile <span>*</span></label>
-                <input class="form-control" type="text" name="mobile" id="mobile" placeholder="Enter Mobile No" required />
+                <input class="form-control" type="text" name="mobile" id="mobile" placeholder="Enter Mobile No"
+                  required />
               </div>
             </div>
           </div>
@@ -830,13 +834,6 @@
               <div class="form-group">
                 <label class="form-label" for="fullName">Full Name <span>*</span></label>
                 <input class="form-control" type="text" name="fullName" id="fullName" placeholder="Enter Name"
-                  required />
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="form-group">
-                <label class="form-label" for="fatherName">Father's Name <span>*</span></label>
-                <input class="form-control" type="text" name="fatherName" id="fatherName" placeholder="Enter Name"
                   required />
               </div>
             </div>
@@ -942,44 +939,85 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="submit" class="btn btn-primary">Find Invoice</button>
+          <button class="btn btn-primary" data-bs-target="#invoiceView-modal" data-bs-toggle="modal">Find
+            Invoice</button>
         </div>
       </div>
     </div>
   </div>
   <!-- Check Invoice Modal -->
 
-    <!-- Form Download Modal -->
-    <div class="modal fade" id="formDownload-modal" data-bs-backdrop="static" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title">Form Download</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="form-group">
-                  <label class="form-label" for="rollNo">Admission/College Roll <span>*</span></label>
-                  <input class="form-control" type="text" name="rollNo" id="rollNo" placeholder="Enter Roll" required />
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <div class="form-group">
-                  <label class="form-label" for="mobile">Mobile <span>*</span></label>
-                  <input class="form-control" type="text" name="mobile" id="mobile" placeholder="Enter No" required />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="submit" class="btn btn-primary">Find Form</button>
-          </div>
+  <!-- Invoice View Modal -->
+  <div class="modal fade" id="invoiceView-modal" data-bs-backdrop="static" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title">Check Invoice</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+          <iframe src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf" width="800"
+            height="650"> </iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Download Invoice</button>
         </div>
       </div>
     </div>
-    <!-- Form Download Modal -->
+  </div>
+  <!-- Invoice View Modal -->
+
+  <!-- Form Download Modal -->
+  <div class="modal fade" id="formDownload-modal" data-bs-backdrop="static" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title">Form Download</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="form-group">
+                <label class="form-label" for="rollNo">Admission/College Roll <span>*</span></label>
+                <input class="form-control" type="text" name="rollNo" id="rollNo" placeholder="Enter Roll" required />
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group">
+                <label class="form-label" for="mobile">Mobile <span>*</span></label>
+                <input class="form-control" type="text" name="mobile" id="mobile" placeholder="Enter No" required />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#formView-modal" data-bs-toggle="modal">Find Form</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Form Download Modal -->
+
+  <!-- Form View Modal -->
+  <div class="modal fade" id="formView-modal" data-bs-backdrop="static" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title">Form Download</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+          <iframe src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf"> </iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Download Form</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Form View Modal -->
+
 
   <!-- View Notice Modal -->
   <div class="modal fade" id="viewNotice-modal" data-bs-backdrop="static" aria-hidden="true">

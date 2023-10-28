@@ -1,3 +1,50 @@
+// Start Wizard Area ---------->>>>>>>>>>>>>>>>>>>>
+const navigateToFormStep = (stepNumber) => {
+  // Hide all form steps
+  document.querySelectorAll(".step-details").forEach((formStepElement) => {
+    formStepElement.classList.add("d-none");
+  });
+  // Mark all form steps as unfinished
+  document.querySelectorAll(".form-stepper-list").forEach((formStepHeader) => {
+    formStepHeader.classList.add("form-stepper-unfinished");
+    formStepHeader.classList.remove("form-stepper-active", "form-stepper-completed");
+  });
+  // Show the current form step (as passed to the function).
+  document.querySelector("#step-" + stepNumber).classList.remove("d-none");
+  // Select the form step circle (progress bar).
+  const formStepCircle = document.querySelector('li[step="' + stepNumber + '"]');
+  //Mark the current form step as active.
+  formStepCircle.classList.remove("form-stepper-unfinished", "form-stepper-completed");
+  formStepCircle.classList.add("form-stepper-active");
+  /**
+   * Loop through each form step circles.
+   * This loop will continue up to the current step number.
+   * Example: If the current step is 3,
+   * then the loop will perform operations for step 1 and 2.
+   */
+  for (let index = 0; index < stepNumber; index++) {
+    //Select the form step circle (progress bar).
+    const formStepCircle = document.querySelector('li[step="' + index + '"]');
+    // Check if the element exist. If yes, then proceed.
+    if (formStepCircle) {
+      // Mark the form step as completed.
+      formStepCircle.classList.remove("form-stepper-unfinished", "form-stepper-active");
+      formStepCircle.classList.add("form-stepper-completed");
+    }
+  }
+};
+//Select all form navigation buttons, and loop through them.
+document.querySelectorAll(".btn-navigate-form-step").forEach((formNavigationBtn) => {
+  // Add a click event listener to the button.
+  formNavigationBtn.addEventListener("click", () => {
+    // Get the value of the step.
+    const stepNumber = parseInt(formNavigationBtn.getAttribute("step_number"));
+    // Call the function to navigate to the target form step.
+    navigateToFormStep(stepNumber);
+  });
+});
+// End Wizard Area ----------<<<<<<<<<<<<<<<<<<<<
+
 // >>>>> Start JavaScript to handle the custom select behavior
 document.addEventListener("DOMContentLoaded", function () {
   const customSelects = document.querySelectorAll(".custom-select");
@@ -21,9 +68,36 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   });
+
+  // Close the select when clicking anywhere outside
+  document.addEventListener("click", function (event) {
+    customSelects.forEach(customSelect => {
+      const selectItems = customSelect.querySelector(".select-items");
+      if (selectItems.style.display === "block" && !customSelect.contains(event.target)) {
+        selectItems.style.display = "none";
+      }
+    });
+  });
 });
 
+
 // <<<<< End JavaScript to handle the custom select behavior
+
+// >>>>> Start Password Show/Hide
+document.querySelectorAll('.togglePassword').forEach(toggleButton => {
+  toggleButton.addEventListener('click', (e) => {
+    const password = e.target.parentElement.querySelector('.form-control.password');
+
+    if (password.type === 'password') {
+      password.type = 'text';
+      e.target.innerHTML = 'visibility_off';
+    } else {
+      password.type = 'password';
+      e.target.innerHTML = 'visibility';
+    }
+  });
+});
+// <<<<< End Password Show/Hide
 
 // >>>>> Start Function to handle scroll event and toggle class 'fixed' for .headerScroll
 const handleScrollHeader = () => {

@@ -445,7 +445,13 @@ a {
 .form-group .form-control[type=file]:hover::file-selector-button {
   background-color: var(--border-color);
 }
-
+.form-group .togglePassword{
+  color: var(--secondary-black);
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;}
 /* ----------> End Input CSS Area <<<<<*/
 
 /*>>>>> Start Image Uploader Area <---------- */
@@ -1245,8 +1251,8 @@ a {
 
 .single-service .service-inner img {
   padding: 12px;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   -webkit-box-shadow: 0px 20px 40px 0px rgba(58, 212, 173, 0.8);
   box-shadow: 0px 20px 40px 0px rgba(58, 212, 173, 0.8);
   border-radius: 8px;
@@ -1406,10 +1412,10 @@ a {
 }
 
 .notice-card {
+  cursor: pointer;
   display: flex;
   gap: 8px;
   flex-direction: column;
-  cursor: default;
   border: 2px solid #fce5c5;
   border-radius: 12px;
   padding: 16px;
@@ -1578,12 +1584,12 @@ a {
 
 
 /* >>>>> Start App Tutorial Area ---------- */
-.step {
+.appTutorial {
   width: 100vw;
   margin-top: 30px;
 }
 
-.step__wrapper {
+.appTutorial .appTutorial-wrapper {
   margin: 50px 0;
   background-color: rgba(98, 214, 143, 0.1);
   padding: 80px 0;
@@ -1592,18 +1598,20 @@ a {
   border-radius: 30px;
 }
 
-.step h5 {
+.appTutorial .appTutorial-wrapper h5 {
   font-weight: 600;
   font-size: var(--font32);
   color: var(--primary-black);
   line-height: normal;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.single-step {
+.appTutorial .appTutorial-wrapper .single-step {
   text-align: center
 }
 
-.single-step .image {
+.appTutorial .appTutorial-wrapper .single-step .image {
   width: 100%;
   filter: drop-shadow(0px 40px 20px rgba(98, 214, 143, 0.2));
   -webkit-filter: drop-shadow(0px 40px 20px rgba(98, 214, 143, 0.2));
@@ -1611,53 +1619,56 @@ a {
   margin-bottom: 40px;
 }
 
-.single-step .content {
+.appTutorial .appTutorial-wrapper .single-step .content {
   margin-top: 16px;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  align-items: center;
 }
 
-.single-step .content h3 {
+.appTutorial .appTutorial-wrapper .single-step .content h3 {
   font-size: var(--font18);
   font-weight: 600;
   color: var(--brand-color-100);
-  margin-bottom: 16px;
 }
 
-.single-step .content h3 span {
+.appTutorial .appTutorial-wrapper .single-step .content span {
   display: block;
-  font-size: var(--font24);
+  font-size: var(--font22);
   color: var(--primary-black);
 }
 
-.single-step .content p {
+.appTutorial .appTutorial-wrapper .single-step .content p {
   color: var(--primary-black);
   font-size: var(--font14);
   width: 94%
 }
 
 @media (max-width: 991.98px) {
-  .step__wrapper {
+  .appTutorial .appTutorial-wrapper {
     padding: 50px 0;
   }
 
-  .single-step .image img {
+  .appTutorial .appTutorial-wrapper .single-step .image img {
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
     width: auto;
     margin: 0 auto
   }
 
-  .single-step .content {
+  .appTutorial .appTutorial-wrapper .single-step .content {
     margin: 0
   }
 
-  .single-step .content .paragraph {
+  .appTutorial .appTutorial-wrapper .single-step .content .paragraph {
     width: 60%;
     margin: 0 auto
   }
 }
 
 @media (max-width: 768px) {
-  .step__wrapper {
+  .appTutorial .appTutorial-wrapper {
     width: calc(100% - 50px);
     padding: 50px 20px;
   }

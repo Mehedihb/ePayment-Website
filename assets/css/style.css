@@ -141,6 +141,26 @@ li {
 /* ----------> End Text & Header Area <<<<<*/
 
 /*>>>>> Start Button Style Area <---------- */
+.btn{
+  min-width: 140px;
+}
+.btn:hover {
+  background-color: var(--brand-color-100);
+  border-color: var(--brand-color-100);
+}
+
+.btn-check:checked+.btn, 
+.btn.active, .btn.show, 
+.btn:first-child:active, 
+:not(.btn-check)+.btn:active {
+  background-color: var(--brand-color-100);
+  border-color: var(--brand-color-100);
+}
+
+
+
+
+
 .btn-group2 {
   display: flex;
   gap: 16px;
@@ -210,7 +230,10 @@ li {
   margin-right: 10px;
 }
 
-.btn-primary {
+.btn-primary.btn-lg {
+  height: 60px;
+  width: 100%;
+  padding: 12px 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -220,21 +243,32 @@ li {
   background-color: var(--brand-color-100);
   border-color: var(--brand-color-100);
   border-radius: 12px;
-  height: 60px;
-  width: 100%;
-  padding: 12px 24px;
+}
+
+.btn-primary {
+  color: var(--white);
+  background-color: var(--brand-color-100);
+  border-color: var(--brand-color-100);
 }
 
 .btn-primary:hover {
-  background-color: var(--brand-color-100);
-  border-color: var(--brand-color-100);
+  background-color: var(--brand-color-75);
+  border-color: var(--brand-color-75);
 }
 
 .btn-primary:focus {
   outline: none;
   box-shadow: none;
 }
-
+.btn-outline-primary {
+  color: var(--brand-color-100);
+  border-color: var(--brand-color-100);
+}
+.btn-outline-primary:hover {
+  color: var(--white);
+  background-color: var(--brand-color-100);
+  border-color: var(--brand-color-100);
+}
 /* Outline Animated BTN */
 .btn-outline {
   display: flex;
@@ -1003,6 +1037,13 @@ a {
   height: 48px;
   font-size: var(--font14);
   border-bottom: 1px solid var(--border-color);
+}
+
+.table tfoot tr {
+  height: 48px;
+  font-weight: 600;
+  font-size: var(--font14);
+  border-bottom: 1px solid transparent;
 }
 
 .table tr th {

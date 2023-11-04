@@ -84,6 +84,20 @@
                 </div>
               </div>
               <div class="col-lg-6 col-12">
+                <div class="form-group">
+                  <label class="form-label" for="fatherName">Father's Name <span>*</span></label>
+                  <input class="form-control" type="text" name="fatherName" id="fatherName" placeholder="Enter Name"
+                    required />
+                </div>
+              </div>
+              <div class="col-lg-6 col-12">
+                <div class="form-group">
+                  <label class="form-label" for="motherName">Mother's Name <span>*</span></label>
+                  <input class="form-control" type="text" name="motherName" id="motherName" placeholder="Enter Name"
+                    required />
+                </div>
+              </div>
+              <div class="col-lg-6 col-12">
                 <div class="form-group custom-select">
                   <label class="form-label" for="gender">Gender<span>*</span></label>
                   <div class="select-selected">Select an option</div>
@@ -106,24 +120,35 @@
                 </div>
               </div>
               <div class="col-lg-6 col-12">
-                <div class="form-group">
-                  <label class="form-label" for="fatherName">Father's Name <span>*</span></label>
-                  <input class="form-control" type="text" name="fatherName" id="fatherName" placeholder="Enter Name"
-                    required />
+                <div class="form-group custom-select">
+                  <label class="form-label" for="Blood">Religion<span>*</span></label>
+                  <div class="select-selected">Select an option</div>
+                  <div class="select-items">
+                    <div>Islam</div>
+                    <div>Hinduism</div>
+                    <div>Chirstian</div>
+                    <div>Buddhist</div>
+                    <div>Other</div>
+                  </div>
                 </div>
               </div>
               <div class="col-lg-6 col-12">
                 <div class="form-group">
-                  <label class="form-label" for="motherName">Mother's Name <span>*</span></label>
-                  <input class="form-control" type="text" name="motherName" id="motherName" placeholder="Enter Name"
-                    required />
+                  <label class="form-label" for="idnumber">NID/Birth Reg No <span>*</span></label>
+                  <input class="form-control" type="text" name="idnumber" id="idnumber"
+                    placeholder="Enter NID/Birth Reg No" required />
                 </div>
               </div>
               <div class="col-lg-6 col-12">
                 <div class="form-group">
-                  <label class="form-label" for="address">Address <span>*</span></label>
-                  <input class="form-control" type="text" name="address" id="address"
-                    placeholder="Village, Post, Upozilla, District" required />
+                  <label class="form-label" for="dob">Date of Birth <span>*</span></label>
+                  <input class="form-control" type="date" name="dob" id="dob" required />
+                </div>
+              </div>
+              <div class="col-lg-6 col-12">
+                <div class="form-group">
+                  <label class="form-label" for="picture">Student Picture <span>(Passport Size)</span></label>
+                  <input class="form-control" type="file" name="picture" id="picture" />
                 </div>
               </div>
             </div>
@@ -135,15 +160,8 @@
               </div>
               <div class="col-lg-6 col-12">
                 <div class="form-group">
-                  <label class="form-label" for="rollNo">Admission/College Roll <span>*</span></label>
+                  <label class="form-label" for="rollNo">Admission Roll <span>*</span></label>
                   <input class="form-control" type="text" name="rollNo" id="rollNo" placeholder="Enter Roll" required />
-                </div>
-              </div>
-              <div class="col-lg-6 col-12">
-                <div class="form-group">
-                  <label class="form-label" for="registrationNo">Registration No <span>*</span></label>
-                  <input class="form-control" type="text" name="registrationNo" id="registrationNo"
-                    placeholder="Enter No" required />
                 </div>
               </div>
               <div class="col-lg-6 col-12">
@@ -158,16 +176,12 @@
                 </div>
               </div>
               <div class="col-lg-6 col-12">
-                <div class="form-group custom-select">
+                <div class="form-group">
                   <label class="form-label" for="academicLevel">Academic Level <span>*</span></label>
-                  <div class="select-selected">Select an option</div>
-                  <div class="select-items">
-                    <div>Master’s Regular</div>
-                    <div>HSC Regular</div>
-                    <div>Honour's Regular</div>
-                  </div>
+                  <input class="form-control" type="text" name="academicLevel" id="academicLevel" placeholder="Enter Roll" value="Degree (Private)" readonly />
                 </div>
               </div>
+
               <div class="col-lg-6 col-12">
                 <div class="form-group custom-select">
                   <label class="form-label" for="studentDepartment">Department/Group <span>*</span></label>
@@ -189,21 +203,11 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6 col-12">
-                <div class="form-group custom-select">
-                  <label class="form-label" for="studentType">Student Type <span>*</span></label>
-                  <div class="select-selected">Select an option</div>
-                  <div class="select-items">
-                    <div>Regular</div>
-                    <div>Irregular</div>
-                  </div>
-                </div>
-              </div>
             </div>
 
             <div class="row">
               <div class="col-12 section-header">
-                <h5>Account Info</h5>
+                <h5>Contact Info</h5>
                 <hr class="colorgraph" />
               </div>
               <div class="col-lg-6 col-12">
@@ -221,16 +225,102 @@
               </div>
               <div class="col-lg-6 col-12">
                 <div class="form-group">
-                  <label class="form-label" for="password">Password <span>*</span></label>
-                  <input class="form-control" type="password" name="password" id="password" placeholder="Enter Password"
+                  <label class="form-label" for="presentAddress">Present Address <span>*</span></label>
+                  <input class="form-control" type="presentAddress" name="presentAddress" id="presentAddress" placeholder="Vill, Post, Upozila, District"
                     required />
                 </div>
               </div>
               <div class="col-lg-6 col-12">
                 <div class="form-group">
-                  <label class="form-label" for="confirmPassword">Confirm Password <span>*</span></label>
-                  <input class="form-control" type="confirmPassword" name="confirmPassword" id="confirmPassword"
-                    placeholder="Enter Password" required />
+                  <label class="form-label" for="permanentAddress">Permanent Address <span>*</span></label>
+                  <input class="form-control" type="permanentAddress" name="permanentAddress" id="permanentAddress" placeholder="Vill, Post, Upozila, District"
+                    required />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 section-header">
+                <h5>Guardian Info</h5>
+                <hr class="colorgraph" />
+              </div>
+
+              <div class="col-lg-6 col-12">
+                <div class="form-group custom-select">
+                  <label class="form-label" for="studentClass">Gurdian Relation <span>*</span></label>
+                  <div class="select-selected">Select an option</div>
+                  <div class="select-items">
+                    <div>Father</div>
+                    <div>Mother</div>
+                    <div>Other</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12">
+                <div class="form-group">
+                  <label class="form-label" for="guardianName">Guardian Name <span>*</span></label>
+                  <input class="form-control" type="text" name="guardianName" id="guardianName" placeholder="Enter Name"
+                    required />
+                </div>
+              </div>
+              <div class="col-lg-6 col-12">
+                <div class="form-group">
+                  <label class="form-label" for="guardianMobile">Guardian Mobile <span>*</span></label>
+                  <input class="form-control" type="tel" name="guardianMobile" id="guardianMobile" placeholder="Enter Mobile" required />
+                </div>
+              </div>
+              <div class="col-lg-6 col-12">
+                <div class="form-group">
+                  <label class="form-label" for="relationType">Relation Type <span>*</span></label>
+                  <input class="form-control" type="relationType" name="relationType" id="relationType" placeholder="Enter Relation Type"
+                    required />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 section-header">
+                <h5>Other Info</h5>
+                <hr class="colorgraph" />
+              </div>
+              <div class="col-lg-6 col-12">
+                <div class="form-group">
+                  <label class="form-label" for="passingYear">Passing Year <span>*</span></label>
+                  <input class="form-control" type="number" name="passingYear" id="passingYear" placeholder="Enter Year"
+                    required />
+                </div>
+              </div>
+              <div class="col-lg-6 col-12">
+                <div class="form-group">
+                  <label class="form-label" for="nationality">Nationality <span>*</span></label>
+                  <input class="form-control" type="tel" name="nationality" id="nationality" placeholder="Enter Nationality" required />
+                </div>
+              </div>
+              <div class="col-lg-6 col-12">
+                <div class="form-group">
+                  <label class="form-label" for="extraActivity">Extra Curricular Activity <span>*</span></label>
+                  <input class="form-control" type="extraActivity" name="extraActivity" id="extraActivity" placeholder="Enter Activity"
+                    required />
+                </div>
+              </div>
+              <div class="col-lg-6 col-12">
+                <div class="form-group custom-select">
+                  <label class="form-label" for="studentQuota">Quota <span>*</span></label>
+                  <div class="select-selected">Select an option</div>
+                  <div class="select-items">
+                    <div>Yes</div>
+                    <div>No</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12">
+                <div class="form-group custom-select">
+                  <label class="form-label" for="maritalStatus">Marital Status <span>*</span></label>
+                  <div class="select-selected">Select an option</div>
+                  <div class="select-items">
+                    <div>Married</div>
+                    <div>Unmarried</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -286,77 +376,77 @@
             </div>
             <div class="row w-100">
               <div class="col-lg-6 col-12">
-                  <div class="section-header">
-                      <h5>Compulsory Subjects</h5>
-                      <hr class="colorgraph" />
+                <div class="section-header">
+                  <h5>Compulsory Subjects</h5>
+                  <hr class="colorgraph" />
+                </div>
+                <ul class="month-list">
+                  <li>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="Bangla" checked disabled>
+                      <label class="form-check-label" for="Bangla">Bangla (101,102)</label>
                     </div>
-                  <ul class="month-list">
-                      <li>
-                          <div class="form-check">
-                              <input class="form-check-input" type="checkbox" id="Bangla" checked disabled>
-                              <label class="form-check-label" for="Bangla">Bangla (101,102)</label>
-                          </div>
-                      </li>
-                      <li>
-                          <div class="form-check">
-                              <input class="form-check-input" type="checkbox" id="English" checked disabled>
-                              <label class="form-check-label" for="English">English (103,104)</label>
-                          </div>
-                      </li>
-                      <li>
-                          <div class="form-check">
-                              <input class="form-check-input" type="checkbox" id="Physics" checked disabled>
-                              <label class="form-check-label" for="Physics">Physics (107,108)</label>
-                          </div>
-                      </li>
-                      <li>
-                          <div class="form-check">
-                              <input class="form-check-input" type="checkbox" id="Chemistry" checked disabled>
-                              <label class="form-check-label" for="Chemistry">Chemistry (109,110)</label>
-                          </div>
-                      </li>
-                  </ul>
+                  </li>
+                  <li>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="English" checked disabled>
+                      <label class="form-check-label" for="English">English (103,104)</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="Physics" checked disabled>
+                      <label class="form-check-label" for="Physics">Physics (107,108)</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="Chemistry" checked disabled>
+                      <label class="form-check-label" for="Chemistry">Chemistry (109,110)</label>
+                    </div>
+                  </li>
+                </ul>
               </div>
               <div class="col-lg-6 col-12">
-                  <div class="section-header">
-                      <h5>4th & Main Subject</h5>
-                      <hr class="colorgraph" />
-                    </div>
-                    <div class="form-group custom-select">
-                      <label class="form-label" for="studentType">4th Subject <span>*</span></label>
-                      <div class="select-selected">Select an option</div>
-                      <div class="select-items">
-                        <div>Math (101,102)</div>
-                        <div>Biology (201,202)</div>
-                      </div>
-                    </div>
-                    <div class="section-header">
-                      <h5>Main Subject</h5>
-                      <hr class="colorgraph" />
-                    </div>
+                <div class="section-header">
+                  <h5>4th & Main Subject</h5>
+                  <hr class="colorgraph" />
+                </div>
+                <div class="form-group custom-select">
+                  <label class="form-label" for="studentType">4th Subject <span>*</span></label>
+                  <div class="select-selected">Select an option</div>
+                  <div class="select-items">
+                    <div>Math (101,102)</div>
+                    <div>Biology (201,202)</div>
+                  </div>
+                </div>
+                <div class="section-header">
+                  <h5>Main Subject</h5>
+                  <hr class="colorgraph" />
+                </div>
 
-                    <ul class="month-list">
-                      <li>
-                          <div class="form-check">
-                              <input class="form-check-input" type="checkbox" id="Math">
-                              <label class="form-check-label" for="Math"><span>Math (101,102)</span></label>
-                          </div>
-                      </li>
-                      <li>
-                          <div class="form-check">
-                              <input class="form-check-input" type="checkbox" id="Other-1">
-                              <label class="form-check-label" for="Other-1">Other 1 (103,104)</label>
-                          </div>
-                      </li>
-                      <li>
-                          <div class="form-check">
-                              <input class="form-check-input" type="checkbox" id="Other-2">
-                              <label class="form-check-label" for="Other-2">Other 2 (103,104)</label>
-                          </div>
-                      </li>
-                  </ul>
+                <ul class="month-list">
+                  <li>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="Math">
+                      <label class="form-check-label" for="Math"><span>Math (101,102)</span></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="Other-1">
+                      <label class="form-check-label" for="Other-1">Other 1 (103,104)</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="Other-2">
+                      <label class="form-check-label" for="Other-2">Other 2 (103,104)</label>
+                    </div>
+                  </li>
+                </ul>
               </div>
-          </div>
+            </div>
 
             <div class="row d-flex justify-content-center">
               <div class="col-6">
@@ -467,20 +557,22 @@
         </a>
         <a href="./registration.html">
           <button class="single-menu" type="button">
-            <img class="menu-icon" src="./assets/images/service-icon/Registration-Icon-Green.svg" alt="Student Registration" />
+            <img class="menu-icon" src="./assets/images/service-icon/Registration-Icon-Green.svg"
+              alt="Student Registration" />
             Student Registration
           </button>
         </a>
         <a data-bs-toggle="modal" data-bs-target="#onlineAdmission-modal">
           <button class="single-menu" type="button">
-            <img class="menu-icon" src="./assets/images/service-icon/OnlineAdmission-Icon-Green.svg" alt="Online Admission" />
+            <img class="menu-icon" src="./assets/images/service-icon/OnlineAdmission-Icon-Green.svg"
+              alt="Online Admission" />
             Online Admission
           </button>
         </a>
         <a data-bs-toggle="modal" data-bs-target="#formDownload-modal">
           <button class="single-menu" type="button">
             <img class="menu-icon" src="./assets/images/service-icon/FormDownload-Icon-Green.svg" alt="Form Download" />
-            Form Download 
+            Form Download
           </button>
         </a>
         <a data-bs-toggle="modal" data-bs-target="#admissionFee-modal">
@@ -491,7 +583,8 @@
         </a>
         <a data-bs-toggle="modal" data-bs-target="#applicationFee-modal">
           <button class="single-menu" type="button">
-            <img class="menu-icon" src="./assets/images/service-icon/ApplicationFee-Icon-Green.svg" alt="Application Fee" />
+            <img class="menu-icon" src="./assets/images/service-icon/ApplicationFee-Icon-Green.svg"
+              alt="Application Fee" />
             Application Fee
           </button>
         </a>

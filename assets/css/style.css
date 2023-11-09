@@ -2450,7 +2450,8 @@ a {
 
 /* Popup styles */
 .popup-container {
-  display: none;
+  z-index: 1111111;
+  display: block;
   position: fixed;
   top: 0;
   left: 0;

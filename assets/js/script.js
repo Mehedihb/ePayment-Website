@@ -124,3 +124,25 @@ menuClose.addEventListener("click", () => {
   menuSidebar.classList.remove('show-hide');
 })
 // <<<<< End Menu Sidebar Area
+
+
+
+
+
+// Function to display the popup on the first visit
+function showPopup() {
+  var popupContainer = document.getElementById('popup-container');
+  popupContainer.style.display = 'block';
+}
+
+// Function to close the popup
+function closePopup() {
+  var popupContainer = document.getElementById('popup-container');
+  popupContainer.style.display = 'none';
+}
+
+// Check if the user has visited before using cookies or local storage
+if (!localStorage.getItem('visited')) {
+  showPopup();
+  localStorage.setItem('visited', 'true');
+}

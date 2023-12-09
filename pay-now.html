@@ -243,31 +243,51 @@
                                 <p>Invoice: <span>32189713</span> </p>
                                 <p>Date: <span>2 Sept 2023</span> </p>
                             </div>
-                            <div class="form-group custom-select">
-                                <label class="form-label" for="gender">Payment Type</label>
-                                <div class="select-selected">Select an option</div>
-                                <div class="select-items">
-                                    <div>Admission Fee</div>
-                                    <div>Seminner Fee</div>
-                                    <div>Option 3</div>
-                                </div>
+                            <div class="form-group">
+                                <label class="form-label" for="paymentType">Payment Type
+                                    <b>*</b>
+                                    <span class="material-symbols-rounded" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" data-bs-title="Tooltip on top">
+                                        warning
+                                    </span>
+                                </label>
+                                <select class="form-select form-control">
+                                    <option selected>Select an option</option>
+                                    <option value="1">Admission Fee</option>
+                                    <option value="2">Seminner Fee</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="form-label" for="registrationNo">Registration No
-                                <span>*</span></label>
+                                <b>*</b>
+                                <span class="material-symbols-rounded" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    data-bs-title="Tooltip on top">
+                                    warning
+                                </span>
+                            </label>
                             <input class="form-control" type="text" name="registrationNo" id="registrationNo"
                                 placeholder="Enter Registration No" />
                         </div>
                         <div class="form-group">
                             <label class="form-label" for="collegeFee">College Fee
-                                <span>*</span></label>
+                                <b>*</b>
+                                <span class="material-symbols-rounded" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    data-bs-title="Tooltip on top">
+                                    warning
+                                </span>
+                            </label>
                             <input class="form-control" type="text" name="collegeFee" id="collegeFee"
                                 placeholder="Enter Fee" />
                         </div>
                         <div class="form-group">
                             <label class="form-label" for="formFee">Form Fee
-                                <span>*</span></label>
+                                <b>*</b>
+                                <span class="material-symbols-rounded" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    data-bs-title="Tooltip on top">
+                                    warning
+                                </span>
+                            </label>
                             <input class="form-control" type="text" name="formFee" id="formFee" placeholder="Enter Fee"
                                 value="200" disabled />
                         </div>

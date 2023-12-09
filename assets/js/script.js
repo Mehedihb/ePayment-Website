@@ -45,44 +45,6 @@ document.querySelectorAll(".btn-navigate-form-step").forEach((formNavigationBtn)
 });
 // End Wizard Area ----------<<<<<<<<<<<<<<<<<<<<
 
-// >>>>> Start JavaScript to handle the custom select behavior
-document.addEventListener("DOMContentLoaded", function () {
-  const customSelects = document.querySelectorAll(".custom-select");
-
-  customSelects.forEach(customSelect => {
-    const selectedOption = customSelect.querySelector(".select-selected");
-    const dropdownItems = customSelect.querySelectorAll(".select-items > div");
-    const isDisabled = customSelect.classList.contains("disabled"); // Check for the 'disabled' class
-
-    if (!isDisabled) {
-      selectedOption.addEventListener("click", function () {
-        const selectItems = this.nextElementSibling;
-        selectItems.style.display = selectItems.style.display === "block" ? "none" : "block";
-      });
-
-      dropdownItems.forEach(item => {
-        item.addEventListener("click", function () {
-          selectedOption.textContent = this.textContent;
-          selectedOption.click();
-        });
-      });
-    }
-  });
-
-  // Close the select when clicking anywhere outside
-  document.addEventListener("click", function (event) {
-    customSelects.forEach(customSelect => {
-      const selectItems = customSelect.querySelector(".select-items");
-      if (selectItems.style.display === "block" && !customSelect.contains(event.target)) {
-        selectItems.style.display = "none";
-      }
-    });
-  });
-});
-
-
-// <<<<< End JavaScript to handle the custom select behavior
-
 // >>>>> Start Password Show/Hide
 document.querySelectorAll('.togglePassword').forEach(toggleButton => {
   toggleButton.addEventListener('click', (e) => {
@@ -127,8 +89,6 @@ menuClose.addEventListener("click", () => {
 
 
 
-
-
 // Function to display the popup on the first visit
 function showPopup() {
   var popupContainer = document.getElementById('popup-container');
@@ -146,3 +106,9 @@ if (!localStorage.getItem('visited')) {
   showPopup();
   localStorage.setItem('visited', 'true');
 }
+
+
+
+
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))

@@ -41,7 +41,9 @@ body {
   box-sizing: border-box;
   overflow-x: hidden !important
 }
-
+.custom-tooltip {
+  --bs-tooltip-bg: var(--red);
+}
 /*>>>>> Start Animation Area <---------- */
 
 @-webkit-keyframes featureImgBounce {
@@ -398,12 +400,13 @@ a {
 
 .form-group.is-error {
   border-color: var(--red);
+  background-color: #FCF0F0;
 }
 
 .form-group .form-label .material-symbols-rounded{
   display: none;
   color: var(--red);
-  font-size: var(--font16);
+  font-size: var(--font18);
 }
 .form-group.is-error .form-label .material-symbols-rounded{
   display: block;

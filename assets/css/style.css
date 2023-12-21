@@ -252,10 +252,9 @@ li {
   letter-spacing: 1px;
   position: relative;
 }
-.swipe-btn p{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.swipe-btn.dropdown-toggle::after {
+  position: absolute;
+  right:15px;
 }
 .swipe-btn img {
   height: 48px;
@@ -264,12 +263,27 @@ li {
   border: 2px solid var(--brand-color-100);
   margin-right: 10px;
 }
+.swipe-btn .user-info{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: start;
+}
+.swipe-btn .user-info p{
+  color: var(--primary-black);
+  font-size: var(--font14);
+}
+.swipe-btn .user-info span{
+  color: var(--secondary-black);
+  font-size: var(--font12);
+}
 .dropdown-menu{
   width: 100%;
   padding: 8px;
 }
 .dropdown-menu .swipe-btn{
   margin-top: 8px;
+  background-color: var(--border-color);
   border-color: transparent;
 }
 .dropdown-menu .swipe-btn:hover{

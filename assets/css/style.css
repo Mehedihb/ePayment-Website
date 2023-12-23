@@ -2544,16 +2544,63 @@ a {
 }
 
 
+.invoice-container {
+  width: 100%;
+}
 
 
 
+.invoice-container .invoice-head{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+  padding: 8px 0px;
+}
 
+.invoice-container .invoice-head .logo{
+  width: 80px;
+}
 
+.invoice-container .invoice-head .head-info{
+  display: flex;
+  gap: 8px;
+  align-items: end;
+  flex-direction: column;
+}
 
+.invoice-container .invoice-body{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0px;
+}
+.invoice-container .invoice-body .invoice-status{
+  flex-grow: 1;
+  justify-content: center;
+}
+.invoice-container .invoice-body .invoice-status img{
+  width: 100px;
+}
+.invoice-container .invoice-body .body-info{
+  flex-grow: 1;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
 
+.invoice-container h6{
+  color: var(--primary-black);
+  font-size: var(--font20);
+}
+.invoice-container p{
+  color: var(--primary-black);
+  font-size: var(--font14);
+}
 
-
-
+.invoice-container p span{
+  color: var(--secondary-black);
+  font-size: var(--font14);
+}
 
 
 

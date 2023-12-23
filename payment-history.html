@@ -309,9 +309,56 @@
                     <h1 class="modal-title">View Invoice</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body p-0">
-                    <iframe src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf"
-                        width="800" height="650"> </iframe>
+                <div class="modal-body">
+                    <div class="invoice-container">
+                        <div class="invoice-head">
+                            <img class="logo" src="./assets/images/CollegeLogo.svg" alt="">
+                            <div class="head-info">
+                                <h6>College Name Line Here</h6>
+                                <p><span>December 23</span> | <span>#55577</span></p>
+                            </div>
+                        </div>
+                        <div class="invoice-body">
+                           <div class="body-info">
+                            <p>Name: <span>Mehedi Hassan</span></p>
+                            <p>Roll Number: <span>877</span></p>
+                            <p>Campus: <span>Campus Name Line Here</span></p>
+                            <p>Medium/ Version: <span>Bangla</span></p>
+                            <p>Group: <span>Science</span></p>
+                           </div>
+                           <div class="invoice-status">
+                            <img  src="./assets/images/paid.png" alt="">
+                           </div>
+                           
+                        </div>
+
+                          <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th class="text-center">SL</th>
+                                <th class="text-center">Description</th>
+                                <th class="text-end">Amount</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="text-center">01</td>
+                                <td class="text-center">Admission Fee</td>
+                                <td class="text-end">2000</td>
+                              </tr>
+                              <tr>
+                                <td colspan="2" class="text-end">Discount</td>
+                                <td class="text-end">0</td>
+                              </tr>
+                              <tr>
+                                <td colspan="2" class="text-end">Total</td>
+                                <td class="text-end">200</td>
+                              </tr>
+                            </tbody>
+                          </table>
+
+                          
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-primary btn-lg">Download Invoice</button>
